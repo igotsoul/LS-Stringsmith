@@ -55,6 +55,12 @@ Key entry points:
 
 - [Interactive UI Prototype](./prototype/index.html)
 
+## License
+
+The LS Stringsmith source code is licensed under the [MIT License](./LICENSE).
+Third-party Liberating Structures assets and materials remain under their own
+licenses; see [Third-Party Notices](./THIRD_PARTY_NOTICES.md).
+
 ## Run Locally
 
 ```bash

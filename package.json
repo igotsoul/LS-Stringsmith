@@ -2,6 +2,7 @@
   "name": "ls-stringsmith",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "node scripts/next-with-wasm.mjs dev --webpack",
     "dev:local": "node scripts/next-with-wasm.mjs dev --webpack -H 127.0.0.1 -p 3001",
