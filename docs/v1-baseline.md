@@ -2,7 +2,7 @@
 
 ## V1 Baseline
 
-Last updated: 2026-04-29
+Last updated: 2026-04-30
 
 This document freezes the current V1 baseline so product, design, and implementation can move in a more structured delivery mode. It is intentionally shorter than the full product brief and should be treated as the active source of truth for:
 
@@ -35,6 +35,9 @@ The current app baseline already includes:
 
 - Next.js browser app with routed screens for `Projects`, `Setup`, `Builder`, and `Preview`
 - shared app shell and design language
+- product identity updated to `LS Stringsmith`
+- GitHub repository published as `igotsoul/LS-Stringsmith`
+- MIT source-code license plus third-party notices for LS assets and content
 - guest-local persistence
 - workspace-local persistence
 - SQLite-backed `server draft` persistence
@@ -54,6 +57,7 @@ The current app baseline already includes:
 - LS library with:
   - search
   - official Matchmaker categories
+  - locally stored official Liberating Structures icon assets
   - related / alternative structure inspection
 - step-level prompts and facilitator cues per block instance
 - local review provider abstraction with:
@@ -71,6 +75,14 @@ The current app baseline already includes:
 - project bundle export / import
 - richer bundle metadata plus reviewed import confirmation flow
 - import into a selected existing project or as a newly created project
+- optional light/dark shell theme toggle
+
+Repository stewardship baseline:
+
+- package name is `ls-stringsmith`
+- code license is MIT
+- third-party Liberating Structures assets are documented separately and are not relicensed by this repository
+- root project docs should keep `README.md`, `LICENSE`, `THIRD_PARTY_NOTICES.md`, `decision-log.md`, and this baseline in sync when project identity or licensing changes
 
 ## 3. V1 Scope Lock
 

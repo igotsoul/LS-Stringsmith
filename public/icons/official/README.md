@@ -4,4 +4,4 @@ Run `pnpm sync:ls-icons` to refresh the PNG files from the source pages listed i
 `domain/workshop/ls-icon-sources.json`.
 
 These assets are third-party materials and are not covered by the project's MIT
-license. See `THIRD_PARTY_NOTICES.md` for source and license notes.
+license. See the root `THIRD_PARTY_NOTICES.md` for source and license notes.

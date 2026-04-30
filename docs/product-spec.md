@@ -2,6 +2,27 @@
 
 ## Product and Technical Specification v0.1
 
+### 0. Product Identity and Repository
+
+Product name:
+
+- `LS Stringsmith`
+
+Repository:
+
+- GitHub: `igotsoul/LS-Stringsmith`
+- package name: `ls-stringsmith`
+
+Short description:
+
+- A browser-first workshop design tool for crafting purposeful Liberating Structures strings from intent to facilitation-ready flow.
+
+Licensing:
+
+- the LS Stringsmith source code is MIT-licensed
+- third-party Liberating Structures assets and materials remain under their own licenses
+- official LS icon assets are documented in `THIRD_PARTY_NOTICES.md` and are not relicensed by this project
+
 ### 1. Product Vision
 
 LS Stringsmith is a browser-first application for facilitators and agile coaches who already know the basics of Liberating Structures and want to design workshops faster, with better structure quality and better internal facilitation documentation.
@@ -51,6 +72,7 @@ This creates avoidable effort and increases the risk of weak structure choices, 
 - Browser-first: no heavy local installation is required.
 - Self-contained: self-hosting must be possible with minimal setup.
 - AI-optional: the core product remains usable without AI.
+- Clear licensing boundary: project source code and third-party LS materials are documented separately.
 
 ### 5. Domain Model
 
@@ -1296,6 +1318,9 @@ Key decisions already made:
 - markdown plus printable HTML/PDF export
 - local browser storage in guest mode
 - SQLite as default persisted storage for self-contained deployment
+- product and repo identity: LS Stringsmith / `igotsoul/LS-Stringsmith`
+- source code under MIT
+- third-party Liberating Structures assets remain under their own licenses
 
 ### 26. Next Recommended Outputs
 

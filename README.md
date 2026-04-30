@@ -2,6 +2,8 @@
 
 Product and implementation groundwork for a browser-first application that helps facilitators forge purposeful Liberating Structures strings.
 
+Repository: [github.com/igotsoul/LS-Stringsmith](https://github.com/igotsoul/LS-Stringsmith)
+
 ## Current App Scaffold
 
 - Next.js App Router scaffold with TypeScript

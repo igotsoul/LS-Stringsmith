@@ -2,6 +2,8 @@
 
 ## LS Icon Strategy v0.2
 
+Last reviewed: 2026-04-30
+
 This note documents the current recommendation for handling Liberating Structures icons in the prototype and later product implementation.
 
 ## Current Decision
@@ -9,7 +11,7 @@ This note documents the current recommendation for handling Liberating Structure
 The design review on 2026-04-29 supersedes the earlier placeholder strategy:
 
 - official Liberating Structures icons are used
-- rights are considered cleared for this project
+- rights are considered cleared for this project use, but the assets remain third-party materials
 - icons are extracted from the official German LS pages
 - icon colors stay unchanged
 - icons are stored locally under `public/icons/official/`
@@ -34,6 +36,15 @@ The reference site at [liberatingstructures.de](https://liberatingstructures.de/
 The same page footer states that the work is licensed under:
 
 - [Creative Commons BY-NC 3.0](https://creativecommons.org/licenses/by-nc/3.0/)
+
+## License Boundary
+
+The app source code is MIT-licensed, but the official Liberating Structures icon
+assets are not covered by that MIT grant. They remain under the applicable
+third-party license terms from their source. Keep these notes aligned with:
+
+- `THIRD_PARTY_NOTICES.md`
+- `public/icons/official/README.md`
 
 ## Product Guidance
 

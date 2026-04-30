@@ -2,7 +2,7 @@
 
 ## Decision Log
 
-Last updated: 2026-04-29
+Last updated: 2026-04-30
 
 This log captures meaningful product, UX, and architecture decisions that should survive chat history compression. Keep entries short and decision-oriented.
 
@@ -289,6 +289,73 @@ Consequence:
 - block, section, and workshop review requests use stable snapshots rather than every transient edit
 - accepted AI refinements update the relevant review snapshot once
 - future AI editor features should prefer explicit or committed triggers over per-keystroke calls
+
+---
+
+## 2026-04-30
+
+### DL-015: Product and repository identity is LS Stringsmith
+
+Status: accepted
+
+Decision:
+
+- use `LS Stringsmith` as the product name
+- use `ls-stringsmith` as the package name
+- use `igotsoul/LS-Stringsmith` as the GitHub repository identity
+
+Why:
+
+- the name keeps the Liberating Structures insider concept of "strings" while making the product feel more crafted and memorable
+- the old working name described the category but did not give the project a strong identity
+
+Consequence:
+
+- app chrome, README, package metadata, bundle labels, mail labels, docs, and print stamps should use `LS Stringsmith`
+- the old working name should not be reintroduced except in historical notes
+
+### DL-016: Source code is MIT, LS assets stay third-party
+
+Status: accepted
+
+Decision:
+
+- license the LS Stringsmith source code under MIT
+- keep third-party Liberating Structures assets and materials under their original licenses
+- document the boundary in `THIRD_PARTY_NOTICES.md` and `public/icons/official/README.md`
+
+Why:
+
+- MIT keeps the app code easy to inspect, fork, self-host, and extend
+- the official LS icons and related materials come from outside the project and should not be implied to be part of the MIT grant
+- Creative Commons licenses are appropriate for those assets/content, but not for the application source code itself
+
+Consequence:
+
+- `LICENSE` covers the project source code
+- `THIRD_PARTY_NOTICES.md` must be kept current when third-party LS assets or content are added, removed, or replaced
+- product docs must avoid implying that code and third-party assets are covered by the same license grant
+
+### DL-017: Current visual alpha baseline is cool-neutral and themeable
+
+Status: accepted
+
+Decision:
+
+- keep the current alpha UI on cool neutral surfaces with Teal/Navy structure accents
+- use the Inter-based system font stack currently in `app/globals.css`
+- keep the optional light/dark theme toggle as part of the alpha shell
+- treat earlier warm editorial font and palette notes as direction context, not as binding implementation until a deliberate visual pass reopens them
+
+Why:
+
+- the current implementation is coherent, readable, and already wired across the main app shell
+- changing typography and palette now would be a visual redesign rather than a documentation fix
+
+Consequence:
+
+- future design work should either refine the current cool-neutral baseline or intentionally replace it in one named visual pass
+- docs should distinguish implemented visual baseline from earlier exploratory recommendations
 
 ---
 

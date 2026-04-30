@@ -2,7 +2,7 @@
 
 ## Implementation Backlog
 
-Last updated: 2026-04-29
+Last updated: 2026-04-30
 
 This backlog turns the current repo state into the next structured delivery plan. It is intentionally slice-based instead of issue-exhaustive.
 
@@ -17,6 +17,8 @@ This backlog turns the current repo state into the next structured delivery plan
 
 Already completed:
 
+- project renamed and published as `LS Stringsmith` / `igotsoul/LS-Stringsmith`
+- MIT source-code license and third-party notices
 - app scaffold
 - builder shell
 - local persistence

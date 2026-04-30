@@ -12,6 +12,19 @@ The goal is not just to make the app usable, but to give it a clear, intentional
 - playful without becoming toy-like
 - modular without looking like a generic kanban board
 
+## Current Alpha Implementation Note
+
+Last reviewed: 2026-04-30
+
+The initial implementation now uses a cooler neutral palette, Teal/Navy accents,
+an Inter-based system font stack, and an optional light/dark theme toggle in the
+app shell. Those choices are the current alpha baseline in `app/globals.css`.
+
+The warmer editorial palette and the `Source Sans 3` / `Space Grotesk` pairing
+below remain useful direction context, but they are no longer an implicit
+requirement. Reopening them should happen as an explicit visual design pass, not
+as incidental cleanup.
+
 ## 1. Design Intent
 
 The app should feel like a focused workshop design studio.
@@ -120,6 +133,11 @@ Recommended palette direction:
 - muted coral for warnings or critique
 - soft green for positive review states
 
+Implementation note:
+
+- current alpha tokens use cooler canvas and surface values in `app/globals.css`
+- future visual work should either refine that cool-neutral baseline or replace it deliberately across docs and CSS together
+
 ### 5.1 Core Palette
 
 #### Neutrals
@@ -175,6 +193,11 @@ Display and section headings:
 Mono for data, tags, and technical metadata:
 
 - `IBM Plex Mono`
+
+Implementation note:
+
+- current alpha UI uses an Inter-based system stack for display and body text
+- `IBM Plex Mono` remains the mono preference where available
 
 ### 6.2 Typographic Roles
 

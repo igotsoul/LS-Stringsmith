@@ -1,8 +1,19 @@
 # Design Review Decisions
 
-Stand: 2026-04-29
+Stand: 2026-04-30
 
 Dieses Dokument fasst die Design- und UX-Entscheidungen fuer den naechsten Umsetzungsschnitt der LS Stringsmith App zusammen. Ziel ist, dass ein neuer Implementierungs-Chat die Entscheidungen ohne erneutes Interview Schritt fuer Schritt umsetzen kann.
+
+## Nachtrag 2026-04-30: Produktidentitaet, Repository und Lizenz
+
+- Produktname: LS Stringsmith.
+- GitHub-Repository: `igotsoul/LS-Stringsmith`.
+- Package-Name: `ls-stringsmith`.
+- Kurzbeschreibung fuer GitHub: "A browser-first workshop design tool for crafting purposeful Liberating Structures strings from intent to facilitation-ready flow."
+- Der Quellcode ist MIT-lizenziert.
+- Offizielle Liberating-Structures-Assets bleiben Third-Party-Material und werden nicht durch die MIT-Lizenz dieses Repos relicensed.
+- Lizenz- und Quellenhinweise liegen in `LICENSE`, `THIRD_PARTY_NOTICES.md` und `public/icons/official/README.md`.
+- Die aktuelle Alpha-UI verwendet eine kuehle neutrale Flaeche, Teal/Navy-Akzente, Inter-basierte Systemtypografie und einen optionalen Light/Dark-Theme-Toggle. Aeltere visuelle Empfehlungen bleiben Kontext, aber die aktuelle CSS-Implementierung ist bis zum naechsten bewussten Visual-Pass die praktische Baseline.
 
 ## Zielbild
 

@@ -20,12 +20,15 @@ The main goals are:
 ├─ features/
 ├─ domain/
 ├─ storage/
+├─ scripts/
 ├─ server/
 ├─ lib/
 ├─ i18n/
 ├─ docs/
 ├─ public/
 ├─ prisma/ or db/
+├─ LICENSE
+├─ THIRD_PARTY_NOTICES.md
 └─ package.json
 ```
 
@@ -286,6 +289,24 @@ Purpose:
 - icons
 - logos
 - optional LS visual assets if licensing allows
+
+Current note:
+
+- official Liberating Structures icon assets live under `public/icons/official/`
+- these assets are third-party materials and are documented in `THIRD_PARTY_NOTICES.md`
+
+### 2.11 Root stewardship files
+
+Purpose:
+
+- preserve project identity, licensing, and third-party attribution at repository level
+
+Current files:
+
+- `README.md`
+- `LICENSE`
+- `THIRD_PARTY_NOTICES.md`
+- `package.json`
 
 ## 3. Feature Ownership Boundaries
 
