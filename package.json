@@ -1,0 +1,28 @@
+{
+  "name": "liberating-structure-designer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/next-with-wasm.mjs dev --webpack",
+    "dev:local": "node scripts/next-with-wasm.mjs dev --webpack -H 127.0.0.1 -p 3001",
+    "build": "node scripts/next-with-wasm.mjs build --webpack",
+    "start": "next start",
+    "sync:ls-icons": "node scripts/sync-ls-icons.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "next": "16.2.4",
+    "react": "19.2.5",
+    "react-dom": "19.2.5"
+  },
+  "devDependencies": {
+    "@next/swc-wasm-nodejs": "16.2.4",
+    "@types/node": "24.3.1",
+    "@types/react": "19.1.12",
+    "@types/react-dom": "19.1.9",
+    "typescript": "5.9.2"
+  }
+}

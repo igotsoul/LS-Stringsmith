@@ -1,0 +1,66 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg124a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32 24) rotate(49.2) scale(64.2)">
+      <stop offset="0" stop-color="#E7F3FF"/>
+      <stop offset="0.52" stop-color="#C9DFF5"/>
+      <stop offset="1" stop-color="#A9C8E7"/>
+    </radialGradient>
+    <linearGradient id="ring124a" x1="15" y1="10" x2="80" y2="86" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E3542"/>
+      <stop offset="1" stop-color="#0F1115"/>
+    </linearGradient>
+    <filter id="shadow124a" x="2" y="2" width="92" height="94" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2.5"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.07 0 0 0 0 0.09 0 0 0 0 0.12 0 0 0 0.18 0"/>
+      <feBlend in2="SourceGraphic" result="shape"/>
+    </filter>
+    <filter id="innerGlow124a" x="7" y="7" width="82" height="82" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow124a)">
+    <circle cx="48" cy="48" r="45.5" fill="url(#ring124a)"/>
+    <circle cx="48" cy="48" r="42.3" fill="url(#bg124a)"/>
+    <circle cx="48" cy="48" r="41.2" stroke="rgba(255,255,255,0.55)" stroke-width="1.6"/>
+    <path d="M20 22C30 12 47 8.5 61 12.5" stroke="rgba(255,255,255,0.5)" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M78.5 61.5C74 72.5 66.5 79.5 55.5 83" stroke="rgba(17,17,17,0.12)" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#innerGlow124a)" opacity="0.35">
+    <circle cx="48" cy="48" r="41" fill="white"/>
+  </g>
+
+  <g fill="#111111">
+    <circle cx="48" cy="15.5" r="5.2"/>
+    <circle cx="16.2" cy="33.2" r="5.2"/>
+    <circle cx="16.4" cy="51.2" r="5.2"/>
+    <circle cx="29.7" cy="75.2" r="5.2"/>
+    <circle cx="48" cy="79" r="5.2"/>
+    <circle cx="79.8" cy="33.2" r="5.2"/>
+    <circle cx="79.6" cy="51.2" r="5.2"/>
+  </g>
+
+  <g fill="white" opacity="0.22">
+    <circle cx="46.4" cy="13.8" r="1.5"/>
+    <circle cx="14.8" cy="31.6" r="1.5"/>
+    <circle cx="14.8" cy="49.5" r="1.5"/>
+    <circle cx="28.1" cy="73.4" r="1.5"/>
+    <circle cx="46.3" cy="77.4" r="1.5"/>
+    <circle cx="78.1" cy="31.7" r="1.5"/>
+    <circle cx="77.9" cy="49.6" r="1.5"/>
+  </g>
+
+  <g fill="#111111">
+    <path d="M31.2 18.2L13.5 19.8L25.8 24.7L24.3 38L31.2 18.2Z"/>
+    <path d="M64.3 23L77.2 12.1L76.7 26.2L89.4 31L64.3 23Z"/>
+    <path d="M65.5 67.3L78.4 56.5L77.9 70.6L90.5 75.4L65.5 67.3Z"/>
+  </g>
+
+  <g fill="white" opacity="0.16">
+    <path d="M27.7 20.6L18.9 21.2L24.1 23.5L23.1 30.6L27.7 20.6Z"/>
+    <path d="M68.6 22.4L75.4 16.7L74.8 23.8L81.5 26.4L68.6 22.4Z"/>
+    <path d="M69.6 66.6L76.2 61.1L75.7 68L82.1 70.4L69.6 66.6Z"/>
+  </g>
+</svg>

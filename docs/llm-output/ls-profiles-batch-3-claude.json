@@ -1,0 +1,281 @@
+{
+  "profiles": [
+    {
+      "entryId": "agreement-and-certainty-matrix",
+      "purposeTags": ["sensemaking", "pattern-detection", "strategy", "systems-thinking"],
+      "sequenceRoles": ["analyze", "synthesize", "bridge"],
+      "outputTypes": ["shared-context", "patterns", "insights", "maps"],
+      "inputNeeds": ["problem-list", "decision-context"],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "medium",
+      "formatFit": ["onsite", "remote", "hybrid"],
+      "bestWhen": [
+        "The group treats different challenge types with the same approach",
+        "You need to triage a mixed portfolio of problems before choosing methods"
+      ],
+      "avoidWhen": [
+        "Only one well-defined challenge is on the table",
+        "There is no shared list of issues to sort"
+      ],
+      "pairsWellAfter": [
+        {"entryId": "nine-whys", "reason": "Clarifying purpose first sharpens which challenges actually matter to sort.", "confidence": "medium"},
+        {"entryId": "25-10-crowd-sourcing", "reason": "Sort the surfaced challenges by agreement and certainty to choose appropriate next methods.", "confidence": "medium"},
+        {"entryId": "input", "reason": "A short framing of the four domains lands better than diving in cold.", "confidence": "high"}
+      ],
+      "pairsWellBefore": [
+        {"entryId": "15percent-solutions", "reason": "Items in the simple and complicated zones are ready for concrete personal action.", "confidence": "high"},
+        {"entryId": "wicked-questions", "reason": "Items landing in the complex zone benefit from articulating the underlying paradoxes.", "confidence": "high"},
+        {"entryId": "design-storyboards", "reason": "Complicated items need the step-by-step planning that storyboards provide.", "confidence": "medium"}
+      ],
+      "useInstead": [
+        {"entryId": "ecocycle-planning", "tradeoff": "deeper", "reason": "If the question is portfolio life-cycle rather than challenge-typing, ecocycle gives a richer view at higher cost.", "confidence": "medium"}
+      ],
+      "notes": "Prepare a visible 2x2 (agreement vs certainty) and a stack of ~10 candidate challenges; sort them together rather than lecturing the model.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "ecocycle-planning",
+      "purposeTags": ["strategy", "prioritization", "sensemaking", "decision", "systems-thinking"],
+      "sequenceRoles": ["analyze", "synthesize", "decide"],
+      "outputTypes": ["priorities", "decisions", "patterns", "maps"],
+      "inputNeeds": ["existing-data", "problem-list", "prior-output"],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": ["onsite", "hybrid"],
+      "bestWhen": [
+        "The team is stretched across too many initiatives",
+        "There is rigidity in legacy work or scarcity in new growth",
+        "Leadership wants to decide what to stop, not only what to start"
+      ],
+      "avoidWhen": [
+        "The portfolio is tiny or already obvious",
+        "Group has no shared knowledge of the current activities"
+      ],
+      "pairsWellAfter": [
+        {"entryId": "nine-whys", "reason": "A sharpened purpose makes positioning activities on the cycle far less arbitrary.", "confidence": "medium"},
+        {"entryId": "25-10-crowd-sourcing", "reason": "Use the surfaced ideas as the inventory you then place on the ecocycle.", "confidence": "medium"},
+        {"entryId": "input", "reason": "A 5-minute framing of the eight ecocycle phases prevents confusion at the board.", "confidence": "high"}
+      ],
+      "pairsWellBefore": [
+        {"entryId": "15percent-solutions", "reason": "Activities in renewal can be acted on immediately with each person's 15%.", "confidence": "high"},
+        {"entryId": "triz", "reason": "Items flagged for creative destruction set up stop-doing work via TRIZ.", "confidence": "high"},
+        {"entryId": "min-specs", "reason": "After deciding what to keep, define minimal guardrails for it.", "confidence": "medium"}
+      ],
+      "useInstead": [
+        {"entryId": "agreement-and-certainty-matrix", "tradeoff": "shorter", "reason": "If you only need to triage problems by type rather than review a whole portfolio life-cycle.", "confidence": "medium"}
+      ],
+      "notes": "Build the ecocycle figure visibly large; let people self-place activities before facilitating discussion of clusters.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "panarchy",
+      "purposeTags": ["systems-thinking", "sensemaking", "pattern-detection", "strategy"],
+      "sequenceRoles": ["analyze", "deepen"],
+      "outputTypes": ["maps", "patterns", "insights"],
+      "inputNeeds": ["existing-data", "expertise", "challenge-question"],
+      "energyLevel": "low",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "high",
+      "formatFit": ["onsite"],
+      "bestWhen": [
+        "Innovation keeps stalling at a different level than where it was created",
+        "Cross-scale dynamics matter: team, org, market, regulation"
+      ],
+      "avoidWhen": [
+        "Group is unfamiliar with systems thinking and time is short",
+        "The challenge is concrete and operational, not multi-scale"
+      ],
+      "pairsWellAfter": [
+        {"entryId": "ecocycle-planning", "reason": "Ecocycle warms the brain for life-cycle thinking before adding nested levels with panarchy.", "confidence": "high"},
+        {"entryId": "social-network-webbing", "reason": "A network map gives panarchy concrete actors to place at each system level.", "confidence": "medium"},
+        {"entryId": "input", "reason": "A short framing of nested adaptive cycles is essential before the exercise lands.", "confidence": "high"}
+      ],
+      "pairsWellBefore": [
+        {"entryId": "15percent-solutions", "reason": "Panarchy insights become useful when each level translates to a specific personal action.", "confidence": "medium"},
+        {"entryId": "wicked-questions", "reason": "Cross-scale dynamics often expose paradoxes worth articulating explicitly.", "confidence": "medium"}
+      ],
+      "useInstead": [
+        {"entryId": "ecocycle-planning", "tradeoff": "shorter", "reason": "If a single-level life-cycle view is enough, ecocycle is faster and more accessible than nested panarchy.", "confidence": "high"}
+      ],
+      "notes": "Prepare large visuals of the three nested cycles; this is heavy cognitive lifting, not a quick warmup.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "generative-relationships-star",
+      "purposeTags": ["pattern-detection", "sensemaking", "relationship-mapping", "reflection"],
+      "sequenceRoles": ["analyze", "deepen"],
+      "outputTypes": ["insights", "patterns", "shared-context"],
+      "inputNeeds": ["stakeholder-roles", "personal-experience", "prior-output"],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": ["onsite", "remote", "hybrid"],
+      "bestWhen": [
+        "A cross-functional working group is stuck and relationships seem to be the bottleneck",
+        "You suspect either too much sameness or too little reason to collaborate"
+      ],
+      "avoidWhen": [
+        "Active toxic conflict needs repair work first",
+        "Relationships are not the actual constraint on the work"
+      ],
+      "pairsWellAfter": [
+        {"entryId": "impromptu-networking", "reason": "Light connection across the room warms people up for an honest STAR rating of their working relationships.", "confidence": "medium"},
+        {"entryId": "nine-whys", "reason": "A clear shared purpose sets the bar for what generative relationships are for.", "confidence": "medium"}
+      ],
+      "pairsWellBefore": [
+        {"entryId": "winfy", "reason": "Once patterns are visible, WINFY converts insights into concrete asks and offers across functions.", "confidence": "high"},
+        {"entryId": "15percent-solutions", "reason": "Each person commits to a small move that improves one of the four STAR dimensions.", "confidence": "high"},
+        {"entryId": "troika-consulting", "reason": "Use peer consulting on the specific relationship patterns each person wants to shift.", "confidence": "medium"}
+      ],
+      "useInstead": [
+        {"entryId": "winfy", "tradeoff": "more-action-oriented", "reason": "If you need concrete needs and commitments now, WINFY skips the diagnostic and goes to requests.", "confidence": "high"},
+        {"entryId": "network-patterning-cards", "tradeoff": "more-structured", "reason": "Cards give a richer pattern language but take longer than the four STAR dimensions.", "confidence": "medium"}
+      ],
+      "notes": "Score the four STAR dimensions privately first; share scores before discussing why they differ.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "network-patterning-cards",
+      "purposeTags": ["pattern-detection", "sensemaking", "relationship-mapping", "innovation"],
+      "sequenceRoles": ["analyze", "deepen", "synthesize"],
+      "outputTypes": ["patterns", "insights", "principles"],
+      "inputNeeds": ["examples", "existing-data", "stakeholder-roles"],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "medium",
+      "formatFit": ["onsite", "hybrid"],
+      "bestWhen": [
+        "A team is redesigning how it interacts and a richer pattern language helps",
+        "You want to compare current and aspirational collaboration patterns"
+      ],
+      "avoidWhen": [
+        "You do not have a card set or remote substitute prepared",
+        "Time pressure demands concrete actions over pattern naming"
+      ],
+      "pairsWellAfter": [
+        {"entryId": "simple-ethnography", "reason": "Real observed behaviors give the cards something concrete to attach to.", "confidence": "medium"},
+        {"entryId": "generative-relationships-star", "reason": "STAR surfaces the symptom; the cards offer a richer pattern vocabulary to explain it.", "confidence": "medium"},
+        {"entryId": "input", "reason": "A short framing of pattern thinking helps participants use the cards as a language, not a quiz.", "confidence": "medium"}
+      ],
+      "pairsWellBefore": [
+        {"entryId": "15percent-solutions", "reason": "Each person picks one pattern shift they personally have authority to try.", "confidence": "high"},
+        {"entryId": "min-specs", "reason": "Translate chosen patterns into a tight set of must-dos and must-not-dos for the team.", "confidence": "medium"}
+      ],
+      "useInstead": [
+        {"entryId": "generative-relationships-star", "tradeoff": "shorter", "reason": "STAR's four dimensions cover the main relational patterns faster, without the card set.", "confidence": "medium"},
+        {"entryId": "social-network-webbing", "tradeoff": "more-action-oriented", "reason": "If you want to map who connects to whom and act on it, webbing is more direct.", "confidence": "medium"}
+      ],
+      "notes": "Have physical cards or a digital deck ready; pre-select a working subset rather than dumping the full library on the table.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "simple-ethnography",
+      "purposeTags": ["sensemaking", "pattern-detection", "knowledge-sharing", "innovation"],
+      "sequenceRoles": ["discover", "analyze"],
+      "outputTypes": ["stories", "patterns", "insights", "shared-context"],
+      "inputNeeds": ["physical-space", "clear-purpose", "stakeholder-roles"],
+      "energyLevel": "medium",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "high",
+      "formatFit": ["onsite"],
+      "bestWhen": [
+        "Assumptions about users or operations feel stale or contested",
+        "Design or policy decisions need grounding in actual behavior"
+      ],
+      "avoidWhen": [
+        "You cannot get safe, ethical access to the field",
+        "The workshop window is too short to send people out and come back"
+      ],
+      "pairsWellAfter": [
+        {"entryId": "nine-whys", "reason": "Clarifying purpose tells observers what to actually pay attention to.", "confidence": "high"},
+        {"entryId": "input", "reason": "A short briefing on observation discipline keeps notes descriptive, not interpretive.", "confidence": "high"}
+      ],
+      "pairsWellBefore": [
+        {"entryId": "what-so-what-now-what", "reason": "Structured debrief turns raw field notes into shared meaning and next steps.", "confidence": "high"},
+        {"entryId": "shift-and-share", "reason": "Small groups present field findings in rotating stations so everyone hears them.", "confidence": "high"},
+        {"entryId": "gallery-walk", "reason": "Posting field notes for a silent walk-through reveals patterns across observations.", "confidence": "medium"}
+      ],
+      "useInstead": [
+        {"entryId": "appreciative", "tradeoff": "shorter", "reason": "If interviewing people is enough and field access is not feasible, appreciative interviews are faster.", "confidence": "medium"},
+        {"entryId": "user-experience-fishbowl", "tradeoff": "shorter", "reason": "If experienced practitioners are in the room, a fishbowl surfaces practice knowledge without going out.", "confidence": "medium"}
+      ],
+      "notes": "Send observers in pairs with a tight shared lens; separate description from interpretation in the notes template.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "min-specs",
+      "purposeTags": ["constraints", "decision", "commitment", "purpose-clarity"],
+      "sequenceRoles": ["synthesize", "decide", "plan"],
+      "outputTypes": ["agreements", "principles", "constraints"],
+      "inputNeeds": ["prior-output", "clear-purpose"],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": ["onsite", "remote", "hybrid"],
+      "bestWhen": [
+        "Rules and process have sprawled and the team needs guardrails, not micromanagement",
+        "Before scaling or handing off an initiative to others"
+      ],
+      "avoidWhen": [
+        "The purpose itself is unclear - clarify it first",
+        "Group still needs to diverge on options before constraining them"
+      ],
+      "pairsWellAfter": [
+        {"entryId": "nine-whys", "reason": "A sharp purpose is the anchor against which max specs are tested for being truly necessary.", "confidence": "high"},
+        {"entryId": "25-10-crowd-sourcing", "reason": "Use the prioritized ideas as the candidate list of must-dos and must-not-dos to challenge.", "confidence": "medium"},
+        {"entryId": "design-storyboards", "reason": "After designing a step-by-step plan, distill it down to the essential specs.", "confidence": "medium"}
+      ],
+      "pairsWellBefore": [
+        {"entryId": "15percent-solutions", "reason": "Within tight specs, each person identifies what they can act on now.", "confidence": "high"},
+        {"entryId": "troika-consulting", "reason": "Peers help each person sharpen how they will work within the specs.", "confidence": "medium"}
+      ],
+      "useInstead": [
+        {"entryId": "15percent-solutions", "tradeoff": "more-action-oriented", "reason": "If you need movement now rather than codified guardrails, 15% goes straight to personal action.", "confidence": "medium"}
+      ],
+      "notes": "Generate a fat list of max specs first, then ruthlessly cut anything not strictly required to achieve the purpose.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "integrated-autonomy",
+      "purposeTags": ["sensemaking", "decision", "strategy", "constraints"],
+      "sequenceRoles": ["analyze", "synthesize", "decide"],
+      "outputTypes": ["principles", "decisions", "agreements", "options"],
+      "inputNeeds": ["decision-context", "options-list", "stakeholder-roles"],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": ["onsite", "remote", "hybrid"],
+      "bestWhen": [
+        "The group is stuck in either/or debates such as standardize vs autonomy or local vs global",
+        "A polarity needs ongoing balancing, not a one-time pick"
+      ],
+      "avoidWhen": [
+        "A clean either/or decision is genuinely required",
+        "No real polarity exists - the choice is just hard"
+      ],
+      "pairsWellAfter": [
+        {"entryId": "wicked-questions", "reason": "Wicked questions surface the underlying paradox so integrated~autonomy can work it concretely.", "confidence": "high"},
+        {"entryId": "nine-whys", "reason": "Shared purpose anchors which elements truly need to be standardized vs left autonomous.", "confidence": "medium"}
+      ],
+      "pairsWellBefore": [
+        {"entryId": "min-specs", "reason": "Lock the both/and balance into a tight set of must-dos and must-not-dos.", "confidence": "high"},
+        {"entryId": "15percent-solutions", "reason": "Each person identifies one move that holds both poles in their own work.", "confidence": "medium"}
+      ],
+      "useInstead": [
+        {"entryId": "wicked-questions", "tradeoff": "shorter", "reason": "If naming the paradox is enough and you do not yet need to design both/and elements, wicked questions is faster.", "confidence": "medium"}
+      ],
+      "notes": "List candidate elements, then sort each into 'standardize globally' or 'leave to local autonomy' with explicit reasons.",
+      "sourceConfidence": "medium"
+    }
+  ]
+}

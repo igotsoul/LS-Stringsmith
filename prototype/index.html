@@ -1,0 +1,1101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liberating Structure Designer Prototype</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="backdrop backdrop-one"></div>
+    <div class="backdrop backdrop-two"></div>
+    <div class="grain"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">
+          <span class="brand-mark-dot"></span>
+          <span class="brand-mark-ring"></span>
+        </div>
+        <div>
+          <p class="eyebrow">Prototype Studio</p>
+          <h1>Liberating Structure Designer</h1>
+        </div>
+      </div>
+
+      <nav class="topnav" aria-label="Primary">
+        <button class="nav-chip active" data-screen-target="projects-screen">Projects</button>
+        <button class="nav-chip" data-screen-target="setup-screen">Setup</button>
+        <button class="nav-chip" data-screen-target="builder-screen">Builder</button>
+        <button class="nav-chip" data-screen-target="preview-screen">Preview</button>
+      </nav>
+
+      <div class="topbar-meta">
+        <span class="meta-pill">Guest mode</span>
+        <span class="meta-pill">Local-first</span>
+        <span class="meta-pill glow-pill">AI on demand</span>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <section id="projects-screen" class="screen active">
+        <div class="hero-card">
+          <div class="hero-copy">
+            <p class="eyebrow">Playful studio board</p>
+            <h2>Shape workshop flows that feel thoughtful, warm, and easy to run.</h2>
+            <p class="hero-text">
+              Assemble Liberating Structures like modular building pieces, keep your
+              invitations visible, and turn the whole flow into a facilitation manual.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-button" data-screen-target="builder-screen">Open live builder</button>
+              <button class="secondary-button" data-screen-target="setup-screen">Review project setup</button>
+            </div>
+          </div>
+
+          <div class="hero-orbit">
+            <div class="orbit-card orbit-card-one">
+              <span class="orbit-label">Purpose</span>
+              <strong>Improve collaboration & communication</strong>
+            </div>
+            <div class="orbit-card orbit-card-two">
+              <span class="orbit-label">Section</span>
+              <strong>Increase psychological safety</strong>
+            </div>
+            <div class="orbit-card orbit-card-three">
+              <span class="orbit-label">Export</span>
+              <strong>Manual + Markdown + PDF</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-toolbar">
+          <div class="filter-row">
+            <button class="filter-pill active">All projects</button>
+            <button class="filter-pill">Local</button>
+            <button class="filter-pill">Cloud</button>
+            <button class="filter-pill">Recently touched</button>
+          </div>
+          <div class="toolbar-actions">
+            <button class="secondary-button">Import bundle</button>
+            <button class="primary-button" data-screen-target="builder-screen">New project</button>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured-card" data-screen-target="builder-screen">
+            <div class="project-card-top">
+              <span class="project-badge">In motion</span>
+              <span class="project-meta">Local draft</span>
+            </div>
+            <h3>Team Collaboration Reset</h3>
+            <p>
+              Improve collaboration and communication by increasing psychological
+              safety and clarifying team agreements.
+            </p>
+            <div class="project-tags">
+              <span>4 sections</span>
+              <span>EN</span>
+              <span>AI enabled</span>
+            </div>
+            <div class="project-foot">
+              <span>Updated 14 min ago</span>
+              <span>Preview ready</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-badge muted-badge">Template seed</span>
+              <span class="project-meta">Cloud</span>
+            </div>
+            <h3>Retrospective Deep Dive</h3>
+            <p>
+              A lighter multi-section flow for surfacing friction, making sense of
+              patterns, and converging on commitments.
+            </p>
+            <div class="project-tags">
+              <span>3 sections</span>
+              <span>Hybrid</span>
+              <span>No AI</span>
+            </div>
+            <div class="project-foot">
+              <span>Updated yesterday</span>
+              <span>Shared later</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-badge soft-badge">Ready to refine</span>
+              <span class="project-meta">Local</span>
+            </div>
+            <h3>Leadership Alignment Sprint</h3>
+            <p>
+              A more strategic chain with stronger decision framing and a structured
+              handoff into the next quarter.
+            </p>
+            <div class="project-tags">
+              <span>5 sections</span>
+              <span>Onsite</span>
+              <span>DE</span>
+            </div>
+            <div class="project-foot">
+              <span>Updated 3 days ago</span>
+              <span>Manual exported</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="setup-screen" class="screen">
+        <div class="screen-header">
+          <div>
+            <p class="eyebrow">Workshop framing</p>
+            <h2>Frame the workshop like a story you want to facilitate well.</h2>
+          </div>
+          <button class="primary-button" data-screen-target="builder-screen">Continue to builder</button>
+        </div>
+
+        <div class="setup-layout">
+          <div class="setup-main paper-panel">
+            <div class="setup-intro-card">
+              <div class="setup-intro-copy">
+                <p class="eyebrow">Workshop identity</p>
+                <h3>Set the energy before you place the first structure.</h3>
+                <p>
+                  This should feel less like filling in a dry form and more like
+                  shaping the character of the workshop: the reason, the people,
+                  and the kind of room you want to create.
+                </p>
+              </div>
+
+              <div class="setup-mood-cloud">
+                <span class="mood-chip warm-chip">psychological safety</span>
+                <span class="mood-chip teal-chip">clearer communication</span>
+                <span class="mood-chip navy-chip">practical agreements</span>
+                <span class="mood-chip amber-chip">shared ownership</span>
+              </div>
+            </div>
+
+            <div class="setup-purpose-board">
+              <div class="setup-purpose-card">
+                <div class="field-group field-group-large">
+                  <label for="project-title">Project title</label>
+                  <input id="project-title" type="text" value="Team Collaboration Reset" />
+                </div>
+
+                <div class="field-group field-group-large">
+                  <label for="global-purpose">Global purpose</label>
+                  <textarea id="global-purpose" rows="4">Improve collaboration and communication in the team through stronger psychological safety, clearer communication patterns, and practical agreements for daily work.</textarea>
+                </div>
+              </div>
+
+              <div class="setup-spark-card">
+                <p class="eyebrow">Desired workshop feel</p>
+                <h3>Safe, practical, honest, energizing.</h3>
+                <p>
+                  The setup screen can carry more emotional direction so the user
+                  designs not only for outcome, but also for experience.
+                </p>
+                <div class="spark-ribbon">
+                  <span>grounded</span>
+                  <span>participatory</span>
+                  <span>candid</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="setup-meta-grid">
+              <div class="setup-meta-card">
+                <label for="target-audience">Target audience</label>
+                <input id="target-audience" type="text" value="Cross-functional product team" />
+              </div>
+              <div class="setup-meta-card">
+                <label for="participants">Participants</label>
+                <input id="participants" type="text" value="9 people" />
+              </div>
+              <div class="setup-meta-card">
+                <label for="format">Format</label>
+                <select id="format">
+                  <option>Onsite</option>
+                  <option>Remote</option>
+                  <option>Hybrid</option>
+                </select>
+              </div>
+              <div class="setup-meta-card">
+                <label for="language">Project language</label>
+                <select id="language">
+                  <option>English</option>
+                  <option>Deutsch</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="setup-story-grid">
+              <div class="setup-context-card">
+                <div class="field-group">
+                  <label for="context">Workshop context</label>
+                  <textarea id="context" rows="4">The team is working under pressure, communication feels transactional, and feedback often comes too late. The workshop should feel safe, practical, and grounded.</textarea>
+                </div>
+              </div>
+
+              <div class="setup-experience-card">
+                <p class="eyebrow">Design ingredients</p>
+                <h3>What should people leave with?</h3>
+                <div class="ingredient-list">
+                  <span class="ingredient-pill">more safety to speak honestly</span>
+                  <span class="ingredient-pill">shared language for friction</span>
+                  <span class="ingredient-pill">a few concrete agreements</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="storyboard-card">
+              <div class="section-list-head">
+                <div>
+                  <p class="eyebrow">Story arc</p>
+                  <h3>Map the workshop into meaningful modules.</h3>
+                </div>
+                <button class="secondary-button">Add section</button>
+              </div>
+
+              <div class="storyboard-lane">
+                <div class="storyboard-day">Day 1</div>
+
+                <div class="story-section-card">
+                  <div class="setup-section-index">01</div>
+                  <div class="setup-section-copy">
+                    <strong>Raise psychological safety</strong>
+                    <span>Create enough trust for more honest interaction.</span>
+                    <p class="story-section-meta">Medium prep · One invitation still wants sharpening.</p>
+                  </div>
+                </div>
+
+                <div class="story-flow-arrow"></div>
+
+                <div class="story-section-card">
+                  <div class="setup-section-index">02</div>
+                  <div class="setup-section-copy">
+                    <strong>Surface communication patterns</strong>
+                    <span>Make habits and friction visible without blame.</span>
+                    <p class="story-section-meta">High prep · TRIZ framing + WINFY response discipline.</p>
+                  </div>
+                </div>
+
+                <div class="story-flow-arrow"></div>
+
+                <div class="storyboard-day accent-day">Day 2</div>
+
+                <div class="story-section-card accent-story-card">
+                  <div class="setup-section-index">03</div>
+                  <div class="setup-section-copy">
+                    <strong>Turn insights into agreements</strong>
+                    <span>Convert reflection into concrete next behaviors.</span>
+                    <p class="story-section-meta">Light prep · Closing move still open.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="setup-side paper-panel">
+            <div class="summary-card">
+              <p class="eyebrow">Facilitation pulse</p>
+              <h3>Most of the prep depth sits in section 2.</h3>
+              <ul class="summary-list">
+                <li>2 structures already have step-level facilitation detail.</li>
+                <li>Section 02 is the only module that needs deeper choreography.</li>
+                <li>Section 03 still needs a final closing move before export.</li>
+                <li>English primary, German supported across UI, content, and export.</li>
+              </ul>
+            </div>
+
+            <div class="prep-map-card">
+              <div class="prep-map-head">
+                <div>
+                  <p class="eyebrow">Prep hotspots</p>
+                  <h3>Know where deeper preparation will pay off.</h3>
+                </div>
+                <span class="prep-scale-label">light -> deep</span>
+              </div>
+
+              <div class="prep-section-list">
+                <div class="prep-section-row">
+                  <div class="prep-section-copy">
+                    <strong>Section 01</strong>
+                    <p>Keep the opening warm and tighten the Appreciative Interviews invitation.</p>
+                  </div>
+                  <div class="prep-section-side">
+                    <span class="prep-level">Medium</span>
+                    <div class="prep-meter" aria-hidden="true">
+                      <span class="prep-fill prep-fill-medium"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="prep-section-row">
+                  <div class="prep-section-copy">
+                    <strong>Section 02</strong>
+                    <p>TRIZ needs careful framing and WINFY benefits from step-by-step run-sheet detail.</p>
+                  </div>
+                  <div class="prep-section-side">
+                    <span class="prep-level">Deep</span>
+                    <div class="prep-meter" aria-hidden="true">
+                      <span class="prep-fill prep-fill-deep"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="prep-section-row">
+                  <div class="prep-section-copy">
+                    <strong>Section 03</strong>
+                    <p>The arc is clear, but the final closing block is still a draft decision.</p>
+                  </div>
+                  <div class="prep-section-side">
+                    <span class="prep-level">Light</span>
+                    <div class="prep-meter" aria-hidden="true">
+                      <span class="prep-fill prep-fill-light"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="toggle-card">
+              <div class="toggle-copy">
+                <p class="eyebrow">AI assistance</p>
+                <strong>Enabled for this project</strong>
+                <p>Keep it on for invitation sharpening and quiet review passes, not for designing the workshop for you.</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span></span>
+              </label>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="builder-screen" class="screen">
+        <div class="builder-topline">
+          <div>
+            <p class="eyebrow">Live builder prototype</p>
+            <h2>Build LS chains with more air, more warmth, and a little delight.</h2>
+          </div>
+          <div class="builder-actions">
+            <button class="secondary-button" data-screen-target="preview-screen">Open manual preview</button>
+            <button class="primary-button">Export</button>
+          </div>
+        </div>
+
+        <div class="builder-layout">
+          <aside class="library-pane paper-panel">
+            <div class="pane-head">
+              <div>
+                <p class="eyebrow">Structure library</p>
+                <h3>Find the next building piece.</h3>
+              </div>
+              <button class="tiny-button menu-trigger" data-menu-toggle="filter-menu" aria-expanded="false">Filter</button>
+            </div>
+
+            <label class="search-field">
+              <span>Search structures</span>
+              <input type="search" placeholder="Search by name, output, or situation" />
+            </label>
+
+            <p class="library-note">
+              Drag a structure into the active section or inspect it first.
+            </p>
+
+            <div class="library-match-strip">
+              <div class="match-strip-head">
+                <p class="eyebrow">Suggested now</p>
+                <span class="match-strip-context">for active section</span>
+              </div>
+              <div class="match-strip-cards">
+                <button class="match-suggestion-card match-suggestion-primary interactive-card" data-inspector="124all">
+                  <span class="match-suggestion-label">Best match</span>
+                  <strong>1-2-4-All</strong>
+                  <p>Opens participation safely and widens the room quickly.</p>
+                </button>
+                <button class="match-suggestion-card interactive-card" data-inspector="appreciative">
+                  <span class="match-suggestion-label">Alternative</span>
+                  <strong>Appreciative Interviews</strong>
+                  <p>Use this when you want more depth after the safe opening.</p>
+                </button>
+              </div>
+            </div>
+
+            <div id="filter-menu" class="floating-menu filter-menu hidden">
+              <p class="floating-menu-label">Matchmaker categories</p>
+              <div class="floating-chip-row">
+                <button class="filter-pill active">Share</button>
+                <button class="filter-pill">Reveal</button>
+                <button class="filter-pill">Analyze</button>
+                <button class="filter-pill">Strategize</button>
+                <button class="filter-pill">Help</button>
+                <button class="filter-pill">Plan</button>
+              </div>
+              <div class="floating-menu-actions">
+                <button class="tiny-button" data-menu-close="filter-menu">Reset</button>
+                <button class="tiny-button" data-menu-close="filter-menu">Done</button>
+              </div>
+            </div>
+
+            <div class="library-card-stack">
+              <button class="library-card interactive-card" data-inspector="124all">
+                <div class="library-icon">
+                  <img class="icon-image" src="./icons/ls-124a.svg" alt="" />
+                </div>
+                <div>
+                  <div class="library-title-row">
+                    <strong>1-2-4-All</strong>
+                  </div>
+                  <p>Move quickly from individual thinking to shared synthesis.</p>
+                  <div class="library-meta">12 min • Exploration • Good for surfacing many voices</div>
+                </div>
+              </button>
+
+              <button class="library-card interactive-card" data-inspector="appreciative">
+                <div class="library-icon">
+                  <img class="icon-image" src="./icons/ls-ai.svg" alt="" />
+                </div>
+                <div>
+                  <div class="library-title-row">
+                    <strong>Appreciative Interviews</strong>
+                  </div>
+                  <p>Invite pairs to explore what already works at its best.</p>
+                  <div class="library-meta">20 min • Reflection • Trust-building</div>
+                </div>
+              </button>
+
+              <button class="library-card interactive-card" data-inspector="triz">
+                <div class="library-icon">
+                  <img class="icon-image" src="./icons/ls-triz.svg" alt="" />
+                </div>
+                <div>
+                  <div class="library-title-row">
+                    <strong>TRIZ</strong>
+                    <span class="library-warning-tag">LS in development</span>
+                  </div>
+                  <p>Expose behaviors that guarantee failure and remove them on purpose.</p>
+                  <div class="library-meta">25 min • Sense-making • Strong pattern work</div>
+                </div>
+              </button>
+
+              <button class="library-card interactive-card" data-inspector="input">
+                <div class="library-icon icon-navy">IN</div>
+                <div>
+                  <div class="library-title-row">
+                    <strong>Input block</strong>
+                  </div>
+                  <p>Use a short framing impulse before the next structure opens up.</p>
+                  <div class="library-meta">10 min • Neutral • Framing</div>
+                </div>
+              </button>
+
+              <button class="library-card interactive-card" data-inspector="winfy">
+                <div class="library-icon icon-teal">WN</div>
+                <div>
+                  <div class="library-title-row">
+                    <strong>What I Need From You</strong>
+                  </div>
+                  <p>Surface cross-functional needs and respond with clear commitments.</p>
+                  <div class="library-meta">55-70 min • Help • Cross-functional clarity</div>
+                </div>
+              </button>
+            </div>
+          </aside>
+
+          <section class="canvas-shell">
+            <div class="canvas-header paper-panel">
+              <div>
+                <p class="eyebrow">Global purpose</p>
+                <h3>Improve collaboration and communication in the team</h3>
+              </div>
+              <p class="canvas-summary-line">3 sections · 2 day groups · manual preview ready</p>
+            </div>
+
+            <div class="day-band">
+              <div class="day-chip">
+                <span class="day-chip-dot"></span>
+                Day 1 · Building enough trust to speak honestly
+              </div>
+            </div>
+
+            <article class="section-box active-section" data-section-id="section-1">
+              <div class="section-header">
+                <div>
+                  <p class="section-kicker">Section 01</p>
+                  <h3>Increase psychological safety</h3>
+                  <p class="section-subgoal">
+                    Create enough emotional safety for open participation and more honest signal-sharing.
+                  </p>
+                </div>
+                <div class="section-meta">
+                  <span class="section-time">09:30 - 11:00</span>
+                  <span class="section-total">55 min chain</span>
+                  <button class="review-button" data-review-toggle="section-review-1" aria-expanded="false">Review section</button>
+                  <button class="tiny-button menu-trigger" data-menu-toggle="section-menu-1" aria-expanded="false">More</button>
+                </div>
+              </div>
+
+              <div id="section-menu-1" class="floating-menu section-menu hidden">
+                <button class="floating-menu-item">Duplicate section</button>
+                <button class="floating-menu-item">Move to next day</button>
+                <button class="floating-menu-item">Add section note</button>
+                <button class="floating-menu-item floating-menu-item-danger" data-menu-close="section-menu-1">Archive section draft</button>
+              </div>
+
+              <div id="section-review-1" class="section-review-panel hidden">
+                <div class="section-review-copy">
+                  <p class="section-review-label">Section review</p>
+                  <strong>Strong sequence for psychological safety.</strong>
+                  <p>The ramp from intro into 1-2-4-All is working well. The only weak point is the invitation length in Appreciative Interviews.</p>
+                </div>
+                <div class="section-review-actions">
+                  <button class="tiny-button" data-inspector="appreciative">Jump to weak spot</button>
+                  <button class="tiny-button" data-menu-close="section-review-1">Close</button>
+                </div>
+              </div>
+
+              <div class="chain-row">
+                <button class="block-card interactive-card selected-card" data-inspector="intro">
+                  <div class="block-top">
+                    <div class="block-icon icon-navy">IN</div>
+                    <div>
+                      <strong>Intro / Context</strong>
+                      <div class="block-meta">8 min · Neutral block</div>
+                    </div>
+                  </div>
+                  <div class="block-invitation-preview">
+                    <span>Invitation</span>
+                    <p>Let's ground ourselves in why this conversation matters before we step into the team experience more directly.</p>
+                  </div>
+                  <label class="block-invitation block-invitation-editor">
+                    <span>Invitation</span>
+                    <textarea rows="3">Let's ground ourselves in why this conversation matters before we step into the team experience more directly.</textarea>
+                  </label>
+                </button>
+
+                <button class="transition-card interactive-card" data-inspector="transition-one">
+                  <span class="transition-label">Transition</span>
+                  <p>Move from shared framing into rapid individual reflection.</p>
+                  <span class="transition-time">2 min</span>
+                </button>
+
+                <button class="block-card interactive-card" data-inspector="124all">
+                  <div class="block-top">
+                    <div class="block-icon">
+                      <img class="icon-image" src="./icons/ls-124a.svg" alt="" />
+                    </div>
+                    <div>
+                      <strong>1-2-4-All</strong>
+                      <div class="block-meta">12 min · Exploration</div>
+                    </div>
+                  </div>
+                  <div class="block-invitation-preview">
+                    <span>Invitation</span>
+                    <p>Think about one moment when collaboration felt easy and energizing. What made that possible?</p>
+                  </div>
+                  <label class="block-invitation block-invitation-editor">
+                    <span>Invitation</span>
+                    <textarea rows="3">Think about one moment when collaboration felt easy and energizing. What made that possible?</textarea>
+                  </label>
+                </button>
+
+                <button class="transition-card interactive-card" data-inspector="transition-two">
+                  <span class="transition-label">Transition</span>
+                  <p>Carry the strongest examples into paired story-sharing.</p>
+                  <span class="transition-time">3 min</span>
+                </button>
+
+                <button class="block-card interactive-card accent-card" data-inspector="appreciative">
+                  <div class="block-top">
+                    <div class="block-icon">
+                      <img class="icon-image" src="./icons/ls-ai.svg" alt="" />
+                    </div>
+                    <div>
+                      <strong>Appreciative Interviews</strong>
+                      <div class="block-meta">20 min · Reflection</div>
+                    </div>
+                  </div>
+                  <div class="block-invitation-preview">
+                    <span>Invitation</span>
+                    <p>Interview your partner about a time when communication felt candid, respectful, and useful.</p>
+                  </div>
+                  <label class="block-invitation block-invitation-editor">
+                    <span>Invitation</span>
+                    <textarea rows="3">Interview your partner about a time when communication in the team felt candid, respectful, and useful. What conditions made that possible?</textarea>
+                  </label>
+                  <p class="block-warning-line">Invitation could sharpen</p>
+                </button>
+
+                <button class="transition-card interactive-card" data-inspector="transition-three">
+                  <span class="transition-label">Transition</span>
+                  <p>Extract concrete conditions that can be reused by the whole team.</p>
+                  <span class="transition-time">2 min</span>
+                </button>
+
+                <button class="block-card interactive-card" data-inspector="reflection">
+                  <div class="block-top">
+                    <div class="block-icon icon-coral">RF</div>
+                    <div>
+                      <strong>Reflection</strong>
+                      <div class="block-meta">8 min · Closing move</div>
+                    </div>
+                  </div>
+                  <div class="block-invitation-preview">
+                    <span>Invitation</span>
+                    <p>What patterns do we want to protect because they help people feel safe enough to contribute?</p>
+                  </div>
+                  <label class="block-invitation block-invitation-editor">
+                    <span>Invitation</span>
+                    <textarea rows="3">What patterns do we want to protect because they help people feel safe enough to contribute?</textarea>
+                  </label>
+                </button>
+
+                <button class="ghost-add-card interactive-card menu-trigger" data-menu-toggle="add-menu-1" aria-expanded="false">
+                  <span class="ghost-plus">+</span>
+                  <strong>Add next block</strong>
+                  <p id="add-selection-note">Drop another LS or a neutral block into this section.</p>
+                </button>
+
+                <div id="add-menu-1" class="floating-menu add-flow-menu hidden">
+                  <p class="floating-menu-label">Add to this section</p>
+                  <button class="floating-menu-item" data-add-choice="124all" data-menu-close="add-menu-1">1-2-4-All</button>
+                  <button class="floating-menu-item" data-add-choice="appreciative" data-menu-close="add-menu-1">Appreciative Interviews</button>
+                  <button class="floating-menu-item" data-add-choice="input" data-menu-close="add-menu-1">Input block</button>
+                  <button class="floating-menu-item" data-add-choice="reflection" data-menu-close="add-menu-1">Reflection</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="section-box section-box-secondary" data-section-id="section-2">
+              <div class="section-header">
+                <div>
+                  <p class="section-kicker">Section 02</p>
+                  <h3>Surface communication patterns</h3>
+                  <p class="section-subgoal">
+                    Make invisible habits visible without tipping the room into defensiveness.
+                  </p>
+                </div>
+                <div class="section-meta">
+                  <span class="section-time">11:15 - 12:30</span>
+                  <span class="section-total">61 min chain</span>
+                  <button class="review-button" data-review-toggle="section-review-2" aria-expanded="false">Review section</button>
+                  <button class="tiny-button menu-trigger" data-menu-toggle="section-menu-2" aria-expanded="false">More</button>
+                </div>
+              </div>
+
+              <div id="section-menu-2" class="floating-menu section-menu hidden">
+                <button class="floating-menu-item" data-section-toggle="section-2">Expand section</button>
+                <button class="floating-menu-item">Duplicate section</button>
+                <button class="floating-menu-item">Move to Day 2</button>
+                <button class="floating-menu-item" data-menu-close="section-menu-2">Close menu</button>
+              </div>
+
+              <div id="section-review-2" class="section-review-panel hidden">
+                <div class="section-review-copy">
+                  <p class="section-review-label">Section review</p>
+                  <strong>Powerful section, but emotionally sharper.</strong>
+                  <p>Consider a softer bridge into TRIZ if the group still feels guarded after section one.</p>
+                </div>
+                <div class="section-review-actions">
+                  <button class="tiny-button" data-inspector="triz">Inspect TRIZ</button>
+                  <button class="tiny-button" data-menu-close="section-review-2">Close</button>
+                </div>
+              </div>
+
+              <p class="section-collapsed-flow">Input -> TRIZ -> What I Need From You -> Reflection</p>
+              <div class="section-expanded-shell hidden" id="section-2-expanded">
+                <div class="mini-preview-row">
+                  <button class="mini-preview-card interactive-card" data-inspector="input">Input</button>
+                  <span class="mini-preview-link"></span>
+                  <button class="mini-preview-card interactive-card" data-inspector="triz">TRIZ</button>
+                  <span class="mini-preview-link"></span>
+                  <button class="mini-preview-card interactive-card" data-inspector="winfy">What I Need From You</button>
+                  <span class="mini-preview-link"></span>
+                  <button class="mini-preview-card interactive-card" data-inspector="reflection">Reflection</button>
+                </div>
+                <p class="section-expanded-note">Expanded sections reveal more chain detail only when you need to work there.</p>
+              </div>
+            </article>
+          </section>
+
+          <aside class="inspector-pane paper-panel">
+            <div class="pane-head">
+              <div>
+                <p class="eyebrow">Inspector</p>
+                <h3 id="inspector-title">Intro / Context</h3>
+                <p id="inspector-badge" class="inspector-meta-line">Neutral</p>
+              </div>
+            </div>
+
+            <p class="inspector-fit-summary">
+              Fit cues:
+              <span id="fit-chip-one">safe entry</span>
+              <span class="inspector-fit-separator">·</span>
+              <span id="fit-chip-two">participation ramp</span>
+              <span class="inspector-fit-separator">·</span>
+              <span id="fit-chip-three">warm tone</span>
+            </p>
+
+            <div class="review-card">
+              <div class="review-head">
+                <span class="review-state green-state" id="review-state">Good fit</span>
+                <span class="review-score" id="review-score">4.4 / 5</span>
+              </div>
+              <p id="review-copy">
+                This opening gives the section emotional grounding before participants are invited to share more vulnerable experiences.
+              </p>
+              <button class="spark-button">Sharpen invitation</button>
+            </div>
+
+            <div class="inspector-block">
+              <h4>Why it belongs here</h4>
+              <p id="inspector-description">
+                A short, well-held intro creates the emotional frame for the sequence and prevents the next structure from feeling abrupt or procedural.
+              </p>
+            </div>
+
+            <div class="inspector-block">
+              <h4>Facilitator notes</h4>
+              <textarea id="inspector-notes" rows="6">Keep the tone warm and concrete. Name the intention of the section without suggesting that anyone must disclose more than they want to.</textarea>
+            </div>
+
+            <div class="inspector-block">
+              <h4>Expected output</h4>
+              <p id="inspector-output">
+                Shared readiness, emotional orientation, and a clear sense of why the upcoming dialogue matters.
+              </p>
+            </div>
+
+            <div id="steps-panel" class="inspector-block steps-panel hidden">
+              <div class="steps-panel-head">
+                <div>
+                  <h4>Structure flow</h4>
+                  <p id="steps-summary" class="steps-summary">5 steps • 4 editable prompt moments</p>
+                </div>
+                <button id="steps-toggle" class="tiny-button" aria-expanded="false">Open steps</button>
+              </div>
+              <div id="steps-list" class="steps-list hidden"></div>
+            </div>
+
+            <div class="inspector-block">
+              <h4>Why this feels right</h4>
+              <div class="energy-strip">
+                <div class="energy-stop energy-stop-one"></div>
+                <div class="energy-stop energy-stop-two"></div>
+                <div class="energy-stop energy-stop-three"></div>
+              </div>
+            </div>
+
+            <div class="inspector-block">
+              <h4>Suggestions</h4>
+              <div class="suggestion-stack" id="suggestion-stack">
+                <button class="suggestion-card">Keep the invitation warmer and shorter.</button>
+                <button class="suggestion-card">Name participation as an invitation, not an obligation.</button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="preview-screen" class="screen">
+        <div class="preview-header">
+          <div>
+            <p class="eyebrow">Internal facilitation manual</p>
+            <h2>Readable, printable, and structured enough for downstream use.</h2>
+          </div>
+          <div class="builder-actions">
+            <button class="secondary-button" data-screen-target="builder-screen">Back to builder</button>
+            <button class="secondary-button" data-print-trigger="manual-print">Print / Save PDF</button>
+            <button class="primary-button">Export Markdown</button>
+          </div>
+        </div>
+
+        <div class="preview-layout">
+          <aside class="preview-side-stack">
+            <div class="preview-warning-card paper-panel">
+              <p class="eyebrow">Soft warnings</p>
+              <ul class="summary-list">
+                <li>Section 2 has one transition note still missing detail.</li>
+                <li>Invitation in Appreciative Interviews could be shortened.</li>
+                <li>Section 3 does not yet have a final closing block.</li>
+              </ul>
+            </div>
+
+            <div class="preview-focus-card paper-panel">
+              <p class="eyebrow">Facilitation focus</p>
+              <h3>Deeper prep is concentrated in a few high-value moments.</h3>
+              <div class="focus-list">
+                <div class="focus-item">
+                  <strong>TRIZ</strong>
+                  <p>Frame it playfully enough to externalize patterns, not blame people.</p>
+                </div>
+                <div class="focus-item">
+                  <strong>What I Need From You</strong>
+                  <p>Protect the response discipline so the structure stays crisp and useful.</p>
+                </div>
+                <div class="focus-item">
+                  <strong>Section 03</strong>
+                  <p>Choose the closing move before exporting the final manual.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="preview-depth-card paper-panel">
+              <p class="eyebrow">Run-sheet depth</p>
+              <ul class="summary-list">
+                <li>Compact detail for lighter blocks.</li>
+                <li>Step-by-step flow only where choreography matters.</li>
+                <li>Manual stays readable enough for print and Markdown export.</li>
+              </ul>
+            </div>
+          </aside>
+
+          <article class="manual-document">
+            <div class="manual-header">
+              <p class="eyebrow">Workshop manual</p>
+              <h3>Team Collaboration Reset</h3>
+              <p>
+                Improve collaboration and communication in the team through stronger
+                psychological safety, clearer communication patterns, and practical agreements.
+              </p>
+              <div class="manual-header-meta">
+                <span>Onsite</span>
+                <span>9 participants</span>
+                <span>English</span>
+                <span>Detailed where needed</span>
+              </div>
+            </div>
+
+            <div class="manual-print-cover print-only">
+              <div class="manual-print-cover-top">
+                <div>
+                  <p class="eyebrow">Print note</p>
+                  <h4>Facilitation run sheet</h4>
+                </div>
+                <span class="manual-print-stamp">Prepared in Liberating Structure Designer prototype</span>
+              </div>
+
+              <div class="manual-print-meta">
+                <div class="manual-print-meta-item">
+                  <span>Workshop</span>
+                  <strong>Team Collaboration Reset</strong>
+                </div>
+                <div class="manual-print-meta-item">
+                  <span>Format</span>
+                  <strong>Onsite · 9 participants · English</strong>
+                </div>
+                <div class="manual-print-meta-item">
+                  <span>Purpose</span>
+                  <strong>Improve collaboration and communication through safety, clearer patterns, and practical agreements.</strong>
+                </div>
+              </div>
+
+              <div class="manual-print-alerts">
+                <strong>Preparation notes before final delivery</strong>
+                <ul>
+                  <li>Shorten the Appreciative Interviews invitation by one clause.</li>
+                  <li>Add one stronger transition note in section 2.</li>
+                  <li>Select the final closing block for section 3.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="manual-section">
+              <div class="manual-section-top">
+                <div>
+                  <div class="manual-divider">Day 1</div>
+                  <h4>Section 01 · Increase psychological safety</h4>
+                </div>
+                <p class="manual-section-focus">Prep focus: keep the ramp gentle, concrete, and safe.</p>
+              </div>
+              <p class="manual-intro">
+                Create enough emotional safety for open participation and more honest signal-sharing.
+              </p>
+
+              <div class="manual-step">
+                <strong>Intro / Context</strong>
+                <span>8 min</span>
+                <div class="manual-step-copy">
+                  <p>
+                    Invitation: Let's ground ourselves in why this conversation matters before we step
+                    into the team experience more directly.
+                  </p>
+                  <p class="manual-facilitator-note">
+                    Facilitator cue: Name the intention warmly and avoid implying anyone must disclose more than they want to.
+                  </p>
+                </div>
+              </div>
+
+              <div class="manual-transition">
+                <strong>Transition</strong>
+                <p>Move from shared framing into rapid individual reflection.</p>
+              </div>
+
+              <div class="manual-step">
+                <strong>1-2-4-All</strong>
+                <span>12 min</span>
+                <div class="manual-step-copy">
+                  <p>
+                    Invitation: Think about one moment when collaboration felt easy and energizing.
+                    What made that possible?
+                  </p>
+                  <div class="manual-flow-glance">
+                    <span>Flow</span>
+                    <p>Solo reflection -> Pairs -> Foursomes -> Whole-group share -> Harvest</p>
+                  </div>
+                  <p class="manual-facilitator-note">
+                    Facilitator cue: harvest only the strongest conditions so the pair work starts from patterns, not from scratch.
+                  </p>
+                </div>
+              </div>
+
+              <div class="manual-transition">
+                <strong>Transition</strong>
+                <p>Carry the strongest examples into paired story-sharing.</p>
+              </div>
+
+              <div class="manual-step">
+                <strong>Appreciative Interviews</strong>
+                <span>20 min</span>
+                <div class="manual-step-copy">
+                  <p>
+                    Invitation: Interview your partner about a time when communication in the team felt
+                    candid, respectful, and useful. What conditions made that possible?
+                  </p>
+                  <p class="manual-facilitator-note manual-facilitator-warning">
+                    Review note: shorten this invitation by one clause before final export.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="manual-section">
+              <div class="manual-section-top">
+                <div>
+                  <div class="manual-divider">Day 1</div>
+                  <h4>Section 02 · Surface communication patterns</h4>
+                </div>
+                <p class="manual-section-focus">Prep focus: keep critique externalized, then convert it into explicit requests.</p>
+              </div>
+              <p class="manual-intro">
+                Make invisible habits visible, then turn requests across functions into explicit commitments and boundaries.
+              </p>
+
+              <div class="manual-step">
+                <strong>TRIZ</strong>
+                <span>25 min</span>
+                <div class="manual-step-copy">
+                  <p>
+                    Invitation: If we wanted to make collaboration and communication fail completely, what would we do?
+                  </p>
+                  <div class="manual-flow-glance">
+                    <span>Flow</span>
+                    <p>Frame the paradox -> list destructive patterns -> notice current reality -> decide what to stop</p>
+                  </div>
+                  <p class="manual-facilitator-note">
+                    Facilitator cue: keep it playful enough to create distance from blame, then slow down when the group notices what already happens today.
+                  </p>
+                </div>
+              </div>
+
+              <div class="manual-transition">
+                <strong>Transition</strong>
+                <p>Shift from exposing damaging patterns into naming what different functions now need from one another.</p>
+              </div>
+
+              <div class="manual-step manual-step-detailed">
+                <div class="manual-step-head">
+                  <strong>What I Need From You</strong>
+                  <span>60 min</span>
+                </div>
+                <div class="manual-step-copy">
+                  <p>
+                    Core move: clusters state concrete requests to one another, capture them without discussion, then answer only with yes, no, I will try, or whatever.
+                  </p>
+                  <p class="manual-facilitator-note">
+                    Facilitator cue: the value comes from clarity and response discipline, not from negotiating every request live.
+                  </p>
+                </div>
+                <div class="manual-substeps">
+                  <div class="manual-substep">
+                    <span>1.</span>
+                    <div>
+                      <strong>Frame the challenge</strong>
+                      <p>Prompt: explain the challenge, the response options, and the no-discussion rule.</p>
+                      <p class="manual-subcue">Cue: keep the rules crisp before anyone starts formulating requests.</p>
+                    </div>
+                  </div>
+                  <div class="manual-substep">
+                    <span>2.</span>
+                    <div>
+                      <strong>Cluster needs by role or function</strong>
+                      <p>Prompt: reduce your needs to the two requests that matter most.</p>
+                      <p class="manual-subcue">Cue: push for concrete asks, not complaints or speeches.</p>
+                    </div>
+                  </div>
+                  <div class="manual-substep">
+                    <span>3.</span>
+                    <div>
+                      <strong>State requests around the circle</strong>
+                      <p>Prompt: one by one, speak your requests while everyone else only captures them.</p>
+                      <p class="manual-subcue">Cue: stop responses immediately if people start answering too early.</p>
+                    </div>
+                  </div>
+                  <div class="manual-substep">
+                    <span>4.</span>
+                    <div>
+                      <strong>Prepare responses</strong>
+                      <p>Prompt: decide whether each response is yes, no, I will try, or whatever.</p>
+                      <p class="manual-subcue">Cue: allow short huddles, but keep the response language disciplined.</p>
+                    </div>
+                  </div>
+                  <div class="manual-substep">
+                    <span>5.</span>
+                    <div>
+                      <strong>Respond with discipline</strong>
+                      <p>Prompt: repeat the request and answer only with the agreed response language.</p>
+                      <p class="manual-subcue">Cue: do not let the room slip into explanation or negotiation yet.</p>
+                    </div>
+                  </div>
+                  <div class="manual-substep">
+                    <span>6.</span>
+                    <div>
+                      <strong>Debrief and convert</strong>
+                      <p>Prompt: what became clearer, and what should now turn into agreements or next moves?</p>
+                      <p class="manual-subcue">Cue: use the debrief to convert clarity into concrete follow-through.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="manual-section manual-section-draft manual-section-new-day">
+              <div class="manual-section-top">
+                <div>
+                  <div class="manual-divider">Day 2</div>
+                  <h4>Section 03 · Turn insights into agreements</h4>
+                </div>
+                <p class="manual-section-focus">Prep focus: choose the final closing move before export.</p>
+              </div>
+              <p class="manual-intro">
+                Convert reflection into a few concrete behavioral agreements the team can actually carry into daily work.
+              </p>
+              <div class="manual-draft-callout">
+                <strong>Draft section</strong>
+                <p>Planned shape: short input -> agreement-making structure -> closing reflection. The closing block is not selected yet.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

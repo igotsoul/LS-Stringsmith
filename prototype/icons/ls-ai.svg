@@ -1,0 +1,61 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clipAiCircle">
+      <circle cx="48" cy="48" r="42.5"/>
+    </clipPath>
+    <linearGradient id="ringAi" x1="15" y1="10" x2="80" y2="86" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E3542"/>
+      <stop offset="1" stop-color="#0F1115"/>
+    </linearGradient>
+    <linearGradient id="pinkAi" x1="15" y1="15" x2="57" y2="55" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8D0C8"/>
+      <stop offset="1" stop-color="#EEB3A7"/>
+    </linearGradient>
+    <linearGradient id="blueAi" x1="43" y1="44" x2="80" y2="82" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D7E8F8"/>
+      <stop offset="1" stop-color="#B9D3EC"/>
+    </linearGradient>
+    <filter id="shadowAi" x="2" y="2" width="92" height="94" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="2.5"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.07 0 0 0 0 0.09 0 0 0 0 0.12 0 0 0 0.18 0"/>
+      <feBlend in2="SourceGraphic" result="shape"/>
+    </filter>
+    <filter id="bubbleShadow" x="16" y="16" width="69" height="62" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="1.5"/>
+      <feGaussianBlur stdDeviation="1.5"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.07 0 0 0 0 0.09 0 0 0 0 0.12 0 0 0 0.16 0"/>
+      <feBlend in2="SourceGraphic" result="shape"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadowAi)">
+    <circle cx="48" cy="48" r="45.5" fill="url(#ringAi)"/>
+    <g clip-path="url(#clipAiCircle)">
+      <circle cx="48" cy="48" r="42.5" fill="#BED8F0"/>
+      <path d="M-1 3H97V56L57 97H-1V3Z" fill="url(#pinkAi)"/>
+      <path d="M97 97H-1V48L41 -3H97V97Z" fill="url(#blueAi)"/>
+      <ellipse cx="35" cy="22" rx="25" ry="11" fill="rgba(255,255,255,0.28)"/>
+    </g>
+    <circle cx="48" cy="48" r="41.3" stroke="rgba(255,255,255,0.55)" stroke-width="1.6"/>
+  </g>
+
+  <g filter="url(#bubbleShadow)">
+    <path d="M23 35.9C23 28 30 21.7 38.8 21.7C47.5 21.7 54.6 28 54.6 35.9V36.2C62 36.6 68 42 68 49C68 56.4 61.2 62.2 52.9 62.2H39.8L28.3 74.1V61.3C24.9 59.1 23 55.5 23 51.5V35.9Z" fill="rgba(255,253,248,0.36)"/>
+    <path d="M44.4 29.2H69.8C77.8 29.2 84.3 35.2 84.3 42.8V57.1L74.7 67.8V62.9H44.4C36.5 62.9 30 56.8 30 49.3V42.8C30 35.2 36.5 29.2 44.4 29.2Z" fill="rgba(255,253,248,0.26)"/>
+    <path d="M23 35.9C23 28 30 21.7 38.8 21.7C47.5 21.7 54.6 28 54.6 35.9V36.2C62 36.6 68 42 68 49C68 56.4 61.2 62.2 52.9 62.2H39.8L28.3 74.1V61.3C24.9 59.1 23 55.5 23 51.5V35.9Z" stroke="#111111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M44.4 29.2H69.8C77.8 29.2 84.3 35.2 84.3 42.8V57.1L74.7 67.8V62.9H44.4C36.5 62.9 30 56.8 30 49.3V42.8C30 35.2 36.5 29.2 44.4 29.2Z" stroke="#111111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g stroke="#111111" stroke-width="3.7" stroke-linecap="round">
+    <path d="M31 42.8C34 43.2 36.8 42.8 39.6 41.9"/>
+    <path d="M30.1 49.6H40.8"/>
+    <path d="M30.1 56.6H40.8"/>
+    <path d="M58.1 42.8H68.7"/>
+    <path d="M58.1 49.6H68.7"/>
+  </g>
+
+  <path d="M48 38.3V52.4" stroke="#111111" stroke-width="5.2" stroke-linecap="round"/>
+  <circle cx="48" cy="59.3" r="3.4" fill="#111111"/>
+  <circle cx="46.8" cy="37.2" r="1.1" fill="white" opacity="0.35"/>
+</svg>

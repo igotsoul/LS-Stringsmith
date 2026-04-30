@@ -1,0 +1,4137 @@
+{
+  "profiles": [
+    {
+      "entryId": "intro",
+      "purposeTags": [
+        "safety",
+        "connection",
+        "inclusion",
+        "purpose-clarity"
+      ],
+      "sequenceRoles": [
+        "opener",
+        "warm-up"
+      ],
+      "outputTypes": [
+        "shared-context"
+      ],
+      "inputNeeds": [
+        "clear-purpose"
+      ],
+      "energyLevel": "low",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Group is meeting in this configuration for the first time or context has shifted since last session."
+      ],
+      "avoidWhen": [
+        "Group already shares strong context and a long intro will drain energy."
+      ],
+      "pairsWellAfter": [],
+      "pairsWellBefore": [
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Move from facilitator framing to peer-to-peer warm-up so voices activate before deeper work.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "nine-whys",
+          "reason": "Once context is set, immediately clarify shared purpose before content work begins.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "input",
+          "reason": "Pair framing with a short impulse to give the group a common reference point.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Skip facilitator-led framing; let participants surface their own context through paired conversation.",
+          "confidence": "medium",
+          "tradeoff": "more-energetic"
+        }
+      ],
+      "notes": "Keep under 10 minutes; longer intros signal to participants that this is a presentation, not a workshop.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "input",
+      "purposeTags": [
+        "knowledge-sharing"
+      ],
+      "sequenceRoles": [
+        "expert-input",
+        "bridge"
+      ],
+      "outputTypes": [
+        "shared-context"
+      ],
+      "inputNeeds": [
+        "expertise"
+      ],
+      "energyLevel": "low",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Group needs the same baseline information before diverging or making sense of a topic."
+      ],
+      "avoidWhen": [
+        "Information could be pre-read or when the group already holds the relevant expertise."
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "intro",
+          "reason": "After framing, deliver the substantive impulse the rest of the workshop will work on.",
+          "confidence": "high"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "124all",
+          "reason": "Process the input immediately so the group converts passive listening into shared sensemaking.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "conversation-cafe",
+          "reason": "Use input as a provocation, then let participants explore implications in depth.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "wicked-questions",
+          "reason": "Use the input to expose paradoxes the group must hold rather than resolve.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "shift-and-share",
+          "reason": "Distribute expertise across multiple voices instead of one expert speaking to all.",
+          "confidence": "medium",
+          "tradeoff": "broader-participation"
+        },
+        {
+          "entryId": "celebrity-interview",
+          "reason": "Same knowledge transfer but framed as a live conversation, which keeps the group engaged.",
+          "confidence": "medium",
+          "tradeoff": "more-energetic"
+        }
+      ],
+      "notes": "Keep input blocks under 10 minutes; if longer is needed, split into chunks separated by short processing structures.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "reflection",
+      "purposeTags": [
+        "reflection",
+        "sensemaking"
+      ],
+      "sequenceRoles": [
+        "deepen",
+        "synthesize",
+        "close"
+      ],
+      "outputTypes": [
+        "insights",
+        "patterns"
+      ],
+      "inputNeeds": [
+        "prior-output"
+      ],
+      "energyLevel": "low",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "A dense or activating module just ended and the group needs to integrate before moving on."
+      ],
+      "avoidWhen": [
+        "Energy is already low and the group needs activation, not more inward work."
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "124all",
+          "reason": "A quick reflection helps cluster and name what emerged.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "conversation-cafe",
+          "reason": "After open exploration, reflection lets each participant land their own takeaway.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "appreciative",
+          "reason": "After surfacing stories of success, give people a quiet moment to extract personal meaning.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "shift-and-share",
+          "reason": "Reflection helps participants distill what they took away from rotating exposure to peers.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Move from individual reflection to a collective debrief and decision about next steps.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Reflection surfaces personal insight; 15% Solutions converts it into a concrete next step.",
+          "confidence": "high"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "spiral-journal",
+          "reason": "Guided journaling produces a richer individual artifact than a generic reflection prompt.",
+          "confidence": "medium",
+          "tradeoff": "deeper"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Provides explicit phases for sensemaking and action instead of open-ended reflection.",
+          "confidence": "high",
+          "tradeoff": "more-structured"
+        }
+      ],
+      "notes": "Specify the prompt; vague 'just reflect' instructions produce vague output. Solo first, then optional pair share.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "124all",
+      "purposeTags": [
+        "divergence",
+        "idea-generation",
+        "inclusion",
+        "sensemaking"
+      ],
+      "sequenceRoles": [
+        "diverge",
+        "discover",
+        "analyze",
+        "synthesize"
+      ],
+      "outputTypes": [
+        "ideas",
+        "questions",
+        "insights",
+        "options"
+      ],
+      "inputNeeds": [
+        "challenge-question"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "You need every voice to engage a question and the loudest voices tend to dominate."
+      ],
+      "avoidWhen": [
+        "The question is trivial or the group is too small to benefit from progressive grouping."
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "input",
+          "reason": "Process an input immediately so listening converts to engagement instead of fading.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Once the room is warmed up, channel the energy into a structured generative round.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "nine-whys",
+          "reason": "After purpose is clear, use 1-2-4-All to generate ideas grounded in that purpose.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "25-10-crowd-sourcing",
+          "reason": "Move from generating ideas to prioritizing them across the whole group.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Convert collective insight into individual concrete next actions.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "wise-crowds",
+          "reason": "After surfacing ideas, deepen the most promising ones with consultation rounds.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "mad-tea-party",
+          "reason": "Many short rotating prompts surface breadth quickly when 1-2-4-All would feel slow.",
+          "confidence": "medium",
+          "tradeoff": "more-energetic"
+        },
+        {
+          "entryId": "conversation-cafe",
+          "reason": "Use when the group needs deeper dialogue rather than rapid synthesis.",
+          "confidence": "high",
+          "tradeoff": "deeper"
+        }
+      ],
+      "notes": "Always commit to the timing (1 / 2 / 4 / all) up front; cutting the solo phase guts the inclusion benefit.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "appreciative",
+      "purposeTags": [
+        "connection",
+        "pattern-detection",
+        "reflection",
+        "knowledge-sharing"
+      ],
+      "sequenceRoles": [
+        "discover",
+        "deepen"
+      ],
+      "outputTypes": [
+        "stories",
+        "patterns",
+        "insights"
+      ],
+      "inputNeeds": [
+        "personal-experience"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Group needs to break a problem-fixated frame and recover what already works."
+      ],
+      "avoidWhen": [
+        "A real crisis is unaddressed; forced positivity will feel dismissive."
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "intro",
+          "reason": "Once context is set, surfacing success stories early builds energy and trust.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "impromptu-networking",
+          "reason": "After warm-up, deeper paired storytelling lands more easily.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "124all",
+          "reason": "Use 1-2-4-All to extract patterns and conditions for success from the stories shared.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Process the stories into shared insights and decisions about what to amplify.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "design-storyboards",
+          "reason": "Success patterns can inform concrete future designs.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "celebrity-interview",
+          "reason": "Single deep interview is faster than many paired rounds when time is tight.",
+          "confidence": "medium",
+          "tradeoff": "shorter"
+        },
+        {
+          "entryId": "conversation-cafe",
+          "reason": "Less prescriptive; useful when the topic is more sensemaking than success mining.",
+          "confidence": "medium",
+          "tradeoff": "broader-participation"
+        }
+      ],
+      "notes": "Build in time for the pattern-extraction step; just sharing stories without harvest leaves value on the table.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "triz",
+      "purposeTags": [
+        "innovation",
+        "divergence",
+        "sensemaking",
+        "reflection",
+        "constraints"
+      ],
+      "sequenceRoles": [
+        "diverge",
+        "analyze"
+      ],
+      "outputTypes": [
+        "ideas",
+        "insights",
+        "patterns",
+        "actions"
+      ],
+      "inputNeeds": [
+        "challenge-question",
+        "clear-purpose"
+      ],
+      "energyLevel": "high",
+      "trustRequirement": "medium",
+      "riskLevel": "sharp",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Group is stuck adding more solutions and needs to see what to stop doing first."
+      ],
+      "avoidWhen": [
+        "Climate is already cynical; TRIZ can amplify negativity without a constructive turn."
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "nine-whys",
+          "reason": "Clarifies the core purpose before attempting to systematically destroy it.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "input",
+          "reason": "After framing the challenge, TRIZ inverts it productively to surface counterproductive habits.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Convert the 'stop doing' list into individual next actions within personal control.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "min-specs",
+          "reason": "Helps define the few rules that prevent backsliding.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "ecocycle-planning",
+          "reason": "Move from stop-list to a portfolio view of what to release across all activities.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "ecocycle-planning",
+          "reason": "Maps the full lifecycle of activities, including release, when a single stop-list is too narrow.",
+          "confidence": "medium",
+          "tradeoff": "more-structured"
+        },
+        {
+          "entryId": "wicked-questions",
+          "reason": "Surfaces paradoxes without moving as directly into stop-doing behavior.",
+          "confidence": "medium",
+          "tradeoff": "safer"
+        }
+      ],
+      "notes": "Run all three steps; without step 3 (which of these are we actually doing?) the structure becomes a venting exercise.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "winfy",
+      "purposeTags": [
+        "help",
+        "relationship-mapping",
+        "conflict-surfacing",
+        "commitment"
+      ],
+      "sequenceRoles": [
+        "deepen",
+        "decide",
+        "commit",
+        "plan"
+      ],
+      "outputTypes": [
+        "requests",
+        "agreements"
+      ],
+      "inputNeeds": [
+        "stakeholder-roles",
+        "high-trust"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "high",
+      "riskLevel": "sharp",
+      "facilitationComplexity": "high",
+      "formatFit": [
+        "onsite",
+        "hybrid",
+        "remote"
+      ],
+      "bestWhen": [
+        "Distinct functions or teams must work together and unspoken needs are blocking progress."
+      ],
+      "avoidWhen": [
+        "Trust is too low to handle public requests; or roles are not actually interdependent."
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "nine-whys",
+          "reason": "Shared purpose makes cross-functional requests land as collaboration, not blame.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each role takes its accepted requests into concrete actions within personal control.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "min-specs",
+          "reason": "Use the agreements surfaced to define the minimum cross-functional rules going forward.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "helping-heuristics",
+          "reason": "Builds the helping muscle peer-to-peer without the public role-on-role exposure of WINFY.",
+          "confidence": "high",
+          "tradeoff": "safer"
+        },
+        {
+          "entryId": "troika-consulting",
+          "reason": "Gives practical help with lower exposure than direct cross-functional requests.",
+          "confidence": "high",
+          "tradeoff": "safer"
+        }
+      ],
+      "notes": "Strict timing matters; WINFY only works if requests stay short and yes/no/whatever rules are kept clean.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "what-so-what-now-what",
+      "purposeTags": [
+        "reflection",
+        "sensemaking",
+        "debrief",
+        "action-planning"
+      ],
+      "sequenceRoles": [
+        "analyze",
+        "synthesize",
+        "plan",
+        "close"
+      ],
+      "outputTypes": [
+        "insights",
+        "actions",
+        "agreements"
+      ],
+      "inputNeeds": [
+        "prior-output"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "A shared experience or working session needs structured debrief into next steps."
+      ],
+      "avoidWhen": [
+        "There is no shared experience to look back on; the structure has nothing to anchor to."
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "conversation-cafe",
+          "reason": "Provides structure after open dialogue on a complex issue.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "shift-and-share",
+          "reason": "Synthesizes insights across rotating exposures into a single set of actions.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "simple-ethnography",
+          "reason": "Field observations are useless without structured sensemaking; this provides it.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "gallery-walk",
+          "reason": "After viewing artifacts, this debrief converts impressions into shared insight and action.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Now What ideas land better when each person commits to a step within their control.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "25-10-crowd-sourcing",
+          "reason": "When Now What surfaces many candidate actions, prioritize them across the whole group.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "spiral-journal",
+          "reason": "Better when individuals need more private processing time first.",
+          "confidence": "medium",
+          "tradeoff": "more-reflective"
+        },
+        {
+          "entryId": "reflection",
+          "reason": "Lighter alternative when there is no time or need for the full three-phase debrief.",
+          "confidence": "high",
+          "tradeoff": "shorter"
+        }
+      ],
+      "notes": "Keep the three phases visibly separate; merging What and So What collapses observation into interpretation.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "nine-whys",
+      "purposeTags": [
+        "purpose-clarity",
+        "sensemaking",
+        "reflection"
+      ],
+      "sequenceRoles": [
+        "discover",
+        "deepen"
+      ],
+      "outputTypes": [
+        "insights",
+        "principles"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "challenge-question",
+        "personal-experience"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Group is rushing to action without shared clarity on why the work matters."
+      ],
+      "avoidWhen": [
+        "Purpose is already crisp and shared; the structure will feel patronizing."
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Warm-up creates the relational ground for honest answers about purpose.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "intro",
+          "reason": "Right after framing, surface deep purpose before any content work begins.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "purpose-to-practice-p2p",
+          "reason": "Take the deep purpose surfaced and turn it into principles, participants, structure, practices.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "design-storyboards",
+          "reason": "Once purpose is clear, design how the work will actually unfold.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "purpose-to-practice-p2p",
+          "reason": "Goes beyond purpose into the supporting elements; use when time and stakes warrant.",
+          "confidence": "high",
+          "tradeoff": "deeper"
+        },
+        {
+          "entryId": "wicked-questions",
+          "reason": "Surfaces paradoxes around purpose rather than driving toward a single statement.",
+          "confidence": "medium",
+          "tradeoff": "more-reflective"
+        }
+      ],
+      "notes": "Pairs are essential; the structure relies on a partner pushing the 'why' question patiently without leading.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "impromptu-networking",
+      "purposeTags": [
+        "connection",
+        "inclusion",
+        "safety"
+      ],
+      "sequenceRoles": [
+        "opener",
+        "warm-up"
+      ],
+      "outputTypes": [
+        "shared-context",
+        "questions",
+        "stories"
+      ],
+      "inputNeeds": [
+        "challenge-question"
+      ],
+      "energyLevel": "high",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Group is mixed or new and you need rapid activation and voice equality."
+      ],
+      "avoidWhen": [
+        "Group is small (<8) where the rotation feels artificial, or trust is so low people freeze."
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "intro",
+          "reason": "Move from facilitator framing to peer activation; voices are warm before deeper work.",
+          "confidence": "high"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "124all",
+          "reason": "Channel the activated energy directly into structured idea generation.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "conversation-cafe",
+          "reason": "Move from many short exchanges into longer, deeper sensemaking on the same theme.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "appreciative",
+          "reason": "Warm-up makes deeper paired storytelling easier; people are already in conversation mode.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "nine-whys",
+          "reason": "Once people are warmed up, partner work on purpose lands more honestly.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "mad-tea-party",
+          "reason": "Several short prompts in rotation when one open question feels too vague to anchor people.",
+          "confidence": "medium",
+          "tradeoff": "more-structured"
+        }
+      ],
+      "notes": "Question quality matters; a vague 'introduce yourself' prompt wastes the structure. Tie it to the workshop topic.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "conversation-cafe",
+      "purposeTags": [
+        "sensemaking",
+        "connection",
+        "reflection",
+        "divergence",
+        "inclusion"
+      ],
+      "sequenceRoles": [
+        "deepen",
+        "analyze",
+        "synthesize"
+      ],
+      "outputTypes": [
+        "insights",
+        "patterns",
+        "shared-context"
+      ],
+      "inputNeeds": [
+        "challenge-question"
+      ],
+      "energyLevel": "low",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "A profound or ambiguous challenge needs slow, equal-voice exploration before any decisions."
+      ],
+      "avoidWhen": [
+        "Time is tight or the group is in execution mode; the slow rounds will feel indulgent."
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "input",
+          "reason": "After a provoking impulse, give the group time to make sense of it together at depth.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Move from short paired exchanges into a longer, anchored exploration of the same theme.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "intro",
+          "reason": "When the workshop centers on a single hard topic, go deep early after framing.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "wicked-questions",
+          "reason": "After surfacing paradoxes, Conversation Cafe gives time to sit with them productively.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Convert open exploration into shared insight and concrete next steps.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Land the deep conversation in personal next steps within each participant's control.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "25-10-crowd-sourcing",
+          "reason": "When the cafe surfaces many candidate directions, prioritize them across the whole room.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "124all",
+          "reason": "Faster, more structured surfacing when the topic does not warrant a long sit.",
+          "confidence": "high",
+          "tradeoff": "shorter"
+        },
+        {
+          "entryId": "shift-and-share",
+          "reason": "Better when content is anchored to specific projects or artifacts, not one open question.",
+          "confidence": "medium",
+          "tradeoff": "more-action-oriented"
+        }
+      ],
+      "notes": "Talking object and explicit agreements are not optional; without them the structure collapses into normal group talk.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "15percent-solutions",
+      "purposeTags": [
+        "action-planning",
+        "commitment",
+        "experimentation",
+        "reflection"
+      ],
+      "sequenceRoles": [
+        "plan",
+        "commit",
+        "close",
+        "bridge"
+      ],
+      "outputTypes": [
+        "actions",
+        "agreements"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "prior-output"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Closing a workshop with concrete next steps inside each person's scope",
+        "Group risks staying abstract after analysis or ideation"
+      ],
+      "avoidWhen": [
+        "Group needs a single shared decision instead of individual commitments",
+        "Participants lack real authority or resources to act on their own"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "25-10-crowd-sourcing",
+          "reason": "Top crowd-sourced ideas become individual commitments inside each person's authority.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "ecocycle-planning",
+          "reason": "Birth and renewal opportunities turn into concrete personal moves people can start now.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "agreement-and-certainty-matrix",
+          "reason": "After sorting challenges, people commit to small moves on simple and complicated work.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "wicked-questions",
+          "reason": "Once paradoxical tensions are named, each person finds a 15% step they can take inside them.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "troika-consulting",
+          "reason": "Each 15% step gets immediate peer help to sharpen the first move.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "reflection",
+          "reason": "Short solo crystallisation locks in the chosen first action before the room disperses.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Debrief the commitments together and surface what becomes possible next.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "troika-consulting",
+          "reason": "Use when each person needs help with a stuck challenge, not just to commit to next steps.",
+          "confidence": "medium",
+          "tradeoff": "more-action-oriented"
+        }
+      ],
+      "notes": "Strong default closer. Keep prompts tight: 'What can you do without new permission, budget, or resources?'",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "25-10-crowd-sourcing",
+      "purposeTags": [
+        "idea-generation",
+        "prioritization",
+        "divergence",
+        "innovation"
+      ],
+      "sequenceRoles": [
+        "diverge",
+        "decide",
+        "synthesize"
+      ],
+      "outputTypes": [
+        "ideas",
+        "priorities"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "challenge-question"
+      ],
+      "energyLevel": "high",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Need to surface and rank bold ideas with a whole group of 12+ quickly",
+        "Want anonymous filtering to let unconventional ideas rise"
+      ],
+      "avoidWhen": [
+        "Group is smaller than ~12 (sifting loses signal)",
+        "Topic is deeply personal or political and needs slower sense-making"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "nine-whys",
+          "reason": "After the purpose is sharp, ideas score against the real 'why' of the work.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "impromptu-networking",
+          "reason": "A warmed-up room produces stronger first-cut ideas before scoring.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "input",
+          "reason": "A short framing impulse calibrates what counts as a bold idea.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "wicked-questions",
+          "reason": "Paradoxes generate richer, more provocative bold ideas to sift.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Top-scored ideas become individual commitments people can act on today.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "design-storyboards",
+          "reason": "Top ideas become inputs to plan a productive sequence of next moves.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "troika-consulting",
+          "reason": "Owners of top ideas get peer help on the first concrete move.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "124all",
+          "reason": "Use for groups under ~12 or when ranking matters less than building shared ideas.",
+          "confidence": "high",
+          "tradeoff": "shorter"
+        },
+        {
+          "entryId": "conversation-cafe",
+          "reason": "Use when you need shared sense-making rather than ranked actionable ideas.",
+          "confidence": "medium",
+          "tradeoff": "more-reflective"
+        }
+      ],
+      "notes": "Needs index cards or a remote tool that supports anonymous 0-5 scoring across five rounds.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "mad-tea-party",
+      "purposeTags": [
+        "connection",
+        "divergence",
+        "sensemaking",
+        "idea-generation"
+      ],
+      "sequenceRoles": [
+        "warm-up",
+        "opener",
+        "diverge",
+        "discover"
+      ],
+      "outputTypes": [
+        "questions",
+        "insights",
+        "shared-context"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "physical-space"
+      ],
+      "energyLevel": "high",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Group needs a fast, energising context shift with many quick paired exchanges",
+        "Opening a session where people barely know each other but the topic is shared"
+      ],
+      "avoidWhen": [
+        "Very low trust where prompts would feel intrusive",
+        "Pure remote without breakout pairs and clear rotation choreography"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "intro",
+          "reason": "A warm framing makes the rapid prompts land instead of feeling like a quiz.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "input",
+          "reason": "A short impulse gives the prompts a shared reference point.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "124all",
+          "reason": "Themes that surface in the rapid pairs get deepened and refined.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "25-10-crowd-sourcing",
+          "reason": "Warmed-up room produces stronger bold ideas to sift.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "conversation-cafe",
+          "reason": "Energised group is ready to slow down and make sense together.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Use when you want focused 2-min rounds on the same question rather than rotating prompts.",
+          "confidence": "high",
+          "tradeoff": "more-structured"
+        }
+      ],
+      "notes": "Prompt design carries this. Keep prompts open, future-leaning, and non-judgmental; rotate every 60-90 seconds.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "spiral-journal",
+      "purposeTags": [
+        "reflection",
+        "sensemaking",
+        "pattern-detection"
+      ],
+      "sequenceRoles": [
+        "deepen",
+        "analyze",
+        "close",
+        "bridge"
+      ],
+      "outputTypes": [
+        "insights",
+        "questions",
+        "patterns"
+      ],
+      "inputNeeds": [
+        "personal-experience",
+        "prior-output"
+      ],
+      "energyLevel": "low",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Need quiet integration after intense input or shared experience",
+        "Group is over-talking and individuals haven't caught up with their own thinking"
+      ],
+      "avoidWhen": [
+        "Group needs immediate collective synthesis or external dialogue",
+        "Participants are strongly averse to writing or working solo"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "appreciative",
+          "reason": "After hearing success stories, individuals sift personal patterns and questions.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "input",
+          "reason": "Lets a dense impulse settle before group conversation starts.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "shift-and-share",
+          "reason": "Quiet processing turns multiple short exposures into personal insight.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "simple-ethnography",
+          "reason": "Field observations need solo time to crystallise into patterns.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "124all",
+          "reason": "Solo insights become richer pair and group conversation.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "troika-consulting",
+          "reason": "Open questions from the journal become exactly the right peer-help topic.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Personal insights translate directly into a small first action.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "reflection",
+          "reason": "Use when you only need a brief crystallisation, not a deeper layered exploration.",
+          "confidence": "medium",
+          "tradeoff": "shorter"
+        },
+        {
+          "entryId": "xxn-writing",
+          "reason": "Use when you want sharpened thinking via a fixed question sequence rather than open spiral exploration.",
+          "confidence": "medium",
+          "tradeoff": "more-structured"
+        }
+      ],
+      "notes": "Provide a printed template with concentric prompts; works equally well in a shared doc remotely.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "xxn-writing",
+      "purposeTags": [
+        "reflection",
+        "sensemaking",
+        "idea-generation",
+        "pattern-detection"
+      ],
+      "sequenceRoles": [
+        "analyze",
+        "deepen",
+        "synthesize",
+        "bridge"
+      ],
+      "outputTypes": [
+        "insights",
+        "ideas",
+        "patterns"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "challenge-question"
+      ],
+      "energyLevel": "low",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Want individual focus and sharp answers before group dialogue",
+        "Topic benefits from progressive narrowing through sequenced prompts"
+      ],
+      "avoidWhen": [
+        "Group needs immediate live exchange or has strong writing aversion",
+        "Question is too vague to design a meaningful sequence"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "input",
+          "reason": "A short framing gives the writing sequence its shared starting point.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "simple-ethnography",
+          "reason": "Field notes get sharpened into patterns through structured writing rounds.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "wicked-questions",
+          "reason": "Paradoxes become productive when each person writes through them in stages.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "124all",
+          "reason": "Sharpened individual answers feed strong pair and group conversation.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "gallery-walk",
+          "reason": "Final statements posted on the wall become a shared landscape to walk through.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "troika-consulting",
+          "reason": "Final-round writing surfaces the exact challenge to bring to peers.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "124all",
+          "reason": "Use when conversation will produce better thinking than solo writing.",
+          "confidence": "medium",
+          "tradeoff": "more-energetic"
+        },
+        {
+          "entryId": "spiral-journal",
+          "reason": "Use when you want open layered exploration rather than a tightening question sequence.",
+          "confidence": "medium",
+          "tradeoff": "more-reflective"
+        }
+      ],
+      "notes": "Design 3-5 progressively sharpening prompts; 2-3 minutes per round usually beats long writing windows.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "drawing-together",
+      "purposeTags": [
+        "sensemaking",
+        "reflection",
+        "pattern-detection",
+        "idea-generation"
+      ],
+      "sequenceRoles": [
+        "deepen",
+        "synthesize",
+        "discover"
+      ],
+      "outputTypes": [
+        "insights",
+        "patterns",
+        "shared-context",
+        "principles"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "physical-space"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Group is over-verbal and needs a non-rational route into the topic",
+        "Integrating complex personal or collective experience that resists words"
+      ],
+      "avoidWhen": [
+        "Low trust or strong 'I can't draw' resistance with no permission-setting time",
+        "Tight schedule with no space to debrief what the drawings reveal"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "appreciative",
+          "reason": "After sharing success stories, drawing surfaces patterns words missed.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "input",
+          "reason": "A dense impulse gets digested visually before any group talk.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "wicked-questions",
+          "reason": "Paradoxes often resolve into images more easily than into sentences.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "124all",
+          "reason": "Pairs interpret each other's drawings, then groups build shared themes.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "gallery-walk",
+          "reason": "Drawings become the gallery; the walk turns private images into shared meaning.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "conversation-cafe",
+          "reason": "Visuals seed a slower sense-making conversation about what they reveal.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "spiral-journal",
+          "reason": "Use when group resists drawing but still needs quiet personal sense-making.",
+          "confidence": "medium",
+          "tradeoff": "safer"
+        }
+      ],
+      "notes": "Set permission early: 'stick figures count'. Always pair with a structure that interprets the drawings.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "folding-spectogram",
+      "purposeTags": [
+        "divergence",
+        "conflict-surfacing",
+        "pattern-detection",
+        "sensemaking"
+      ],
+      "sequenceRoles": [
+        "discover",
+        "diverge",
+        "deepen"
+      ],
+      "outputTypes": [
+        "patterns",
+        "insights",
+        "shared-context"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "challenge-question",
+        "physical-space"
+      ],
+      "energyLevel": "high",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite"
+      ],
+      "bestWhen": [
+        "Need to make diversity of opinion on a charged question visible and bodily",
+        "Group has been talking abstractly and needs to take a position"
+      ],
+      "avoidWhen": [
+        "Strong hierarchy in the room makes public positioning risky for juniors",
+        "Fully remote setting where physical placement can't be replicated"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "input",
+          "reason": "A framing impulse defines the spectrum's poles clearly enough to position on.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "intro",
+          "reason": "A warm opening earns the safety needed to take a public position.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "conversation-cafe",
+          "reason": "Visible disagreement becomes the agenda for slower shared sense-making.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "124all",
+          "reason": "Mixed-position pairs work the question further before group synthesis.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "wicked-questions",
+          "reason": "Visible polarity is the raw material for naming a productive paradox.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "conversation-cafe",
+          "reason": "Use when slow shared sense-making matters more than making positions visible.",
+          "confidence": "medium",
+          "tradeoff": "deeper"
+        },
+        {
+          "entryId": "mad-tea-party",
+          "reason": "Use when the topic is too sensitive for public positioning but still needs fast divergence.",
+          "confidence": "medium",
+          "tradeoff": "safer"
+        }
+      ],
+      "notes": "Prepare 2-4 sharp either/or statements. Always invite folding so opposite views meet face-to-face after positioning.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "wicked-questions",
+      "purposeTags": [
+        "sensemaking",
+        "conflict-surfacing",
+        "strategy",
+        "pattern-detection"
+      ],
+      "sequenceRoles": [
+        "discover",
+        "deepen",
+        "analyze"
+      ],
+      "outputTypes": [
+        "questions",
+        "insights",
+        "patterns"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "decision-context"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Group is stuck in either/or thinking on a complex strategic challenge",
+        "Need to surface productive tensions before planning or deciding"
+      ],
+      "avoidWhen": [
+        "Group needs a simple direct answer rather than to sit with paradox",
+        "Low context on the challenge so paradoxes would be invented, not discovered"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "ecocycle-planning",
+          "reason": "Portfolio tensions across phases become sharp paradoxical questions.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "nine-whys",
+          "reason": "Once purpose is clear, the real paradoxes the group must hold become visible.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "agreement-and-certainty-matrix",
+          "reason": "Complex-quadrant work names the paradoxes that sorting alone can't resolve.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "124all",
+          "reason": "Groups work each paradox to find moves that hold both sides.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "integrated-autonomy",
+          "reason": "Named paradoxes get worked into both-and operating choices.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each person finds a small move they can take inside the paradox today.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "agreement-and-certainty-matrix",
+          "reason": "Use when you need to sort challenges by type rather than name productive paradoxes.",
+          "confidence": "medium",
+          "tradeoff": "more-structured"
+        },
+        {
+          "entryId": "integrated-autonomy",
+          "reason": "Use when you need to resolve a known polarity into both-and moves, not surface new ones.",
+          "confidence": "medium",
+          "tradeoff": "more-action-oriented"
+        }
+      ],
+      "notes": "Quality of the paradoxes matters more than quantity. Two strong wicked questions usually beat six weak ones.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "tiny-demons",
+      "purposeTags": [
+        "reflection",
+        "sensemaking",
+        "safety"
+      ],
+      "sequenceRoles": [
+        "deepen",
+        "discover",
+        "analyze"
+      ],
+      "outputTypes": [
+        "insights",
+        "patterns"
+      ],
+      "inputNeeds": [
+        "personal-experience",
+        "high-trust",
+        "clear-purpose"
+      ],
+      "energyLevel": "low",
+      "trustRequirement": "high",
+      "riskLevel": "sharp",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote"
+      ],
+      "bestWhen": [
+        "Experienced group with high trust working on a personal change or stuck pattern",
+        "Need to surface inner blockers that abstract analysis can't reach"
+      ],
+      "avoidWhen": [
+        "Mixed seniority, performance context, or any setting where inner work could be weaponised",
+        "No time or follow-up structure to hold what surfaces"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "heard-seen-respected",
+          "reason": "Empathy practice primes the group to handle personal disclosure with care.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "intro",
+          "reason": "A warm, careful opening sets the safety this structure needs.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "input",
+          "reason": "A short impulse on inner blockers normalises naming them.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Insight about a blocker turns into the smallest possible move against it.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "troika-consulting",
+          "reason": "Each named demon becomes a precise help-request for peers.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "reflection",
+          "reason": "A gentle solo close lets what surfaced settle before the next module.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "talking-with-pixies",
+          "reason": "Use when you want a clearer protocol for working with inner constraints in pairs.",
+          "confidence": "high",
+          "tradeoff": "more-structured"
+        },
+        {
+          "entryId": "spiral-journal",
+          "reason": "Use when trust is too low for naming personal blockers aloud but reflection is still needed.",
+          "confidence": "medium",
+          "tradeoff": "safer"
+        }
+      ],
+      "notes": "Brief participants explicitly that sharing depth is optional. Never use as an opener or with strangers.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "anxiety-circus",
+      "purposeTags": [
+        "sensemaking",
+        "conflict-surfacing",
+        "safety",
+        "reflection"
+      ],
+      "sequenceRoles": [
+        "discover",
+        "diverge",
+        "deepen"
+      ],
+      "outputTypes": [
+        "insights",
+        "patterns",
+        "shared-context"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "decision-context"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Before launching a change initiative where unspoken fears would otherwise sabotage it",
+        "Group senses something is off but no one has named the worries out loud"
+      ],
+      "avoidWhen": [
+        "High political tension where naming fears could be weaponised",
+        "No follow-up structure to take what surfaces seriously"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "input",
+          "reason": "A short framing of the coming change focuses what worries are about.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "intro",
+          "reason": "A warm opening earns the safety to put fears into shared view.",
+          "confidence": "high"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "triz",
+          "reason": "Surfaced fears feed directly into 'how would we make it worse?' for productive release.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "troika-consulting",
+          "reason": "Each big worry becomes a help-request that gets practical peer input.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each person finds a small move that addresses one of their named worries.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Group integrates what was named and decides what changes in the plan.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "triz",
+          "reason": "Use when you'd rather invert the fears into 'worst possible outcome' play than name them directly.",
+          "confidence": "high",
+          "tradeoff": "more-energetic"
+        },
+        {
+          "entryId": "wicked-questions",
+          "reason": "Use when surfacing tensions as paradoxes feels safer than naming fears in the open.",
+          "confidence": "medium",
+          "tradeoff": "safer"
+        }
+      ],
+      "notes": "Pre-commit visibly to what will happen with the worries that surface; without that, this structure damages trust.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "agreement-and-certainty-matrix",
+      "purposeTags": [
+        "sensemaking",
+        "pattern-detection",
+        "strategy",
+        "systems-thinking"
+      ],
+      "sequenceRoles": [
+        "analyze",
+        "synthesize",
+        "bridge"
+      ],
+      "outputTypes": [
+        "shared-context",
+        "patterns",
+        "insights",
+        "maps"
+      ],
+      "inputNeeds": [
+        "problem-list",
+        "decision-context"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "The group treats different challenge types with the same approach",
+        "You need to triage a mixed portfolio of problems before choosing methods"
+      ],
+      "avoidWhen": [
+        "Only one well-defined challenge is on the table",
+        "There is no shared list of issues to sort"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "input",
+          "reason": "A short framing of the four domains lands better than diving in cold.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "25-10-crowd-sourcing",
+          "reason": "Sort the surfaced challenges by agreement and certainty to choose appropriate next methods.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "nine-whys",
+          "reason": "Clarifying purpose first sharpens which challenges actually matter to sort.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Items in the simple and complicated zones are ready for concrete personal action.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "wicked-questions",
+          "reason": "Items landing in the complex zone benefit from articulating the underlying paradoxes.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "design-storyboards",
+          "reason": "Complicated items need the step-by-step planning that storyboards provide.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "ecocycle-planning",
+          "reason": "If the question is portfolio life-cycle rather than challenge-typing, ecocycle gives a richer view at higher cost.",
+          "confidence": "medium",
+          "tradeoff": "deeper"
+        }
+      ],
+      "notes": "Prepare a visible 2x2 (agreement vs certainty) and a stack of ~10 candidate challenges; sort them together rather than lecturing the model.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "ecocycle-planning",
+      "purposeTags": [
+        "strategy",
+        "prioritization",
+        "sensemaking",
+        "decision",
+        "systems-thinking"
+      ],
+      "sequenceRoles": [
+        "analyze",
+        "synthesize",
+        "decide"
+      ],
+      "outputTypes": [
+        "priorities",
+        "decisions",
+        "patterns",
+        "maps"
+      ],
+      "inputNeeds": [
+        "existing-data",
+        "problem-list",
+        "prior-output"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "The team is stretched across too many initiatives",
+        "There is rigidity in legacy work or scarcity in new growth",
+        "Leadership wants to decide what to stop, not only what to start"
+      ],
+      "avoidWhen": [
+        "The portfolio is tiny or already obvious",
+        "Group has no shared knowledge of the current activities"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "input",
+          "reason": "A 5-minute framing of the eight ecocycle phases prevents confusion at the board.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "25-10-crowd-sourcing",
+          "reason": "Use the surfaced ideas as the inventory you then place on the ecocycle.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "nine-whys",
+          "reason": "A sharpened purpose makes positioning activities on the cycle far less arbitrary.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Activities in renewal can be acted on immediately with each person's 15%.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "triz",
+          "reason": "Items flagged for creative destruction set up stop-doing work via TRIZ.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "min-specs",
+          "reason": "After deciding what to keep, define minimal guardrails for it.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "agreement-and-certainty-matrix",
+          "reason": "If you only need to triage problems by type rather than review a whole portfolio life-cycle.",
+          "confidence": "medium",
+          "tradeoff": "shorter"
+        }
+      ],
+      "notes": "Build the ecocycle figure visibly large; let people self-place activities before facilitating discussion of clusters.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "panarchy",
+      "purposeTags": [
+        "systems-thinking",
+        "sensemaking",
+        "pattern-detection",
+        "strategy"
+      ],
+      "sequenceRoles": [
+        "analyze",
+        "deepen"
+      ],
+      "outputTypes": [
+        "maps",
+        "patterns",
+        "insights"
+      ],
+      "inputNeeds": [
+        "existing-data",
+        "expertise",
+        "challenge-question"
+      ],
+      "energyLevel": "low",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "high",
+      "formatFit": [
+        "onsite"
+      ],
+      "bestWhen": [
+        "Innovation keeps stalling at a different level than where it was created",
+        "Cross-scale dynamics matter: team, org, market, regulation"
+      ],
+      "avoidWhen": [
+        "Group is unfamiliar with systems thinking and time is short",
+        "The challenge is concrete and operational, not multi-scale"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "ecocycle-planning",
+          "reason": "Ecocycle warms the brain for life-cycle thinking before adding nested levels with panarchy.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "input",
+          "reason": "A short framing of nested adaptive cycles is essential before the exercise lands.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "social-network-webbing",
+          "reason": "A network map gives panarchy concrete actors to place at each system level.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Panarchy insights become useful when each level translates to a specific personal action.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "wicked-questions",
+          "reason": "Cross-scale dynamics often expose paradoxes worth articulating explicitly.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "ecocycle-planning",
+          "reason": "If a single-level life-cycle view is enough, ecocycle is faster and more accessible than nested panarchy.",
+          "confidence": "high",
+          "tradeoff": "shorter"
+        }
+      ],
+      "notes": "Prepare large visuals of the three nested cycles; this is heavy cognitive lifting, not a quick warmup.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "generative-relationships-star",
+      "purposeTags": [
+        "pattern-detection",
+        "sensemaking",
+        "relationship-mapping",
+        "reflection"
+      ],
+      "sequenceRoles": [
+        "analyze",
+        "deepen"
+      ],
+      "outputTypes": [
+        "insights",
+        "patterns",
+        "shared-context"
+      ],
+      "inputNeeds": [
+        "stakeholder-roles",
+        "personal-experience",
+        "prior-output"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "A cross-functional working group is stuck and relationships seem to be the bottleneck",
+        "You suspect either too much sameness or too little reason to collaborate"
+      ],
+      "avoidWhen": [
+        "Active toxic conflict needs repair work first",
+        "Relationships are not the actual constraint on the work"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Light connection across the room warms people up for an honest STAR rating of their working relationships.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "nine-whys",
+          "reason": "A clear shared purpose sets the bar for what generative relationships are for.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each person commits to a small move that improves one of the four STAR dimensions.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "winfy",
+          "reason": "Once patterns are visible, WINFY converts insights into concrete asks and offers across functions.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "troika-consulting",
+          "reason": "Use peer consulting on the specific relationship patterns each person wants to shift.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "winfy",
+          "reason": "If you need concrete needs and commitments now, WINFY skips the diagnostic and goes to requests.",
+          "confidence": "high",
+          "tradeoff": "more-action-oriented"
+        },
+        {
+          "entryId": "network-patterning-cards",
+          "reason": "Cards give a richer pattern language but take longer than the four STAR dimensions.",
+          "confidence": "medium",
+          "tradeoff": "more-structured"
+        }
+      ],
+      "notes": "Score the four STAR dimensions privately first; share scores before discussing why they differ.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "network-patterning-cards",
+      "purposeTags": [
+        "pattern-detection",
+        "sensemaking",
+        "relationship-mapping",
+        "innovation"
+      ],
+      "sequenceRoles": [
+        "analyze",
+        "deepen",
+        "synthesize"
+      ],
+      "outputTypes": [
+        "patterns",
+        "insights",
+        "principles"
+      ],
+      "inputNeeds": [
+        "examples",
+        "existing-data",
+        "stakeholder-roles"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "A team is redesigning how it interacts and a richer pattern language helps",
+        "You want to compare current and aspirational collaboration patterns"
+      ],
+      "avoidWhen": [
+        "You do not have a card set or remote substitute prepared",
+        "Time pressure demands concrete actions over pattern naming"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "generative-relationships-star",
+          "reason": "STAR surfaces the symptom; the cards offer a richer pattern vocabulary to explain it.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "input",
+          "reason": "A short framing of pattern thinking helps participants use the cards as a language, not a quiz.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "simple-ethnography",
+          "reason": "Real observed behaviors give the cards something concrete to attach to.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each person picks one pattern shift they personally have authority to try.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "min-specs",
+          "reason": "Translate chosen patterns into a tight set of must-dos and must-not-dos for the team.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "generative-relationships-star",
+          "reason": "STAR's four dimensions cover the main relational patterns faster, without the card set.",
+          "confidence": "medium",
+          "tradeoff": "shorter"
+        },
+        {
+          "entryId": "social-network-webbing",
+          "reason": "If you want to map who connects to whom and act on it, webbing is more direct.",
+          "confidence": "medium",
+          "tradeoff": "more-action-oriented"
+        }
+      ],
+      "notes": "Have physical cards or a digital deck ready; pre-select a working subset rather than dumping the full library on the table.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "simple-ethnography",
+      "purposeTags": [
+        "sensemaking",
+        "pattern-detection",
+        "knowledge-sharing",
+        "innovation"
+      ],
+      "sequenceRoles": [
+        "discover",
+        "analyze"
+      ],
+      "outputTypes": [
+        "stories",
+        "patterns",
+        "insights",
+        "shared-context"
+      ],
+      "inputNeeds": [
+        "physical-space",
+        "clear-purpose",
+        "stakeholder-roles"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "high",
+      "formatFit": [
+        "onsite"
+      ],
+      "bestWhen": [
+        "Assumptions about users or operations feel stale or contested",
+        "Design or policy decisions need grounding in actual behavior"
+      ],
+      "avoidWhen": [
+        "You cannot get safe, ethical access to the field",
+        "The workshop window is too short to send people out and come back"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "input",
+          "reason": "A short briefing on observation discipline keeps notes descriptive, not interpretive.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "nine-whys",
+          "reason": "Clarifying purpose tells observers what to actually pay attention to.",
+          "confidence": "high"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "shift-and-share",
+          "reason": "Small groups present field findings in rotating stations so everyone hears them.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Structured debrief turns raw field notes into shared meaning and next steps.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "gallery-walk",
+          "reason": "Posting field notes for a silent walk-through reveals patterns across observations.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "appreciative",
+          "reason": "If interviewing people is enough and field access is not feasible, appreciative interviews are faster.",
+          "confidence": "medium",
+          "tradeoff": "shorter"
+        },
+        {
+          "entryId": "user-experience-fishbowl",
+          "reason": "If experienced practitioners are in the room, a fishbowl surfaces practice knowledge without going out.",
+          "confidence": "medium",
+          "tradeoff": "shorter"
+        }
+      ],
+      "notes": "Send observers in pairs with a tight shared lens; separate description from interpretation in the notes template.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "min-specs",
+      "purposeTags": [
+        "constraints",
+        "decision",
+        "commitment",
+        "purpose-clarity"
+      ],
+      "sequenceRoles": [
+        "synthesize",
+        "decide",
+        "plan"
+      ],
+      "outputTypes": [
+        "agreements",
+        "principles",
+        "constraints"
+      ],
+      "inputNeeds": [
+        "prior-output",
+        "clear-purpose"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Rules and process have sprawled and the team needs guardrails, not micromanagement",
+        "Before scaling or handing off an initiative to others"
+      ],
+      "avoidWhen": [
+        "The purpose itself is unclear - clarify it first",
+        "Group still needs to diverge on options before constraining them"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "nine-whys",
+          "reason": "A sharp purpose is the anchor against which max specs are tested for being truly necessary.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "25-10-crowd-sourcing",
+          "reason": "Use the prioritized ideas as the candidate list of must-dos and must-not-dos to challenge.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "design-storyboards",
+          "reason": "After designing a step-by-step plan, distill it down to the essential specs.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Within tight specs, each person identifies what they can act on now.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "troika-consulting",
+          "reason": "Peers help each person sharpen how they will work within the specs.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "If you need movement now rather than codified guardrails, 15% goes straight to personal action.",
+          "confidence": "medium",
+          "tradeoff": "more-action-oriented"
+        }
+      ],
+      "notes": "Generate a fat list of max specs first, then ruthlessly cut anything not strictly required to achieve the purpose.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "integrated-autonomy",
+      "purposeTags": [
+        "sensemaking",
+        "decision",
+        "strategy",
+        "constraints"
+      ],
+      "sequenceRoles": [
+        "analyze",
+        "synthesize",
+        "decide"
+      ],
+      "outputTypes": [
+        "principles",
+        "decisions",
+        "agreements",
+        "options"
+      ],
+      "inputNeeds": [
+        "decision-context",
+        "options-list",
+        "stakeholder-roles"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "The group is stuck in either/or debates such as standardize vs autonomy or local vs global",
+        "A polarity needs ongoing balancing, not a one-time pick"
+      ],
+      "avoidWhen": [
+        "A clean either/or decision is genuinely required",
+        "No real polarity exists - the choice is just hard"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "wicked-questions",
+          "reason": "Wicked questions surface the underlying paradox so integrated~autonomy can work it concretely.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "nine-whys",
+          "reason": "Shared purpose anchors which elements truly need to be standardized vs left autonomous.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "min-specs",
+          "reason": "Lock the both/and balance into a tight set of must-dos and must-not-dos.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each person identifies one move that holds both poles in their own work.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "wicked-questions",
+          "reason": "If naming the paradox is enough and you do not yet need to design both/and elements, wicked questions is faster.",
+          "confidence": "medium",
+          "tradeoff": "shorter"
+        }
+      ],
+      "notes": "List candidate elements, then sort each into 'standardize globally' or 'leave to local autonomy' with explicit reasons.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "troika-consulting",
+      "purposeTags": [
+        "help",
+        "knowledge-sharing",
+        "reflection"
+      ],
+      "sequenceRoles": [
+        "deepen",
+        "discover"
+      ],
+      "outputTypes": [
+        "ideas",
+        "insights",
+        "requests"
+      ],
+      "inputNeeds": [
+        "personal-experience",
+        "challenge-question"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Participants bring real, current challenges they want help with",
+        "Mixed expertise can produce surprising perspectives",
+        "Time is short and you want everyone helped in parallel"
+      ],
+      "avoidWhen": [
+        "People have no real challenge to bring",
+        "Trust is too low to expose a struggle to two peers",
+        "Group is stuck in advice-giving habits and will not slow down"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "helping-heuristics",
+          "reason": "Practices listening and helping skills first, raising the quality of advice in the triads.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Builds quick connection and warms people up to share real challenges in small triads.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "intro",
+          "reason": "Frames the purpose and the kind of challenges to bring.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "nine-whys",
+          "reason": "Helps participants sharpen the why behind their challenge before asking for help.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Turns advice from triads into concrete next steps within each person's freedom and resources.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "reflection",
+          "reason": "Lets participants distill what was actually useful from the advice received.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Group debrief surfacing patterns across all triads' challenges and advice.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "wise-crowds",
+          "reason": "Single client gets the full group's wisdom instead of two peers; deeper but slower per person.",
+          "confidence": "high",
+          "tradeoff": "deeper"
+        },
+        {
+          "entryId": "wise-crowds-fur-grosse-gruppen",
+          "reason": "Scales the wise-crowds shape to many participants when the group is too big for clean triads.",
+          "confidence": "medium",
+          "tradeoff": "better-for-large-groups"
+        }
+      ],
+      "notes": "Works very well in remote breakouts; clear timing and roles are essential.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "wise-crowds",
+      "purposeTags": [
+        "help",
+        "knowledge-sharing",
+        "sensemaking"
+      ],
+      "sequenceRoles": [
+        "deepen",
+        "analyze"
+      ],
+      "outputTypes": [
+        "ideas",
+        "insights",
+        "requests"
+      ],
+      "inputNeeds": [
+        "personal-experience",
+        "challenge-question"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "One or two people have a meaty challenge worth the group's full attention",
+        "Group has diverse expertise the client can benefit from",
+        "Client is willing to listen silently while peers consult"
+      ],
+      "avoidWhen": [
+        "Many people need help simultaneously (use Troika instead)",
+        "Group is too large to give one client real airtime",
+        "Trust is too low to expose a meaningful challenge to all"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "nine-whys",
+          "reason": "Sharpens the client's challenge framing so the group's advice lands on the real question.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "helping-heuristics",
+          "reason": "Primes the group to ask before advising, improving the quality of the consult.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Builds enough connection for a single client to expose a real challenge.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Helps the client convert wide-ranging advice into immediately actionable next steps.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "reflection",
+          "reason": "Gives the client space to integrate what mattered most from the consult.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Group reflects on patterns observed across multiple client consults.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "troika-consulting",
+          "reason": "Everyone gets to be a client in parallel triads instead of one client at a time.",
+          "confidence": "high",
+          "tradeoff": "broader-participation"
+        },
+        {
+          "entryId": "wise-crowds-fur-grosse-gruppen",
+          "reason": "Same logic adapted for groups too big for the original format.",
+          "confidence": "high",
+          "tradeoff": "better-for-large-groups"
+        }
+      ],
+      "notes": "Strict role discipline (client listens silently) is what makes this work; brief carefully.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "wise-crowds-fur-grosse-gruppen",
+      "purposeTags": [
+        "help",
+        "knowledge-sharing",
+        "sensemaking"
+      ],
+      "sequenceRoles": [
+        "deepen",
+        "analyze"
+      ],
+      "outputTypes": [
+        "ideas",
+        "insights",
+        "requests"
+      ],
+      "inputNeeds": [
+        "personal-experience",
+        "challenge-question",
+        "expertise"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Large group with multiple challenge holders who all need real airtime",
+        "Enough facilitators or strong self-organization to run parallel rounds",
+        "There is genuine cross-functional expertise to draw on"
+      ],
+      "avoidWhen": [
+        "Group is small enough for the original Wise Crowds",
+        "Pure remote without strong breakout coordination",
+        "Time is too tight to run multiple full rounds"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "nine-whys",
+          "reason": "Each client sharpens their own challenge before the parallel consults begin.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "helping-heuristics",
+          "reason": "Aligns many helpers across many groups on a shared way of helping.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Quickly mixes a large group so consult tables are not just same-team clusters.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each client converts the advice from their table into a concrete next step.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Whole-group debrief surfaces patterns across all the parallel consults.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "reflection",
+          "reason": "Quiet space for clients to integrate what they heard.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "wise-crowds",
+          "reason": "Smaller, simpler version when the group is not actually large enough to need scaling.",
+          "confidence": "high",
+          "tradeoff": "shorter"
+        },
+        {
+          "entryId": "troika-consulting",
+          "reason": "Everyone is a client in parallel triads; faster and lighter for very large groups.",
+          "confidence": "medium",
+          "tradeoff": "broader-participation"
+        }
+      ],
+      "notes": "Coordinate parallel rounds with crisp timing; appoint table hosts.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "helping-heuristics",
+      "purposeTags": [
+        "help",
+        "connection",
+        "reflection"
+      ],
+      "sequenceRoles": [
+        "warm-up",
+        "discover",
+        "bridge"
+      ],
+      "outputTypes": [
+        "principles",
+        "insights"
+      ],
+      "inputNeeds": [
+        "personal-experience"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "About to run peer consultation structures (Troika, Wise Crowds, DAD)",
+        "Team wants to build a shared culture of asking for and giving help",
+        "People default to advice giving and need a reset"
+      ],
+      "avoidWhen": [
+        "Group is already fluent in peer help and the practice would feel basic",
+        "No follow-on activity that puts the new skills to use",
+        "Time pressure makes a skill-practice exercise feel like overhead"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Pairs people once they are warm and connected enough to practice honestly.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "intro",
+          "reason": "Frames why helping skills matter for the rest of the session.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "troika-consulting",
+          "reason": "Lets participants apply the helping behaviors they just practiced on real challenges.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "wise-crowds",
+          "reason": "Improves the quality of consultative listening before a single-client format.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "discovery-and-action-dialogue-dad",
+          "reason": "Sharpens the asking and listening posture used throughout DAD's seven questions.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "heard-seen-respected",
+          "reason": "Deepens listening from helping skills into pure empathic presence.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [],
+      "notes": "Treat as a primer; its value compounds when followed by a real consultation structure.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "heard-seen-respected",
+      "purposeTags": [
+        "connection",
+        "safety",
+        "reflection",
+        "help"
+      ],
+      "sequenceRoles": [
+        "warm-up",
+        "deepen",
+        "discover"
+      ],
+      "outputTypes": [
+        "stories",
+        "insights",
+        "patterns"
+      ],
+      "inputNeeds": [
+        "personal-experience"
+      ],
+      "energyLevel": "low",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Building empathy before difficult conversations or conflict surfacing",
+        "Team formation moments where people want to be known more fully",
+        "Inclusion or culture work where listening is the main muscle to grow"
+      ],
+      "avoidWhen": [
+        "Trust is so low that personal stories feel unsafe",
+        "There is no time for a careful closing after stories surface",
+        "The group expects fast pace and concrete output, not reflection"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "intro",
+          "reason": "Sets a tone of care so the listening practice feels intentional, not awkward.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Warms up connection before pairing for deeper personal stories.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "input",
+          "reason": "Briefly frames why deeper listening matters for what follows.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "reflection",
+          "reason": "Quiet integration of what surfaced in the listening pairs.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "conversation-cafe",
+          "reason": "Carries the listening posture into a wider sense-making conversation.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "troika-consulting",
+          "reason": "Channels improved listening into peer consultation on real challenges.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Names patterns and implications from the stories that surfaced.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [],
+      "notes": "Brief listeners explicitly: no advice, no comparison, no fixing.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "grief-walking",
+      "purposeTags": [
+        "connection",
+        "safety",
+        "reflection",
+        "help"
+      ],
+      "sequenceRoles": [
+        "deepen"
+      ],
+      "outputTypes": [
+        "stories",
+        "insights"
+      ],
+      "inputNeeds": [
+        "personal-experience",
+        "high-trust",
+        "physical-space"
+      ],
+      "energyLevel": "low",
+      "trustRequirement": "high",
+      "riskLevel": "sharp",
+      "facilitationComplexity": "high",
+      "formatFit": [
+        "onsite"
+      ],
+      "bestWhen": [
+        "Real loss, layoff, ending, or profound change is alive in the group",
+        "Sufficient trust and an experienced facilitator are present",
+        "Time and space allow a careful closing, not a hard stop"
+      ],
+      "avoidWhen": [
+        "There is no genuine grief context; using it as an exercise will feel exploitative",
+        "Trust is low or participation is not fully consensual",
+        "Schedule cannot hold the emotional aftermath",
+        "Facilitator is not experienced with grief work"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "intro",
+          "reason": "Carefully frames purpose, consent, and what participants can expect.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "heard-seen-respected",
+          "reason": "Builds the listening capacity needed before walking through loss together.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "input",
+          "reason": "Names the loss explicitly and gives the practice a respectful container.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "reflection",
+          "reason": "Gentle, quiet integration; no rush to action after grief work.",
+          "confidence": "high"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "heard-seen-respected",
+          "reason": "Acknowledgment and empathy without explicitly naming grief; appropriate when readiness is unclear.",
+          "confidence": "medium",
+          "tradeoff": "safer"
+        }
+      ],
+      "notes": "Requires informed consent, an experienced facilitator, and protected closing time.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "social-network-webbing",
+      "purposeTags": [
+        "relationship-mapping",
+        "strategy",
+        "action-planning",
+        "systems-thinking"
+      ],
+      "sequenceRoles": [
+        "analyze",
+        "synthesize",
+        "plan"
+      ],
+      "outputTypes": [
+        "maps",
+        "actions",
+        "priorities"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "stakeholder-roles"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Launching or unsticking an initiative that depends on informal allies",
+        "Group knows the players but has not yet seen the whole pattern",
+        "There is a clear purpose the network should serve"
+      ],
+      "avoidWhen": [
+        "No clear purpose to map relationships against",
+        "Group lacks knowledge of the relevant stakeholders",
+        "Mapping would surface political risk the group is not ready for"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "nine-whys",
+          "reason": "Locks in the purpose the network is being mapped to serve.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "input",
+          "reason": "Provides the strategic context that shapes whose connections matter.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "intro",
+          "reason": "Frames the why and the boundaries of the mapping exercise.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each person picks concrete next steps to strengthen specific connections in the map.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "design-storyboards",
+          "reason": "Plans the engagement sequence with the people the map highlights.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "reflection",
+          "reason": "Quiet integration of what the map revealed before committing to actions.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "winfy",
+          "reason": "Surfaces what the group needs from the key people the map identified.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "generative-relationships-star",
+          "reason": "Analyzes the quality of existing relationships rather than mapping the broader network.",
+          "confidence": "medium",
+          "tradeoff": "deeper"
+        }
+      ],
+      "notes": "Use a digital whiteboard remote; prepare stakeholder categories ahead of time.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "discovery-and-action-dialogue-dad",
+      "purposeTags": [
+        "pattern-detection",
+        "idea-generation",
+        "sensemaking",
+        "action-planning"
+      ],
+      "sequenceRoles": [
+        "discover",
+        "deepen",
+        "plan"
+      ],
+      "outputTypes": [
+        "patterns",
+        "insights",
+        "actions",
+        "ideas"
+      ],
+      "inputNeeds": [
+        "problem-list",
+        "personal-experience"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "A chronic problem keeps recurring and the group shares the frustration",
+        "You want bottom-up local solutions rather than top-down fixes",
+        "Positive deviants likely exist within the group itself"
+      ],
+      "avoidWhen": [
+        "Problem is brand new and no one has lived experience yet",
+        "Decision context is strictly top-down and ideas have nowhere to land",
+        "Group cannot stay with the seven questions long enough"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Warms people up to share lived experience honestly with peers.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "input",
+          "reason": "Briefly grounds the problem context before opening it up.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "intro",
+          "reason": "Frames the chronic problem and the spirit of the seven-question dialogue.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "nine-whys",
+          "reason": "Sharpens why the chronic problem matters before searching for local solutions.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Converts emerging local solutions into immediate, owned next steps.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "25-10-crowd-sourcing",
+          "reason": "Prioritizes the most powerful ideas surfaced across the dialogue.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "reflection",
+          "reason": "Personal integration before any commitment is made.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Group sense-making on patterns and implications across the dialogue.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "appreciative",
+          "reason": "Builds on root causes of past success rather than working a chronic problem.",
+          "confidence": "medium",
+          "tradeoff": "more-reflective"
+        }
+      ],
+      "notes": "The seven questions are the structure; do not improvise them away.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "talking-with-pixies",
+      "purposeTags": [
+        "reflection",
+        "sensemaking",
+        "help",
+        "constraints"
+      ],
+      "sequenceRoles": [
+        "deepen",
+        "discover"
+      ],
+      "outputTypes": [
+        "insights",
+        "patterns"
+      ],
+      "inputNeeds": [
+        "personal-experience"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "People are stuck on a goal and limiting beliefs may be the real blocker",
+        "Before action planning when assumptions need to be tested",
+        "Coaching contexts where naming inner constraints helps movement"
+      ],
+      "avoidWhen": [
+        "Trust is too low to voice a limiting belief out loud",
+        "There is no real stuck situation and the exercise will feel forced",
+        "Large group without breakout structure for the inner dialogue"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Surfaces what each person feels they could do, exposing where blocks really sit.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "input",
+          "reason": "Briefly explains why limiting beliefs matter for the work to come.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "intro",
+          "reason": "Sets a reflective frame so participants take the inner work seriously.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Once a limiting belief is loosened, name what becomes possible right now.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "reflection",
+          "reason": "Quiet integration after surfacing personal assumptions.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "troika-consulting",
+          "reason": "Bring the now-named belief to peers for help acting beyond it.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Translates surfaced beliefs into shared patterns and actions.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "tiny-demons",
+          "reason": "Lighter inner-blocker format with a similar intent and quicker run time.",
+          "confidence": "high",
+          "tradeoff": "shorter"
+        },
+        {
+          "entryId": "triz",
+          "reason": "Names counterproductive behaviors to stop rather than surfacing inner beliefs.",
+          "confidence": "medium",
+          "tradeoff": "more-action-oriented"
+        }
+      ],
+      "notes": "Pairs or triads work best; remote requires breakouts with clear timing.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "celebrity-interview",
+      "purposeTags": [
+        "knowledge-sharing",
+        "sensemaking",
+        "connection"
+      ],
+      "sequenceRoles": [
+        "expert-input",
+        "discover",
+        "bridge"
+      ],
+      "outputTypes": [
+        "stories",
+        "insights",
+        "shared-context"
+      ],
+      "inputNeeds": [
+        "expertise",
+        "clear-purpose",
+        "stakeholder-roles"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "A leader or expert has critical experience the group needs to absorb",
+        "You want to humanize leadership and surface real stories before group work"
+      ],
+      "avoidWhen": [
+        "The interviewee is rehearsed and won't speak candidly",
+        "The group needs to act and produce, not listen"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Warms up the room and surfaces participants' questions before the interview begins.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "intro",
+          "reason": "Short framing sets context and the role of the celebrity before they take the stage.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "124all",
+          "reason": "Lets participants make sense of what they heard and translate insights into next steps.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Structured debrief turning the interview's stories into shared meaning and next moves.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Converts the inspiration from the interview into concrete personal next actions.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "user-experience-fishbowl",
+          "reason": "Several practitioners share live in the inner circle instead of one staged interview.",
+          "confidence": "high",
+          "tradeoff": "broader-participation"
+        },
+        {
+          "entryId": "shift-and-share",
+          "reason": "Multiple innovators host stations rather than concentrating attention on a single voice.",
+          "confidence": "medium",
+          "tradeoff": "broader-participation"
+        }
+      ],
+      "notes": "Brief the interviewer carefully; the questions decide whether this lands as candid sharing or PR.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "gallery-walk",
+      "purposeTags": [
+        "knowledge-sharing",
+        "sensemaking",
+        "pattern-detection",
+        "reflection"
+      ],
+      "sequenceRoles": [
+        "synthesize",
+        "deepen",
+        "bridge"
+      ],
+      "outputTypes": [
+        "insights",
+        "patterns",
+        "shared-context"
+      ],
+      "inputNeeds": [
+        "prior-output"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "low",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Groups have produced posters, flipcharts, or boards others should absorb",
+        "You want movement and quiet absorption between two intense modules"
+      ],
+      "avoidWhen": [
+        "There are no prior artifacts to walk through",
+        "Group is too large to circulate without crowding stations"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "design-storyboards",
+          "reason": "Storyboards displayed as a gallery let groups compare designs before merging or choosing.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "drawing-together",
+          "reason": "Drawings are perfect gallery material; participants absorb each others' visual stories.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "124all",
+          "reason": "Outputs from breakouts can be posted, then absorbed by everyone via a walk.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "25-10-crowd-sourcing",
+          "reason": "Top ideas can be posted on the wall and walked through to deepen understanding.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Structured reflection on what was seen across the gallery turns observations into actions.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "124all",
+          "reason": "Surfaces patterns and questions noticed during the walk before the next module.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Personal next steps inspired by what each person noticed during the walk.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "shift-and-share",
+          "reason": "Presenters host stations and explain artifacts live, instead of silent absorption.",
+          "confidence": "high",
+          "tradeoff": "more-structured"
+        }
+      ],
+      "notes": "In remote format, use a Miro/Mural board with timed silent exploration before group reflection.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "shift-and-share",
+      "purposeTags": [
+        "knowledge-sharing",
+        "idea-generation",
+        "connection",
+        "pattern-detection"
+      ],
+      "sequenceRoles": [
+        "discover",
+        "deepen",
+        "bridge"
+      ],
+      "outputTypes": [
+        "insights",
+        "ideas",
+        "stories",
+        "shared-context"
+      ],
+      "inputNeeds": [
+        "examples",
+        "expertise",
+        "physical-space"
+      ],
+      "energyLevel": "high",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Five to seven innovators have working examples worth spreading",
+        "You want connections between innovators and curious peers"
+      ],
+      "avoidWhen": [
+        "No clear presenters with concrete things to share",
+        "Group is small enough to share in plenary"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Warms the room and surfaces what people most want to learn before they choose stations.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "intro",
+          "reason": "Short framing of the theme and station logistics before rotations begin.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each participant takes one new idea from the stations and turns it into a personal next step.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Plenary debrief surfacing patterns across stations and what to act on next.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "25-10-crowd-sourcing",
+          "reason": "Sift the most actionable ideas spread across stations before deciding where to invest.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "gallery-walk",
+          "reason": "Silent absorption of artifacts without dedicated presenters; faster but less interactive.",
+          "confidence": "high",
+          "tradeoff": "shorter"
+        },
+        {
+          "entryId": "celebrity-interview",
+          "reason": "Concentrate attention on one expert if you don't have multiple innovators to host stations.",
+          "confidence": "medium",
+          "tradeoff": "shorter"
+        },
+        {
+          "entryId": "user-experience-fishbowl",
+          "reason": "Single shared focus on practitioners in the inner circle, no rotation logistics.",
+          "confidence": "medium",
+          "tradeoff": "better-for-large-groups"
+        }
+      ],
+      "notes": "Plan rotation timing tightly (2-3 rounds of 10-15 min); presenters get exhausted faster than expected.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "user-experience-fishbowl",
+      "purposeTags": [
+        "knowledge-sharing",
+        "sensemaking",
+        "pattern-detection",
+        "connection"
+      ],
+      "sequenceRoles": [
+        "expert-input",
+        "discover",
+        "deepen"
+      ],
+      "outputTypes": [
+        "stories",
+        "insights",
+        "patterns",
+        "shared-context"
+      ],
+      "inputNeeds": [
+        "expertise",
+        "examples",
+        "stakeholder-roles"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Several practitioners can share field experience with a wider community",
+        "You want listening and absorption before broad group work"
+      ],
+      "avoidWhen": [
+        "Inner circle isn't truly experienced or is just senior by title",
+        "Group needs to act and decide, not absorb"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Audience surfaces their burning questions before the inner circle starts.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "input",
+          "reason": "Brief framing of the topic and the inner circle members before they begin.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "124all",
+          "reason": "Outer circle processes insights into questions and follow-up actions.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Structured reflection on what the practitioners shared and what to take forward.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each listener identifies one practice from the inner circle they can try this week.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "celebrity-interview",
+          "reason": "Single interviewee with a moderator, simpler to facilitate when only one expert is available.",
+          "confidence": "high",
+          "tradeoff": "more-structured"
+        },
+        {
+          "entryId": "conversation-cafe",
+          "reason": "Everyone speaks at small tables instead of listening to a designated inner circle.",
+          "confidence": "medium",
+          "tradeoff": "broader-participation"
+        },
+        {
+          "entryId": "shift-and-share",
+          "reason": "Distribute attention across multiple innovators at stations rather than one inner circle.",
+          "confidence": "medium",
+          "tradeoff": "broader-participation"
+        }
+      ],
+      "notes": "Brief inner-circle members on candor expectations; rehearsed answers kill the format's value.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "open-space-technology",
+      "purposeTags": [
+        "action-planning",
+        "idea-generation",
+        "knowledge-sharing",
+        "commitment",
+        "innovation"
+      ],
+      "sequenceRoles": [
+        "diverge",
+        "deepen",
+        "plan",
+        "commit"
+      ],
+      "outputTypes": [
+        "actions",
+        "ideas",
+        "agreements",
+        "shared-context",
+        "insights"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "challenge-question",
+        "high-trust",
+        "physical-space"
+      ],
+      "energyLevel": "high",
+      "trustRequirement": "high",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "high",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "A diverse group must self-organize around a complex shared theme",
+        "Sponsors genuinely want emergent direction, not pre-decided outcomes"
+      ],
+      "avoidWhen": [
+        "The outcome is already decided and OST is being used as theatre",
+        "Group lacks authority or willingness to act on what surfaces"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Surfaces participants' real questions and energy before they post sessions.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "nine-whys",
+          "reason": "Sharpens the OST theme so the marketplace gets purposeful sessions, not random topics.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "wicked-questions",
+          "reason": "Names the paradoxes the group must hold while self-organizing the marketplace.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each session leader and participant names what they will personally do next week.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Whole-group sense-making across the many session reports before closing.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "25-10-crowd-sourcing",
+          "reason": "Sifts the strongest proposals across all session reports for collective focus.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "25-10-crowd-sourcing",
+          "reason": "Surface and prioritize ideas in 30 minutes when there's no time for full self-organization.",
+          "confidence": "medium",
+          "tradeoff": "shorter"
+        },
+        {
+          "entryId": "shift-and-share",
+          "reason": "Predefined stations with set hosts when an emergent agenda would feel too risky.",
+          "confidence": "medium",
+          "tradeoff": "more-structured"
+        }
+      ],
+      "notes": "The four principles and Law of Two Feet must be introduced and held; skipping this collapses the format.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "critical-uncertainties",
+      "purposeTags": [
+        "strategy",
+        "sensemaking",
+        "systems-thinking",
+        "decision"
+      ],
+      "sequenceRoles": [
+        "analyze",
+        "synthesize",
+        "decide",
+        "plan"
+      ],
+      "outputTypes": [
+        "options",
+        "insights",
+        "principles",
+        "patterns"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "challenge-question",
+        "expertise",
+        "decision-context"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "high",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Facing high uncertainty and high stakes where one strategy isn't enough",
+        "Leadership needs to stress-test plans against plausible futures"
+      ],
+      "avoidWhen": [
+        "The future is reasonably predictable for the decision horizon",
+        "Group lacks authority or context to pick uncertainties that matter"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "wicked-questions",
+          "reason": "Names the paradoxes that often become the two axes of the uncertainty matrix.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "agreement-and-certainty-matrix",
+          "reason": "Sorting challenges by certainty surfaces which ones deserve scenario work.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "ecocycle-planning",
+          "reason": "Portfolio view of current activities sharpens which uncertainties most threaten them.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "min-specs",
+          "reason": "Translates 'survival rules' from each scenario into the minimum specs the strategy must hold.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each leader picks one robust action that holds up across scenarios and starts now.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Group makes sense of the four scenarios and decides which signals to monitor.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "agreement-and-certainty-matrix",
+          "reason": "Faster way to sort issues by certainty when full scenario planning would be too heavy.",
+          "confidence": "medium",
+          "tradeoff": "shorter"
+        },
+        {
+          "entryId": "ecocycle-planning",
+          "reason": "Whole-portfolio review without scenario-building when uncertainties aren't the bottleneck.",
+          "confidence": "medium",
+          "tradeoff": "broader-participation"
+        }
+      ],
+      "notes": "Picking the two axes is the hard part; validate they're truly uncertain and high-impact before building scenarios.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "design-storyboards",
+      "purposeTags": [
+        "action-planning",
+        "purpose-clarity",
+        "commitment"
+      ],
+      "sequenceRoles": [
+        "plan",
+        "synthesize",
+        "commit"
+      ],
+      "outputTypes": [
+        "actions",
+        "agreements",
+        "principles"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "decision-context"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "low",
+      "riskLevel": "gentle",
+      "facilitationComplexity": "medium",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "You need to design a meeting or session collaboratively, not solo",
+        "LS structures must be sequenced toward a clear meeting outcome"
+      ],
+      "avoidWhen": [
+        "Purpose isn't clarified yet (run Nine Whys first)",
+        "Designers don't know enough LS structures to choose well"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "nine-whys",
+          "reason": "Locks the purpose so the storyboard targets a real outcome, not a generic agenda.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "input",
+          "reason": "Brief input on the LS palette gives less-experienced designers building blocks to use.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "min-specs",
+          "reason": "Constraints on what the meeting must and must not do shape the storyboard's structure choice.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "gallery-walk",
+          "reason": "Compare storyboards side-by-side to merge strengths or pick the strongest design.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "124all",
+          "reason": "Sharpen and pressure-test the storyboard's flow before locking it.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each designer commits to a first concrete step they'll take to prepare the meeting.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "design-storyboards-advanced",
+          "reason": "Use when scope is a transformation initiative rather than a single meeting.",
+          "confidence": "high",
+          "tradeoff": "deeper"
+        },
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Faster commitment to next steps when full session design isn't needed.",
+          "confidence": "medium",
+          "tradeoff": "shorter"
+        }
+      ],
+      "notes": "Have a printed LS menu visible; the storyboard quality depends on what structures designers actually know.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "design-storyboards-advanced",
+      "purposeTags": [
+        "action-planning",
+        "strategy",
+        "commitment",
+        "purpose-clarity",
+        "systems-thinking"
+      ],
+      "sequenceRoles": [
+        "plan",
+        "synthesize",
+        "decide",
+        "commit"
+      ],
+      "outputTypes": [
+        "actions",
+        "agreements",
+        "principles",
+        "decisions"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "decision-context",
+        "stakeholder-roles",
+        "prior-output",
+        "expertise"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "high",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Designing a multi-week or multi-month transformation initiative",
+        "A senior team needs a concrete sequenced plan to commit to"
+      ],
+      "avoidWhen": [
+        "Scope is a single meeting (use Design StoryBoards instead)",
+        "Initiative purpose and principles aren't clarified yet"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "purpose-to-practice-p2p",
+          "reason": "P2P locks the five elements; advanced storyboards then sequence the actual rollout.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "ecocycle-planning",
+          "reason": "Portfolio view shows what to start, sustain, or release before designing the sequence.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "min-specs",
+          "reason": "Hard constraints from min-specs anchor what the storyboard must respect.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each owner names a concrete first step within their authority before leaving the room.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Sense-making and adjustment after the first phase of the storyboard runs in the field.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "design-storyboards",
+          "reason": "Use the standard variant when the scope is a single meeting, not a project.",
+          "confidence": "high",
+          "tradeoff": "shorter"
+        },
+        {
+          "entryId": "purpose-to-practice-p2p",
+          "reason": "When the initiative needs foundational design (purpose, principles) more than sequencing.",
+          "confidence": "medium",
+          "tradeoff": "more-reflective"
+        }
+      ],
+      "notes": "Pair with clear ownership per phase; without owners the sequenced plan becomes a wish list.",
+      "sourceConfidence": "medium"
+    },
+    {
+      "entryId": "purpose-to-practice-p2p",
+      "purposeTags": [
+        "purpose-clarity",
+        "strategy",
+        "commitment",
+        "action-planning",
+        "systems-thinking"
+      ],
+      "sequenceRoles": [
+        "plan",
+        "synthesize",
+        "decide",
+        "commit"
+      ],
+      "outputTypes": [
+        "principles",
+        "agreements",
+        "actions",
+        "decisions",
+        "shared-context"
+      ],
+      "inputNeeds": [
+        "clear-purpose",
+        "decision-context",
+        "stakeholder-roles"
+      ],
+      "energyLevel": "medium",
+      "trustRequirement": "medium",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "high",
+      "formatFit": [
+        "onsite",
+        "remote",
+        "hybrid"
+      ],
+      "bestWhen": [
+        "Launching a new initiative that needs resilient foundations",
+        "Restarting or refounding an existing initiative that has drifted"
+      ],
+      "avoidWhen": [
+        "A quick decision is enough; foundational design would be overkill",
+        "Authority to set purpose and principles is missing in the room"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "nine-whys",
+          "reason": "Sharpens the deeper purpose before P2P's first element locks it for the initiative.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "ecocycle-planning",
+          "reason": "Reveals what to release or sustain so the new initiative isn't competing with old work.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "wicked-questions",
+          "reason": "Names paradoxes the initiative must hold; useful before drafting principles.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each participant commits to a personal first move grounded in the new principles.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "design-storyboards-advanced",
+          "reason": "Once the five elements are set, storyboards sequence the rollout step by step.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "min-specs",
+          "reason": "Convert the principles into hard must-do/must-not-do rules for daily practice.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Periodic reviews of how the five elements are holding up in practice.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "design-storyboards-advanced",
+          "reason": "When the initiative needs sequenced execution more than foundational design.",
+          "confidence": "medium",
+          "tradeoff": "more-action-oriented"
+        },
+        {
+          "entryId": "nine-whys",
+          "reason": "Sharpens purpose alone in 20 minutes when full P2P is too heavy for the moment.",
+          "confidence": "medium",
+          "tradeoff": "shorter"
+        }
+      ],
+      "notes": "Run all five elements in order; skipping participants or principles is the most common failure mode.",
+      "sourceConfidence": "high"
+    },
+    {
+      "entryId": "improv-prototyping",
+      "purposeTags": [
+        "experimentation",
+        "innovation",
+        "idea-generation",
+        "pattern-detection",
+        "sensemaking"
+      ],
+      "sequenceRoles": [
+        "diverge",
+        "deepen",
+        "synthesize"
+      ],
+      "outputTypes": [
+        "prototypes",
+        "insights",
+        "patterns",
+        "ideas"
+      ],
+      "inputNeeds": [
+        "problem-list",
+        "examples",
+        "personal-experience",
+        "high-trust"
+      ],
+      "energyLevel": "high",
+      "trustRequirement": "high",
+      "riskLevel": "moderate",
+      "facilitationComplexity": "high",
+      "formatFit": [
+        "onsite"
+      ],
+      "bestWhen": [
+        "A chronic interpersonal or process challenge needs fresh angles",
+        "Group has appetite for play, embodiment, and a bit of awkwardness"
+      ],
+      "avoidWhen": [
+        "Group is risk-averse, low-trust, or hierarchically tense",
+        "Topic is too sensitive or personal for embodied role-play"
+      ],
+      "pairsWellAfter": [
+        {
+          "entryId": "impromptu-networking",
+          "reason": "Loosens the group and surfaces concrete situations that become improv scenes.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "drawing-together",
+          "reason": "Nonverbal warm-up that lowers self-consciousness before stepping into role-play.",
+          "confidence": "medium"
+        },
+        {
+          "entryId": "helping-heuristics",
+          "reason": "Practiced helping moves give players a vocabulary they can replay on stage.",
+          "confidence": "medium"
+        }
+      ],
+      "pairsWellBefore": [
+        {
+          "entryId": "15percent-solutions",
+          "reason": "Each person names a concrete behavior change inspired by what worked on stage.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "what-so-what-now-what",
+          "reason": "Group debrief turning the scenes into shared insights and behavioral commitments.",
+          "confidence": "high"
+        },
+        {
+          "entryId": "min-specs",
+          "reason": "Codify the behaviors that the best scenes revealed into hard team rules.",
+          "confidence": "medium"
+        }
+      ],
+      "useInstead": [
+        {
+          "entryId": "drawing-together",
+          "reason": "Nonverbal exploration of the same chronic challenge without performance exposure.",
+          "confidence": "medium",
+          "tradeoff": "safer"
+        },
+        {
+          "entryId": "troika-consulting",
+          "reason": "Conversational peer help on the same chronic challenge instead of role-play.",
+          "confidence": "medium",
+          "tradeoff": "safer"
+        },
+        {
+          "entryId": "wise-crowds",
+          "reason": "Structured peer consultation when embodied prototyping is too vulnerable for the group.",
+          "confidence": "medium",
+          "tradeoff": "more-structured"
+        }
+      ],
+      "notes": "Test psychological safety first; if leaders won't play, players won't either, and the format collapses.",
+      "sourceConfidence": "medium"
+    }
+  ]
+}

@@ -1,0 +1,779 @@
+{
+“profiles”: [
+{
+“entryId”: “intro”,
+“purposeTags”: [“safety”, “connection”, “inclusion”],
+“sequenceRoles”: [“opener”, “warm-up”],
+“outputTypes”: [“shared-context”],
+“inputNeeds”: [“clear-purpose”],
+“energyLevel”: “low”,
+“trustRequirement”: “low”,
+“riskLevel”: “gentle”,
+“facilitationComplexity”: “low”,
+“formatFit”: [“onsite”, “remote”, “hybrid”],
+“bestWhen”: [
+“Group energy is just forming and you need a quick human start.”,
+“You want enough safety before asking for broader participation.”
+],
+“avoidWhen”: [
+“The group already has momentum and time is extremely tight.”,
+“You need working output more than a brief opening ritual.”
+],
+“pairsWellAfter”: [],
+“pairsWellBefore”: [
+{
+“entryId”: “impromptu-networking”,
+“reason”: “Lets people speak early once the room is warmed up.”,
+“confidence”: “high”
+},
+{
+“entryId”: “124all”,
+“reason”: “Moves from brief safety-building into broad participation fast.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “nine-whys”,
+“reason”: “A calm opening helps people engage more honestly with purpose.”,
+“confidence”: “medium”
+}
+],
+“useInstead”: [
+{
+“entryId”: “impromptu-networking”,
+“tradeoff”: “more-energetic”,
+“reason”: “Gets voices in the room faster than a simple welcome block.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “input”,
+“tradeoff”: “more-structured”,
+“reason”: “Better when participants first need a shared frame or factual context.”,
+“confidence”: “medium”
+}
+],
+“notes”: “Keep it brief; the goal is readiness, not content.”,
+“sourceConfidence”: “low”
+},
+{
+“entryId”: “input”,
+“purposeTags”: [“purpose-clarity”, “knowledge-sharing”, “sensemaking”],
+“sequenceRoles”: [“expert-input”, “bridge”],
+“outputTypes”: [“shared-context”, “questions”],
+“inputNeeds”: [“clear-purpose”, “expertise”],
+“energyLevel”: “low”,
+“trustRequirement”: “low”,
+“riskLevel”: “gentle”,
+“facilitationComplexity”: “low”,
+“formatFit”: [“onsite”, “remote”, “hybrid”],
+“bestWhen”: [
+“Participants need a common frame, example, or constraint before they respond.”,
+“You want to seed the next structure without turning the session into a lecture.”
+],
+“avoidWhen”: [
+“The group already has enough context to start working.”,
+“The input is likely to consume the time needed for participation.”
+],
+“pairsWellAfter”: [
+{
+“entryId”: “intro”,
+“reason”: “A brief welcome makes short framing input easier to absorb.”,
+“confidence”: “high”
+},
+{
+“entryId”: “impromptu-networking”,
+“reason”: “Surfaced expectations can help you tailor the framing block.”,
+“confidence”: “medium”
+}
+],
+“pairsWellBefore”: [
+{
+“entryId”: “124all”,
+“reason”: “Shared context makes the next round of idea generation more focused.”,
+“confidence”: “high”
+},
+{
+“entryId”: “conversation-cafe”,
+“reason”: “A framing impulse can deepen dialogue on a complex topic.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “what-so-what-now-what”,
+“reason”: “Fresh data or examples give the debrief something concrete to process.”,
+“confidence”: “medium”
+}
+],
+“useInstead”: [
+{
+“entryId”: “shift-and-share”,
+“tradeoff”: “broader-participation”,
+“reason”: “Distributes input across participants instead of one presenter.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “gallery-walk”,
+“tradeoff”: “more-reflective”,
+“reason”: “Lets people absorb material at their own pace before discussion.”,
+“confidence”: “medium”
+}
+],
+“notes”: “Cap the input tightly and point clearly to the next activity.”,
+“sourceConfidence”: “low”
+},
+{
+“entryId”: “reflection”,
+“purposeTags”: [“reflection”, “debrief”, “pattern-detection”, “sensemaking”],
+“sequenceRoles”: [“synthesize”, “close”, “bridge”],
+“outputTypes”: [“insights”, “patterns”, “shared-context”],
+“inputNeeds”: [“prior-output”],
+“energyLevel”: “low”,
+“trustRequirement”: “low”,
+“riskLevel”: “gentle”,
+“facilitationComplexity”: “low”,
+“formatFit”: [“onsite”, “remote”, “hybrid”],
+“bestWhen”: [
+“You need to harvest learning before changing pace or topic.”,
+“A module produced many signals and the group needs a clean pause.”
+],
+“avoidWhen”: [
+“The group has not generated enough material to reflect on yet.”,
+“Participants need immediate action choices rather than another pause.”
+],
+“pairsWellAfter”: [
+{
+“entryId”: “124all”,
+“reason”: “A quick reflection helps cluster and name what emerged.”,
+“confidence”: “high”
+},
+{
+“entryId”: “conversation-cafe”,
+“reason”: “Captures insights before the dialogue energy dissipates.”,
+“confidence”: “high”
+},
+{
+“entryId”: “appreciative”,
+“reason”: “Turns stories of success into patterns the group can reuse.”,
+“confidence”: “medium”
+}
+],
+“pairsWellBefore”: [
+{
+“entryId”: “winfy”,
+“reason”: “Clarified takeaways make support requests more concrete.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “what-so-what-now-what”,
+“reason”: “Works as a short bridge into a fuller debrief.”,
+“confidence”: “medium”
+}
+],
+“useInstead”: [
+{
+“entryId”: “spiral-journal”,
+“tradeoff”: “deeper”,
+“reason”: “Gives individuals more time to think before sharing.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “what-so-what-now-what”,
+“tradeoff”: “more-structured”,
+“reason”: “Better when you need a clear path from observations to action.”,
+“confidence”: “high”
+}
+],
+“notes”: “Prompt for concrete takeaways, not vague feelings.”,
+“sourceConfidence”: “low”
+},
+{
+“entryId”: “124all”,
+“purposeTags”: [“inclusion”, “divergence”, “idea-generation”],
+“sequenceRoles”: [“discover”, “diverge”, “synthesize”],
+“outputTypes”: [“questions”, “ideas”, “options”],
+“inputNeeds”: [“challenge-question”, “clear-purpose”],
+“energyLevel”: “medium”,
+“trustRequirement”: “low”,
+“riskLevel”: “gentle”,
+“facilitationComplexity”: “low”,
+“formatFit”: [“onsite”, “remote”, “hybrid”],
+“bestWhen”: [
+“You need everyone thinking and contributing within minutes.”,
+“The question is clear but the group has not explored the space yet.”
+],
+“avoidWhen”: [
+“The prompt is fuzzy or loaded with hidden assumptions.”,
+“You need deep analysis from experts more than broad participation.”
+],
+“pairsWellAfter”: [
+{
+“entryId”: “input”,
+“reason”: “A short framing block sharpens the prompt before divergence.”,
+“confidence”: “high”
+},
+{
+“entryId”: “intro”,
+“reason”: “A warm opening lowers hesitation before asking everyone to contribute.”,
+“confidence”: “high”
+},
+{
+“entryId”: “nine-whys”,
+“reason”: “Clarified purpose improves the relevance of generated ideas.”,
+“confidence”: “medium”
+}
+],
+“pairsWellBefore”: [
+{
+“entryId”: “what-so-what-now-what”,
+“reason”: “Helps the group sort what the generated ideas mean and what to do.”,
+“confidence”: “high”
+},
+{
+“entryId”: “conversation-cafe”,
+“reason”: “Takes a broad set of ideas into deeper shared sensemaking.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “25-10-crowd-sourcing”,
+“reason”: “Adds quick prioritization after a burst of idea generation.”,
+“confidence”: “medium”
+}
+],
+“useInstead”: [
+{
+“entryId”: “mad-tea-party”,
+“tradeoff”: “more-energetic”,
+“reason”: “Creates faster cross-pollination when the room needs movement.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “xxn-writing”,
+“tradeoff”: “more-reflective”,
+“reason”: “Works better when quiet writing will yield stronger ideas.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “impromptu-networking”,
+“tradeoff”: “better-for-low-trust”,
+“reason”: “Safer when people first need light connection before idea work.”,
+“confidence”: “medium”
+}
+],
+“notes”: “Spend extra care on the prompt; the structure amplifies question quality.”,
+“sourceConfidence”: “medium”
+},
+{
+“entryId”: “appreciative”,
+“purposeTags”: [“connection”, “knowledge-sharing”, “reflection”, “pattern-detection”],
+“sequenceRoles”: [“discover”, “deepen”, “synthesize”],
+“outputTypes”: [“stories”, “insights”, “principles”],
+“inputNeeds”: [“personal-experience”],
+“energyLevel”: “medium”,
+“trustRequirement”: “medium”,
+“riskLevel”: “gentle”,
+“facilitationComplexity”: “medium”,
+“formatFit”: [“onsite”, “remote”, “hybrid”],
+“bestWhen”: [
+“You want to build on real successes instead of starting from deficits.”,
+“Participants have lived examples that can reveal repeatable strengths.”
+],
+“avoidWhen”: [
+“The group needs an immediate decision or hard tradeoff today.”,
+“Recent harm makes positive framing feel evasive or premature.”
+],
+“pairsWellAfter”: [
+{
+“entryId”: “intro”,
+“reason”: “A warm opening helps people share success stories more freely.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “impromptu-networking”,
+“reason”: “Light connection makes deeper paired interviews feel easier.”,
+“confidence”: “high”
+},
+{
+“entryId”: “input”,
+“reason”: “A brief frame can focus interviews on the challenge at hand.”,
+“confidence”: “medium”
+}
+],
+“pairsWellBefore”: [
+{
+“entryId”: “what-so-what-now-what”,
+“reason”: “Turns stories into shared meaning and next steps.”,
+“confidence”: “high”
+},
+{
+“entryId”: “design-storyboards”,
+“reason”: “Success patterns can inform concrete future designs.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “124all”,
+“reason”: “Lets the group expand from stories into many practical ideas.”,
+“confidence”: “medium”
+}
+],
+“useInstead”: [
+{
+“entryId”: “celebrity-interview”,
+“tradeoff”: “more-energetic”,
+“reason”: “Surfaces positive examples with more performance and visibility.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “conversation-cafe”,
+“tradeoff”: “broader-participation”,
+“reason”: “Better when you want open dialogue rather than paired interviews.”,
+“confidence”: “medium”
+}
+],
+“notes”: “Ask for specific moments and conditions, not generic success stories.”,
+“sourceConfidence”: “medium”
+},
+{
+“entryId”: “triz”,
+“purposeTags”: [“constraints”, “innovation”, “conflict-surfacing”, “experimentation”],
+“sequenceRoles”: [“analyze”, “synthesize”, “decide”],
+“outputTypes”: [“constraints”, “actions”, “insights”],
+“inputNeeds”: [“clear-purpose”, “personal-experience”],
+“energyLevel”: “high”,
+“trustRequirement”: “medium”,
+“riskLevel”: “sharp”,
+“facilitationComplexity”: “medium”,
+“formatFit”: [“onsite”, “remote”, “hybrid”],
+“bestWhen”: [
+“The group is stuck in recurring patterns and ready to name them honestly.”,
+“You need to clear space for innovation by stopping harmful habits first.”
+],
+“avoidWhen”: [
+“Trust is too low for candid discussion of destructive behavior.”,
+“Leaders are likely to punish people for naming current realities.”
+],
+“pairsWellAfter”: [
+{
+“entryId”: “nine-whys”,
+“reason”: “Clear purpose helps people see which behaviors are truly counterproductive.”,
+“confidence”: “high”
+},
+{
+“entryId”: “input”,
+“reason”: “A tight frame helps focus on the specific result at risk.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “intro”,
+“reason”: “A brief warm start can soften entry into a sharper structure.”,
+“confidence”: “medium”
+}
+],
+“pairsWellBefore”: [
+{
+“entryId”: “15percent-solutions”,
+“reason”: “Converts what to stop into small next actions participants can own.”,
+“confidence”: “high”
+},
+{
+“entryId”: “min-specs”,
+“reason”: “Helps define the few rules that prevent backsliding.”,
+“confidence”: “high”
+},
+{
+“entryId”: “what-so-what-now-what”,
+“reason”: “Provides a clean debrief after the edge of TRIZ.”,
+“confidence”: “medium”
+}
+],
+“useInstead”: [
+{
+“entryId”: “wicked-questions”,
+“tradeoff”: “safer”,
+“reason”: “Better when you need to surface tension without attacking behaviors directly.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “ecocycle-planning”,
+“tradeoff”: “deeper”,
+“reason”: “Better when blockages are systemic and need a fuller map.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “anxiety-circus”,
+“tradeoff”: “better-for-low-trust”,
+“reason”: “Surfaces concerns with less direct exposure of bad habits.”,
+“confidence”: “low”
+}
+],
+“notes”: “Keep the tone playful but protect candor when translating insights back to reality.”,
+“sourceConfidence”: “medium”
+},
+{
+“entryId”: “winfy”,
+“purposeTags”: [“help”, “commitment”, “action-planning”, “relationship-mapping”],
+“sequenceRoles”: [“plan”, “commit”, “decide”],
+“outputTypes”: [“requests”, “agreements”, “actions”],
+“inputNeeds”: [“stakeholder-roles”, “decision-context”],
+“energyLevel”: “medium”,
+“trustRequirement”: “medium”,
+“riskLevel”: “moderate”,
+“facilitationComplexity”: “medium”,
+“formatFit”: [“onsite”, “remote”, “hybrid”],
+“bestWhen”: [
+“Work is blocked by cross-functional dependencies that need explicit requests and responses.”,
+“People can make or negotiate support commitments in the room.”
+],
+“avoidWhen”: [
+“The right decision makers are missing or cannot commit.”,
+“Requests are still too vague to accept, reject, or negotiate.”
+],
+“pairsWellAfter”: [
+{
+“entryId”: “what-so-what-now-what”,
+“reason”: “A debrief clarifies what support is actually needed next.”,
+“confidence”: “high”
+},
+{
+“entryId”: “reflection”,
+“reason”: “A brief pause helps people formulate better requests.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “nine-whys”,
+“reason”: “Shared purpose reduces random or political requests.”,
+“confidence”: “medium”
+}
+],
+“pairsWellBefore”: [
+{
+“entryId”: “15percent-solutions”,
+“reason”: “Lets individuals translate agreements into immediate personal moves.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “min-specs”,
+“reason”: “Turns negotiated needs into simple operating rules.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “what-so-what-now-what”,
+“reason”: “Useful for debriefing what agreements were made and what remains open.”,
+“confidence”: “medium”
+}
+],
+“useInstead”: [
+{
+“entryId”: “troika-consulting”,
+“tradeoff”: “safer”,
+“reason”: “Better when people need advice before making direct requests of each other.”,
+“confidence”: “high”
+},
+{
+“entryId”: “generative-relationships-star”,
+“tradeoff”: “deeper”,
+“reason”: “Better when the issue is relationship quality, not only immediate requests.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “wise-crowds”,
+“tradeoff”: “more-structured”,
+“reason”: “Better when one person needs focused help from a group at a time.”,
+“confidence”: “medium”
+}
+],
+“notes”: “Insist on concrete asks and explicit accept, decline, or counteroffer responses.”,
+“sourceConfidence”: “medium”
+},
+{
+“entryId”: “what-so-what-now-what”,
+“purposeTags”: [“reflection”, “sensemaking”, “debrief”, “action-planning”],
+“sequenceRoles”: [“analyze”, “synthesize”, “plan”, “close”],
+“outputTypes”: [“insights”, “patterns”, “actions”, “decisions”],
+“inputNeeds”: [“prior-output”, “existing-data”],
+“energyLevel”: “low”,
+“trustRequirement”: “low”,
+“riskLevel”: “gentle”,
+“facilitationComplexity”: “low”,
+“formatFit”: [“onsite”, “remote”, “hybrid”],
+“bestWhen”: [
+“The group needs a simple debrief that ends with practical adjustments.”,
+“You want to turn experience or data into shared next steps quickly.”
+],
+“avoidWhen”: [
+“There is little to reflect on yet.”,
+“The challenge calls for fresh ideation, not synthesis and action.”
+],
+“pairsWellAfter”: [
+{
+“entryId”: “124all”,
+“reason”: “Helps make sense of many ideas before deciding what to do.”,
+“confidence”: “high”
+},
+{
+“entryId”: “appreciative”,
+“reason”: “Converts success stories into lessons and concrete moves.”,
+“confidence”: “high”
+},
+{
+“entryId”: “conversation-cafe”,
+“reason”: “Provides structure after open dialogue on a complex issue.”,
+“confidence”: “high”
+}
+],
+“pairsWellBefore”: [
+{
+“entryId”: “winfy”,
+“reason”: “Next actions often depend on explicit support requests across roles.”,
+“confidence”: “high”
+},
+{
+“entryId”: “15percent-solutions”,
+“reason”: “Lets each person claim a doable next move after the debrief.”,
+“confidence”: “high”
+},
+{
+“entryId”: “ecocycle-planning”,
+“reason”: “Use it when debrief insights need a broader systems map next.”,
+“confidence”: “medium”
+}
+],
+“useInstead”: [
+{
+“entryId”: “reflection”,
+“tradeoff”: “shorter”,
+“reason”: “Better when you only need a light pause between modules.”,
+“confidence”: “high”
+},
+{
+“entryId”: “spiral-journal”,
+“tradeoff”: “more-reflective”,
+“reason”: “Better when individuals need more private processing time first.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “ecocycle-planning”,
+“tradeoff”: “deeper”,
+“reason”: “Better when the situation needs a richer view of the system.”,
+“confidence”: “medium”
+}
+],
+“notes”: “Keep each phase distinct so the group does not jump to action too early.”,
+“sourceConfidence”: “medium”
+},
+{
+“entryId”: “nine-whys”,
+“purposeTags”: [“purpose-clarity”, “reflection”, “strategy”, “commitment”],
+“sequenceRoles”: [“deepen”, “synthesize”, “bridge”],
+“outputTypes”: [“shared-context”, “insights”, “principles”],
+“inputNeeds”: [“personal-experience”],
+“energyLevel”: “low”,
+“trustRequirement”: “medium”,
+“riskLevel”: “gentle”,
+“facilitationComplexity”: “low”,
+“formatFit”: [“onsite”, “remote”, “hybrid”],
+“bestWhen”: [
+“People know what they do but not why it matters.”,
+“You need a shared sense of purpose before generating options or commitments.”
+],
+“avoidWhen”: [
+“The scope is so broad that participants cannot name a concrete contribution.”,
+“The group first needs factual alignment on the problem itself.”
+],
+“pairsWellAfter”: [
+{
+“entryId”: “intro”,
+“reason”: “A calm opening helps people answer purpose questions sincerely.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “input”,
+“reason”: “Short context can anchor the purpose conversation in a real challenge.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “impromptu-networking”,
+“reason”: “Early connection makes paired purpose work less awkward.”,
+“confidence”: “medium”
+}
+],
+“pairsWellBefore”: [
+{
+“entryId”: “124all”,
+“reason”: “Clear purpose improves the relevance of generated ideas.”,
+“confidence”: “high”
+},
+{
+“entryId”: “winfy”,
+“reason”: “Shared why makes support requests easier to judge and prioritize.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “purpose-to-practice-p2p”,
+“reason”: “A clarified why can flow into designing the practice around it.”,
+“confidence”: “high”
+}
+],
+“useInstead”: [
+{
+“entryId”: “purpose-to-practice-p2p”,
+“tradeoff”: “deeper”,
+“reason”: “Better when the group needs to connect purpose to principles and practices.”,
+“confidence”: “high”
+},
+{
+“entryId”: “conversation-cafe”,
+“tradeoff”: “broader-participation”,
+“reason”: “Better when purpose needs collective dialogue more than paired inquiry.”,
+“confidence”: “medium”
+}
+],
+“notes”: “Probe for concrete impact on others, not abstract mission language.”,
+“sourceConfidence”: “medium”
+},
+{
+“entryId”: “impromptu-networking”,
+“purposeTags”: [“connection”, “inclusion”, “knowledge-sharing”],
+“sequenceRoles”: [“opener”, “warm-up”, “discover”],
+“outputTypes”: [“shared-context”, “stories”, “questions”],
+“inputNeeds”: [“challenge-question”],
+“energyLevel”: “high”,
+“trustRequirement”: “low”,
+“riskLevel”: “gentle”,
+“facilitationComplexity”: “low”,
+“formatFit”: [“onsite”, “remote”, “hybrid”],
+“bestWhen”: [
+“You want everyone speaking early and meeting beyond usual neighbors.”,
+“The session needs quick visibility into hopes, questions, or challenges.”
+],
+“avoidWhen”: [
+“The prompt is too vague to answer in short rounds.”,
+“Privacy or sensitivity makes rapid repeated sharing unsafe.”
+],
+“pairsWellAfter”: [
+{
+“entryId”: “intro”,
+“reason”: “A brief welcome makes fast partner exchanges feel less abrupt.”,
+“confidence”: “high”
+},
+{
+“entryId”: “input”,
+“reason”: “A framing prompt can focus what people share in rounds.”,
+“confidence”: “medium”
+}
+],
+“pairsWellBefore”: [
+{
+“entryId”: “124all”,
+“reason”: “Connection and shared prompts create momentum for broad idea generation.”,
+“confidence”: “high”
+},
+{
+“entryId”: “conversation-cafe”,
+“reason”: “Rapid exchanges warm the room before a longer dialogue.”,
+“confidence”: “high”
+},
+{
+“entryId”: “appreciative”,
+“reason”: “Light contact makes deeper paired interviews easier to enter.”,
+“confidence”: “high”
+}
+],
+“useInstead”: [
+{
+“entryId”: “mad-tea-party”,
+“tradeoff”: “more-energetic”,
+“reason”: “Better when the room needs movement and louder cross-pollination.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “intro”,
+“tradeoff”: “shorter”,
+“reason”: “Better when you only need a light opening and almost no interaction.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “124all”,
+“tradeoff”: “more-structured”,
+“reason”: “Better when you want written-to-group progression, not rotating pairs.”,
+“confidence”: “medium”
+}
+],
+“notes”: “Use a crisp prompt and keep the exchanges moving.”,
+“sourceConfidence”: “medium”
+},
+{
+“entryId”: “conversation-cafe”,
+“purposeTags”: [“sensemaking”, “reflection”, “connection”, “inclusion”],
+“sequenceRoles”: [“deepen”, “discover”, “synthesize”],
+“outputTypes”: [“stories”, “insights”, “shared-context”],
+“inputNeeds”: [“challenge-question”],
+“energyLevel”: “low”,
+“trustRequirement”: “medium”,
+“riskLevel”: “moderate”,
+“facilitationComplexity”: “medium”,
+“formatFit”: [“onsite”, “remote”, “hybrid”],
+“bestWhen”: [
+“The group needs thoughtful dialogue on a meaningful challenge without rushing to a decision.”,
+“You want quieter voices included in a paced conversation.”
+],
+“avoidWhen”: [
+“You need a concrete decision or prioritization in this block.”,
+“There is too little time for multiple rounds and reflection.”
+],
+“pairsWellAfter”: [
+{
+“entryId”: “input”,
+“reason”: “A short frame gives the dialogue a common starting point.”,
+“confidence”: “high”
+},
+{
+“entryId”: “impromptu-networking”,
+“reason”: “Rapid early exchanges warm people up for deeper conversation.”,
+“confidence”: “high”
+},
+{
+“entryId”: “appreciative”,
+“reason”: “Stories of what works can open richer sensemaking together.”,
+“confidence”: “medium”
+}
+],
+“pairsWellBefore”: [
+{
+“entryId”: “reflection”,
+“reason”: “A short pause helps crystallize what the conversation surfaced.”,
+“confidence”: “high”
+},
+{
+“entryId”: “what-so-what-now-what”,
+“reason”: “Adds clear synthesis and next-step thinking after open dialogue.”,
+“confidence”: “high”
+},
+{
+“entryId”: “winfy”,
+“reason”: “Useful when dialogue reveals support needs that must be negotiated.”,
+“confidence”: “medium”
+}
+],
+“useInstead”: [
+{
+“entryId”: “what-so-what-now-what”,
+“tradeoff”: “more-action-oriented”,
+“reason”: “Better when you need a faster path from discussion to decisions.”,
+“confidence”: “high”
+},
+{
+“entryId”: “appreciative”,
+“tradeoff”: “safer”,
+“reason”: “Better when a positive lens will help people speak more openly.”,
+“confidence”: “medium”
+},
+{
+“entryId”: “user-experience-fishbowl”,
+“tradeoff”: “more-structured”,
+“reason”: “Better when listening to a defined perspective matters most.”,
+“confidence”: “medium”
+}
+],
+“notes”: “Protect the rounds and silence; the pacing is part of the method.”,
+“sourceConfidence”: “medium”
+}
+]
+}

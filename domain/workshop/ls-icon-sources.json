@@ -1,0 +1,432 @@
+[
+  {
+    "icon": "ls-124a",
+    "entryId": "124all",
+    "title": "1-2-4-All",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/1-2-4-all/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/124A-Rand.png",
+    "sourceImagePattern": "124A-Rand.png",
+    "fileName": "ls-124a.png",
+    "publicPath": "/icons/official/ls-124a.png"
+  },
+  {
+    "icon": "ls-15percent-solutions",
+    "entryId": "15percent-solutions",
+    "title": "15% Solutions",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/15-solutions/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/15-Rand.png",
+    "sourceImagePattern": "15-Rand.png",
+    "fileName": "ls-15percent-solutions.png",
+    "publicPath": "/icons/official/ls-15percent-solutions.png"
+  },
+  {
+    "icon": "ls-25-10-crowd-sourcing",
+    "entryId": "25-10-crowd-sourcing",
+    "title": "25/10 Crowd Sourcing",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/2510-crowdsourcing/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/2510-CS-Rand.png",
+    "sourceImagePattern": "2510-CS-Rand.png",
+    "fileName": "ls-25-10-crowd-sourcing.png",
+    "publicPath": "/icons/official/ls-25-10-crowd-sourcing.png"
+  },
+  {
+    "icon": "ls-nine-whys",
+    "entryId": "nine-whys",
+    "title": "Nine Whys",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/nine-whys/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/9W-Rand.png",
+    "sourceImagePattern": "9W-Rand.png",
+    "fileName": "ls-nine-whys.png",
+    "publicPath": "/icons/official/ls-nine-whys.png"
+  },
+  {
+    "icon": "ls-anxiety-circus",
+    "entryId": "anxiety-circus",
+    "title": "Anxiety Circus",
+    "pageUrl": "https://liberatingstructures.de/anxiety-circus/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/AS-Anxiety-Rand.png",
+    "sourceImagePattern": "AS-Anxiety-Rand.png",
+    "fileName": "ls-anxiety-circus.png",
+    "publicPath": "/icons/official/ls-anxiety-circus.png"
+  },
+  {
+    "icon": "ls-ai",
+    "entryId": "appreciative",
+    "title": "Appreciative Interviews",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/appreciative-interviews-ai/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/AI-Rand.png",
+    "sourceImagePattern": "AI-Rand.png",
+    "fileName": "ls-ai.png",
+    "publicPath": "/icons/official/ls-ai.png"
+  },
+  {
+    "icon": "ls-agreement-and-certainty-matrix",
+    "entryId": "agreement-and-certainty-matrix",
+    "title": "Agreement & Certainty Matrix",
+    "pageUrl": "https://liberatingstructures.de/agreement-certainty-matrix/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/ACM-Rand.png",
+    "sourceImagePattern": "ACM-Rand.png",
+    "fileName": "ls-agreement-and-certainty-matrix.png",
+    "publicPath": "/icons/official/ls-agreement-and-certainty-matrix.png"
+  },
+  {
+    "icon": "ls-celebrity-interview",
+    "entryId": "celebrity-interview",
+    "title": "Celebrity Interview",
+    "pageUrl": "https://liberatingstructures.de/celebrity-interview/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/CI-Celebrity-Interview-Rand-1.png",
+    "sourceImagePattern": "CI-Celebrity-Interview-Rand-1.png",
+    "fileName": "ls-celebrity-interview.png",
+    "publicPath": "/icons/official/ls-celebrity-interview.png"
+  },
+  {
+    "icon": "ls-conversation-cafe",
+    "entryId": "conversation-cafe",
+    "title": "Conversation Café",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/conversation-cafe/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/CC-Rand.png",
+    "sourceImagePattern": "CC-Rand.png",
+    "fileName": "ls-conversation-cafe.png",
+    "publicPath": "/icons/official/ls-conversation-cafe.png"
+  },
+  {
+    "icon": "ls-critical-uncertainties",
+    "entryId": "critical-uncertainties",
+    "title": "Critical Uncertainties",
+    "pageUrl": "https://liberatingstructures.de/critical-uncertainties/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/CU-Rand.png",
+    "sourceImagePattern": "CU-Rand.png",
+    "fileName": "ls-critical-uncertainties.png",
+    "publicPath": "/icons/official/ls-critical-uncertainties.png"
+  },
+  {
+    "icon": "ls-design-storyboards",
+    "entryId": "design-storyboards",
+    "title": "Design StoryBoards",
+    "pageUrl": "https://liberatingstructures.de/design-storyboard/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/DSB-Rand.png",
+    "sourceImagePattern": "DSB-Rand.png",
+    "fileName": "ls-design-storyboards.png",
+    "publicPath": "/icons/official/ls-design-storyboards.png"
+  },
+  {
+    "icon": "ls-discovery-and-action-dialogue-dad",
+    "entryId": "discovery-and-action-dialogue-dad",
+    "title": "Discovery & Action Dialogue (DAD)",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/discovery-action-dialogue-dad/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/DAD-Rand.png",
+    "sourceImagePattern": "DAD-Rand.png",
+    "fileName": "ls-discovery-and-action-dialogue-dad.png",
+    "publicPath": "/icons/official/ls-discovery-and-action-dialogue-dad.png"
+  },
+  {
+    "icon": "ls-drawing-together",
+    "entryId": "drawing-together",
+    "title": "Drawing Together",
+    "pageUrl": "https://liberatingstructures.de/drawing-together/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/DT-Rand.png",
+    "sourceImagePattern": "DT-Rand.png",
+    "fileName": "ls-drawing-together.png",
+    "publicPath": "/icons/official/ls-drawing-together.png"
+  },
+  {
+    "icon": "ls-ecocycle-planning",
+    "entryId": "ecocycle-planning",
+    "title": "Ecocycle Planning",
+    "pageUrl": "https://liberatingstructures.de/ecocycle-planning/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/EP-Rand.png",
+    "sourceImagePattern": "EP-Rand.png",
+    "fileName": "ls-ecocycle-planning.png",
+    "publicPath": "/icons/official/ls-ecocycle-planning.png"
+  },
+  {
+    "icon": "ls-folding-spectogram",
+    "entryId": "folding-spectogram",
+    "title": "Folding Spectogram",
+    "pageUrl": "https://liberatingstructures.de/folding-spectogram/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/FS-Rand.png",
+    "sourceImagePattern": "FS-Rand.png",
+    "fileName": "ls-folding-spectogram.png",
+    "publicPath": "/icons/official/ls-folding-spectogram.png"
+  },
+  {
+    "icon": "ls-gallery-walk",
+    "entryId": "gallery-walk",
+    "title": "Gallery Walk",
+    "pageUrl": "https://liberatingstructures.de/gallery-walk/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/GW-Rand.png",
+    "sourceImagePattern": "GW-Rand.png",
+    "fileName": "ls-gallery-walk.png",
+    "publicPath": "/icons/official/ls-gallery-walk.png"
+  },
+  {
+    "icon": "ls-generative-relationships-star",
+    "entryId": "generative-relationships-star",
+    "title": "Generative Relationships (STAR)",
+    "pageUrl": "https://liberatingstructures.de/generative-relationships-star/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/GRStar-Rand.png",
+    "sourceImagePattern": "GRStar-Rand.png",
+    "fileName": "ls-generative-relationships-star.png",
+    "publicPath": "/icons/official/ls-generative-relationships-star.png"
+  },
+  {
+    "icon": "ls-grief-walking",
+    "entryId": "grief-walking",
+    "title": "Grief Walking",
+    "pageUrl": "https://liberatingstructures.de/grief-walking/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2025/12/Grief-Walking-mit-Rand.png",
+    "sourceImagePattern": "Grief-Walking-mit-Rand.png",
+    "fileName": "ls-grief-walking.png",
+    "publicPath": "/icons/official/ls-grief-walking.png"
+  },
+  {
+    "icon": "ls-heard-seen-respected",
+    "entryId": "heard-seen-respected",
+    "title": "Heard, Seen, Respected",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/heard-seen-respected/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/HSR-Rand.png",
+    "sourceImagePattern": "HSR-Rand.png",
+    "fileName": "ls-heard-seen-respected.png",
+    "publicPath": "/icons/official/ls-heard-seen-respected.png"
+  },
+  {
+    "icon": "ls-helping-heuristics",
+    "entryId": "helping-heuristics",
+    "title": "Helping Heuristics",
+    "pageUrl": "https://liberatingstructures.de/helping-heuristics/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/HH-Rand.png",
+    "sourceImagePattern": "HH-Rand.png",
+    "fileName": "ls-helping-heuristics.png",
+    "publicPath": "/icons/official/ls-helping-heuristics.png"
+  },
+  {
+    "icon": "ls-impromptu-networking",
+    "entryId": "impromptu-networking",
+    "title": "Impromptu Networking",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/impromptu-networking/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/IN-Rand.png",
+    "sourceImagePattern": "IN-Rand.png",
+    "fileName": "ls-impromptu-networking.png",
+    "publicPath": "/icons/official/ls-impromptu-networking.png"
+  },
+  {
+    "icon": "ls-improv-prototyping",
+    "entryId": "improv-prototyping",
+    "title": "Improv Prototyping",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/improv-prototyping/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/IP-Rand.png",
+    "sourceImagePattern": "IP-Rand.png",
+    "fileName": "ls-improv-prototyping.png",
+    "publicPath": "/icons/official/ls-improv-prototyping.png"
+  },
+  {
+    "icon": "ls-integrated-autonomy",
+    "entryId": "integrated-autonomy",
+    "title": "Integrated~Autonomy",
+    "pageUrl": "https://liberatingstructures.de/integratedautonomy/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/IA-Rand.png",
+    "sourceImagePattern": "IA-Rand.png",
+    "fileName": "ls-integrated-autonomy.png",
+    "publicPath": "/icons/official/ls-integrated-autonomy.png"
+  },
+  {
+    "icon": "ls-mad-tea-party",
+    "entryId": "mad-tea-party",
+    "title": "Mad Tea Party",
+    "pageUrl": "https://liberatingstructures.de/mad-tea-party/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/MT-Rand.png",
+    "sourceImagePattern": "MT-Rand.png",
+    "fileName": "ls-mad-tea-party.png",
+    "publicPath": "/icons/official/ls-mad-tea-party.png"
+  },
+  {
+    "icon": "ls-min-specs",
+    "entryId": "min-specs",
+    "title": "Min Specs",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/min-specs/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/MS-Rand.png",
+    "sourceImagePattern": "MS-Rand.png",
+    "fileName": "ls-min-specs.png",
+    "publicPath": "/icons/official/ls-min-specs.png"
+  },
+  {
+    "icon": "ls-network-patterning-cards",
+    "entryId": "network-patterning-cards",
+    "title": "Network Patterning Cards",
+    "pageUrl": "https://liberatingstructures.de/network-patterning-cards/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/NWPC-Rand.png",
+    "sourceImagePattern": "NWPC-Rand.png",
+    "fileName": "ls-network-patterning-cards.png",
+    "publicPath": "/icons/official/ls-network-patterning-cards.png"
+  },
+  {
+    "icon": "ls-open-space-technology",
+    "entryId": "open-space-technology",
+    "title": "Open Space Technology",
+    "pageUrl": "https://liberatingstructures.de/open-space-technology/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/OST-Rand.png",
+    "sourceImagePattern": "OST-Rand.png",
+    "fileName": "ls-open-space-technology.png",
+    "publicPath": "/icons/official/ls-open-space-technology.png"
+  },
+  {
+    "icon": "ls-panarchy",
+    "entryId": "panarchy",
+    "title": "Panarchy",
+    "pageUrl": "https://liberatingstructures.de/panarchy/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/Panarchy-Rand.png",
+    "sourceImagePattern": "Panarchy-Rand.png",
+    "fileName": "ls-panarchy.png",
+    "publicPath": "/icons/official/ls-panarchy.png"
+  },
+  {
+    "icon": "ls-purpose-to-practice-p2p",
+    "entryId": "purpose-to-practice-p2p",
+    "title": "Purpose-To-Practice (P2P)",
+    "pageUrl": "https://liberatingstructures.de/purpose-to-practice-p2p/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/P2P-Rand.png",
+    "sourceImagePattern": "P2P-Rand.png",
+    "fileName": "ls-purpose-to-practice-p2p.png",
+    "publicPath": "/icons/official/ls-purpose-to-practice-p2p.png"
+  },
+  {
+    "icon": "ls-shift-and-share",
+    "entryId": "shift-and-share",
+    "title": "Shift and Share",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/shift-share/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/SS-Rand.png",
+    "sourceImagePattern": "SS-Rand.png",
+    "fileName": "ls-shift-and-share.png",
+    "publicPath": "/icons/official/ls-shift-and-share.png"
+  },
+  {
+    "icon": "ls-simple-ethnography",
+    "entryId": "simple-ethnography",
+    "title": "Simple Ethnography",
+    "pageUrl": "https://liberatingstructures.de/simple-ethnography/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/SE-Rand.png",
+    "sourceImagePattern": "SE-Rand.png",
+    "fileName": "ls-simple-ethnography.png",
+    "publicPath": "/icons/official/ls-simple-ethnography.png"
+  },
+  {
+    "icon": "ls-social-network-webbing",
+    "entryId": "social-network-webbing",
+    "title": "Social Network Webbing",
+    "pageUrl": "https://liberatingstructures.de/social-network-webbing/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/SNW-Rand.png",
+    "sourceImagePattern": "SNW-Rand.png",
+    "fileName": "ls-social-network-webbing.png",
+    "publicPath": "/icons/official/ls-social-network-webbing.png"
+  },
+  {
+    "icon": "ls-spiral-journal",
+    "entryId": "spiral-journal",
+    "title": "Spiral Journal",
+    "pageUrl": "https://liberatingstructures.de/spiral-journal/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/SJ-Rand.png",
+    "sourceImagePattern": "SJ-Rand.png",
+    "fileName": "ls-spiral-journal.png",
+    "publicPath": "/icons/official/ls-spiral-journal.png"
+  },
+  {
+    "icon": "ls-talking-with-pixies",
+    "entryId": "talking-with-pixies",
+    "title": "Talking with Pixies",
+    "pageUrl": "https://liberatingstructures.de/talking-with-pixies/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2024/11/TalkingWithPixies.png",
+    "sourceImagePattern": "TalkingWithPixies.png",
+    "fileName": "ls-talking-with-pixies.png",
+    "publicPath": "/icons/official/ls-talking-with-pixies.png"
+  },
+  {
+    "icon": "ls-tiny-demons",
+    "entryId": "tiny-demons",
+    "title": "Tiny Demons",
+    "pageUrl": "https://liberatingstructures.de/tiny-demons/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/TD-Rand.png",
+    "sourceImagePattern": "TD-Rand.png",
+    "fileName": "ls-tiny-demons.png",
+    "publicPath": "/icons/official/ls-tiny-demons.png"
+  },
+  {
+    "icon": "ls-triz",
+    "entryId": "triz",
+    "title": "TRIZ",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/triz/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/TRIZ-Rand.png",
+    "sourceImagePattern": "TRIZ-Rand.png",
+    "fileName": "ls-triz.png",
+    "publicPath": "/icons/official/ls-triz.png"
+  },
+  {
+    "icon": "ls-troika-consulting",
+    "entryId": "troika-consulting",
+    "title": "Troika Consulting",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/troika-consulting/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/TC-Rand.png",
+    "sourceImagePattern": "TC-Rand.png",
+    "fileName": "ls-troika-consulting.png",
+    "publicPath": "/icons/official/ls-troika-consulting.png"
+  },
+  {
+    "icon": "ls-user-experience-fishbowl",
+    "entryId": "user-experience-fishbowl",
+    "title": "User Experience Fishbowl",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/user-experience-fishbowl/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/UXFB-Rand.png",
+    "sourceImagePattern": "UXFB-Rand.png",
+    "fileName": "ls-user-experience-fishbowl.png",
+    "publicPath": "/icons/official/ls-user-experience-fishbowl.png"
+  },
+  {
+    "icon": "ls-winfy",
+    "entryId": "winfy",
+    "title": "What I Need From You (WINFY)",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/what-i-need-from-you-winfy/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/WINFY-Rand.png",
+    "sourceImagePattern": "WINFY-Rand.png",
+    "fileName": "ls-winfy.png",
+    "publicPath": "/icons/official/ls-winfy.png"
+  },
+  {
+    "icon": "ls-what-so-what-now-what",
+    "entryId": "what-so-what-now-what",
+    "title": "What, So What, Now What?",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/what-so-what-now-what/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/WWW-Rand.png",
+    "sourceImagePattern": "WWW-Rand.png",
+    "fileName": "ls-what-so-what-now-what.png",
+    "publicPath": "/icons/official/ls-what-so-what-now-what.png"
+  },
+  {
+    "icon": "ls-wicked-questions",
+    "entryId": "wicked-questions",
+    "title": "Wicked Questions",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/wicked-questions/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/WQ-Rand.png",
+    "sourceImagePattern": "WQ-Rand.png",
+    "fileName": "ls-wicked-questions.png",
+    "publicPath": "/icons/official/ls-wicked-questions.png"
+  },
+  {
+    "icon": "ls-wise-crowds",
+    "entryId": "wise-crowds",
+    "title": "Wise Crowds",
+    "pageUrl": "https://liberatingstructures.de/liberating-structures-menue/wise-crowds/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/WC-Rand.png",
+    "sourceImagePattern": "WC-Rand.png",
+    "fileName": "ls-wise-crowds.png",
+    "publicPath": "/icons/official/ls-wise-crowds.png"
+  },
+  {
+    "icon": "ls-xxn-writing",
+    "entryId": "xxn-writing",
+    "title": "XxN-Writing",
+    "pageUrl": "https://liberatingstructures.de/xxn-writing/",
+    "sourceImageUrl": "https://liberatingstructures.de/wp-content/uploads/2023/10/xxn-Rand.png",
+    "sourceImagePattern": "xxn-Rand.png",
+    "fileName": "ls-xxn-writing.png",
+    "publicPath": "/icons/official/ls-xxn-writing.png"
+  }
+]

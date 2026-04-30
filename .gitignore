@@ -1,0 +1,14 @@
+.DS_Store
+.next
+node_modules
+.pnpm-store
+out
+dist
+*.tsbuildinfo
+.tools
+.runtime
+.local-home
+.cache
+.env
+.env.local
+.env*.local
