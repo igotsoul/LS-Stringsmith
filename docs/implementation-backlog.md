@@ -1,4 +1,4 @@
-# Liberating Structure Designer
+# LS Stringsmith
 
 ## Implementation Backlog
 

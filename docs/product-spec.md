@@ -1,10 +1,10 @@
-# Liberating Structure Designer
+# LS Stringsmith
 
 ## Product and Technical Specification v0.1
 
 ### 1. Product Vision
 
-Liberating Structure Designer is a browser-first application for facilitators and agile coaches who already know the basics of Liberating Structures and want to design workshops faster, with better structure quality and better internal facilitation documentation.
+LS Stringsmith is a browser-first application for facilitators and agile coaches who already know the basics of Liberating Structures and want to design workshops faster, with better structure quality and better internal facilitation documentation.
 
 The application helps users:
 

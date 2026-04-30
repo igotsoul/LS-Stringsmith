@@ -1,4 +1,4 @@
-# Liberating Structure Designer
+# LS Stringsmith
 
 ## Screen Composition Blueprint v0.1
 

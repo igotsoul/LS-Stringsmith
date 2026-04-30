@@ -3,7 +3,7 @@ import type { WorkshopProject } from "@/domain/workshop/types";
 import type { ProjectStorageMode } from "@/storage/projects/storage-mode";
 
 const BUNDLE_VERSION = 2;
-const APP_LABEL = "Liberating Structure Designer";
+const APP_LABEL = "LS Stringsmith";
 
 export interface ProjectBundleMetadata {
   aiEnabled: boolean;

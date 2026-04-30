@@ -1,6 +1,6 @@
-# Liberating Structure Designer
+# LS Stringsmith
 
-Product and implementation groundwork for a browser-first application that helps facilitators design workshops using Liberating Structures.
+Product and implementation groundwork for a browser-first application that helps facilitators forge purposeful Liberating Structures strings.
 
 ## Current App Scaffold
 

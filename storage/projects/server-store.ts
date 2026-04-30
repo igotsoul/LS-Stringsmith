@@ -7,7 +7,7 @@ import type { StoredProjectRecord } from "@/storage/projects/adapters";
 
 const RUNTIME_DIR = path.join(process.cwd(), ".runtime");
 const SQLITE_DIR = path.join(RUNTIME_DIR, "sqlite");
-const SQLITE_PATH = path.join(SQLITE_DIR, "liberating-structure-designer.db");
+const SQLITE_PATH = path.join(SQLITE_DIR, "ls-stringsmith.db");
 const LEGACY_JSON_DIR = path.join(RUNTIME_DIR, "persisted-projects");
 
 interface PersistedProjectRow {

@@ -1,4 +1,4 @@
-# Liberating Structure Designer
+# LS Stringsmith
 
 ## Decision Log
 

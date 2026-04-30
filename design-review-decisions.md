@@ -2,7 +2,7 @@
 
 Stand: 2026-04-29
 
-Dieses Dokument fasst die Design- und UX-Entscheidungen fuer den naechsten Umsetzungsschnitt der Liberating Structure Designer App zusammen. Ziel ist, dass ein neuer Implementierungs-Chat die Entscheidungen ohne erneutes Interview Schritt fuer Schritt umsetzen kann.
+Dieses Dokument fasst die Design- und UX-Entscheidungen fuer den naechsten Umsetzungsschnitt der LS Stringsmith App zusammen. Ziel ist, dass ein neuer Implementierungs-Chat die Entscheidungen ohne erneutes Interview Schritt fuer Schritt umsetzen kann.
 
 ## Zielbild
 

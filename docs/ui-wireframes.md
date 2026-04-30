@@ -1,4 +1,4 @@
-# Liberating Structure Designer
+# LS Stringsmith
 
 ## UI Wireframe Specification v0.1
 

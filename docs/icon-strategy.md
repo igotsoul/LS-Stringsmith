@@ -1,4 +1,4 @@
-# Liberating Structure Designer
+# LS Stringsmith
 
 ## LS Icon Strategy v0.2
 

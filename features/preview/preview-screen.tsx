@@ -545,7 +545,7 @@ export function PreviewScreen() {
                 <h4>Facilitation run sheet</h4>
               </div>
               <span className="manual-print-stamp">
-                Prepared in Liberating Structure Designer scaffold
+                Prepared in LS Stringsmith
               </span>
             </div>
 

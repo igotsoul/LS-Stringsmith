@@ -6,7 +6,7 @@ import { AppProviders } from "@/app/providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Liberating Structure Designer",
+  title: "LS Stringsmith",
   description:
     "Browser-first workshop design studio for Liberating Structures.",
 };

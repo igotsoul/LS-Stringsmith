@@ -1,4 +1,4 @@
-# Liberating Structure Designer
+# LS Stringsmith
 
 ## V1 Baseline
 
@@ -14,7 +14,7 @@ This document freezes the current V1 baseline so product, design, and implementa
 
 ## 1. Product Intent
 
-Liberating Structure Designer is a browser-first, self-contained workshop design app for facilitators who already know the basics of Liberating Structures and want to:
+LS Stringsmith is a browser-first, self-contained workshop design app for facilitators who already know the basics of Liberating Structures and want to:
 
 - design workshops faster
 - compose LS chains per section/sub-goal

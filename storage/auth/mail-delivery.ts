@@ -71,8 +71,8 @@ function createHttpMailProvider(config: AuthRuntimeConfig): MailDeliveryProvider
           },
           body: JSON.stringify({
             from: config.mailFrom,
-            html: `<p>Open this magic link to sign in:</p><p><a href="${message.activationUrl}">Sign in to Liberating Structure Designer</a></p><p>This link expires at ${message.expiresAt}.</p>`,
-            subject: "Your Liberating Structure Designer sign-in link",
+            html: `<p>Open this magic link to sign in:</p><p><a href="${message.activationUrl}">Sign in to LS Stringsmith</a></p><p>This link expires at ${message.expiresAt}.</p>`,
+            subject: "Your LS Stringsmith sign-in link",
             text: `Open this magic link to sign in: ${message.activationUrl}\n\nThis link expires at ${message.expiresAt}.`,
             to: message.email,
             type: "magic-link",

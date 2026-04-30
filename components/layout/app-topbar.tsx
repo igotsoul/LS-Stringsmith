@@ -106,7 +106,7 @@ export function AppTopbar({ active }: AppTopbarProps) {
         </div>
         <div>
           <p className="eyebrow">Scaffold Alpha</p>
-          <h1>Liberating Structure Designer</h1>
+          <h1>LS Stringsmith</h1>
         </div>
       </div>
 

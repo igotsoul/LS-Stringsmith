@@ -4,7 +4,7 @@ import {
   type ProjectStorageMode,
 } from "@/storage/projects/storage-mode";
 
-const DB_NAME = "liberating-structure-designer";
+const DB_NAME = "ls-stringsmith";
 const DB_VERSION = 1;
 const STORE_NAMES: Record<ProjectStorageMode, string> = {
   "guest-local": "projects_guest",
