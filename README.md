@@ -190,5 +190,9 @@ pnpm build
 ## License
 
 The LS Stringsmith source code is licensed under the [MIT License](./LICENSE).
-Third-party Liberating Structures assets and materials remain under their own
-licenses; see [Third-Party Notices](./THIRD_PARTY_NOTICES.md).
+Included or adapted Liberating Structures names, method references, descriptions,
+metadata, and official icons are third-party materials under
+[Creative Commons BY-NC 3.0](https://creativecommons.org/licenses/by-nc/3.0/)
+and are not covered by this repository's MIT grant. See
+[Third-Party Notices](./THIRD_PARTY_NOTICES.md) for sources, attribution notes,
+and the non-commercial boundary.

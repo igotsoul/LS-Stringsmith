@@ -197,7 +197,8 @@ a:focus-visible {
 }
 
 .topbar,
-.page-shell {
+.page-shell,
+.app-credit {
   position: relative;
   z-index: 1;
 }
@@ -510,6 +511,24 @@ a:focus-visible {
 
 .page-shell {
   padding: 0 1.25rem 1.5rem;
+}
+
+.app-credit {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.25rem 1.25rem;
+  color: var(--color-ink-500);
+  font: 500 0.72rem/1.45 var(--font-mono);
+  text-align: center;
+}
+
+.app-credit a {
+  color: var(--color-teal-700);
+  font-weight: 700;
+}
+
+.app-credit a:hover {
+  text-decoration: underline;
 }
 
 .screen-page {
