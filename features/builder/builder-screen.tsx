@@ -122,7 +122,7 @@ const inspectorTabs: Array<{
 }> = [
   { id: "details", label: "Details" },
   { id: "checks", label: "Checks" },
-  { id: "notes", label: "Notes" },
+  { id: "notes", label: "Prep notes" },
   { id: "recommendations", label: "Recommendations" },
 ];
 
@@ -3271,12 +3271,16 @@ export function BuilderScreen() {
           {inspectorTab === "notes" ? (
             <div className="inspector-tab-panel">
               <div className="inspector-block">
-                <h4>Section notes</h4>
+                <h4>Section prep notes</h4>
+                <p className="note-scope-hint">
+                  Applies to section {selectedSection.indexLabel} · {selectedSection.title}.
+                  Appears once under this section in the manual and Markdown export.
+                </p>
                 <textarea
                   onChange={(event) =>
                     updateSection(selectedSection.id, { notes: event.target.value })
                   }
-                  placeholder="Capture prep notes, risks, materials, or facilitation reminders for this section."
+                  placeholder="Capture section-level prep, risks, materials, or facilitation intent."
                   rows={6}
                   value={selectedSection.notes ?? ""}
                 />
@@ -3284,7 +3288,11 @@ export function BuilderScreen() {
 
               {selectedBlockItem ? (
                 <div className="inspector-block">
-                  <h4>Block facilitator notes</h4>
+                  <h4>Selected block notes</h4>
+                  <p className="note-scope-hint">
+                    Applies only to this {selectedEntry.title} block instance.
+                    Appears inside this block in the manual and Markdown export.
+                  </p>
                   <textarea
                     onChange={(event) =>
                       updateBlockNotes(
@@ -3293,7 +3301,7 @@ export function BuilderScreen() {
                         event.target.value,
                       )
                     }
-                    placeholder="Add private notes for facilitating this structure."
+                    placeholder="Add run-time reminders, timing cues, adaptations, or debrief hints for this block."
                     rows={7}
                     value={selectedBlockItem.facilitatorNotes ?? ""}
                   />

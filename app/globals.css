@@ -3888,6 +3888,13 @@ a:focus-visible {
   line-height: 1.5;
 }
 
+.note-scope-hint {
+  margin: -0.25rem 0 0.65rem;
+  color: var(--color-ink-500);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
 .flow-glance-box {
   padding: 0.8rem 0.9rem;
   border-radius: 1rem;
