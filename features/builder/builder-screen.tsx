@@ -158,6 +158,8 @@ const sourceLabels: Record<SourceStatus, string> = {
 
 const chainScrollEdgeThreshold = 104;
 const chainScrollMaxStep = 24;
+const canvasScrollEdgeThreshold = 96;
+const canvasScrollMaxStep = 28;
 
 function getDayLabels(project: WorkshopProject) {
   const labels = project.sections.map((section) => section.dayLabel || "Day 1");
@@ -723,6 +725,9 @@ export function BuilderScreen() {
     useState<WorkshopProject | null>(null);
   const libraryCardRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const exportButtonRef = useRef<HTMLButtonElement | null>(null);
+  const canvasShellRef = useRef<HTMLElement | null>(null);
+  const canvasAutoScrollFrameRef = useRef<number | null>(null);
+  const canvasAutoScrollDeltaRef = useRef(0);
   const fallbackSection = project.sections[0];
   const reviewProvider = useMemo(() => getReviewProvider(project), [project.aiEnabled]);
   const runtime = useMemo(
@@ -772,6 +777,8 @@ export function BuilderScreen() {
       window.removeEventListener("scroll", updateExportMenuPosition, true);
     };
   }, [isExportMenuOpen]);
+
+  useEffect(() => () => stopCanvasAutoScroll(), []);
 
   if (!fallbackSection) {
     return null;
@@ -1227,6 +1234,70 @@ export function BuilderScreen() {
     }
   }
 
+  function tickCanvasAutoScroll() {
+    const canvasShell = canvasShellRef.current;
+    const delta = canvasAutoScrollDeltaRef.current;
+
+    if (!canvasShell || delta === 0) {
+      canvasAutoScrollFrameRef.current = null;
+      return;
+    }
+
+    canvasShell.scrollTop += delta;
+    canvasAutoScrollFrameRef.current = window.requestAnimationFrame(tickCanvasAutoScroll);
+  }
+
+  function stopCanvasAutoScroll() {
+    canvasAutoScrollDeltaRef.current = 0;
+
+    if (canvasAutoScrollFrameRef.current === null) {
+      return;
+    }
+
+    window.cancelAnimationFrame(canvasAutoScrollFrameRef.current);
+    canvasAutoScrollFrameRef.current = null;
+  }
+
+  function scheduleCanvasAutoScroll(delta: number) {
+    if (delta === 0) {
+      stopCanvasAutoScroll();
+      return;
+    }
+
+    canvasAutoScrollDeltaRef.current = delta;
+
+    if (canvasAutoScrollFrameRef.current === null) {
+      canvasAutoScrollFrameRef.current = window.requestAnimationFrame(tickCanvasAutoScroll);
+    }
+  }
+
+  function autoScrollCanvas(clientY: number) {
+    const canvasShell = canvasShellRef.current;
+
+    if (!canvasShell) {
+      return;
+    }
+
+    const bounds = canvasShell.getBoundingClientRect();
+    const distanceFromTop = clientY - bounds.top;
+    const distanceFromBottom = bounds.bottom - clientY;
+    let delta = 0;
+
+    if (distanceFromTop < canvasScrollEdgeThreshold) {
+      const intensity =
+        (canvasScrollEdgeThreshold - Math.max(0, distanceFromTop)) /
+        canvasScrollEdgeThreshold;
+      delta = -Math.ceil(canvasScrollMaxStep * intensity);
+    } else if (distanceFromBottom < canvasScrollEdgeThreshold) {
+      const intensity =
+        (canvasScrollEdgeThreshold - Math.max(0, distanceFromBottom)) /
+        canvasScrollEdgeThreshold;
+      delta = Math.ceil(canvasScrollMaxStep * intensity);
+    }
+
+    scheduleCanvasAutoScroll(delta);
+  }
+
   function handleAddBlock(section: WorkshopSection) {
     const entryId = getQueuedEntryId(section);
     const newItemId = addBlockToSection(section.id, entryId);
@@ -1318,6 +1389,7 @@ export function BuilderScreen() {
 
     if (!payload) {
       setDropTarget(null);
+      stopCanvasAutoScroll();
     }
   }
 
@@ -1424,6 +1496,7 @@ export function BuilderScreen() {
 
     event.preventDefault();
     event.dataTransfer.dropEffect = payload.type === "library" ? "copy" : "move";
+    autoScrollCanvas(event.clientY);
     autoScrollChainRow(event.currentTarget, event.clientX);
 
     if (dropTarget?.sectionId !== sectionId || dropTarget.index !== index) {
@@ -1490,6 +1563,7 @@ export function BuilderScreen() {
       return;
     }
 
+    autoScrollCanvas(event.clientY);
     autoScrollChainRow(event.currentTarget, event.clientX);
   }
 
@@ -1500,7 +1574,22 @@ export function BuilderScreen() {
       return;
     }
 
+    event.preventDefault();
+    event.dataTransfer.dropEffect = payload.type === "library" ? "copy" : "move";
+    autoScrollCanvas(event.clientY);
     autoScrollChainRow(event.currentTarget, event.clientX);
+  }
+
+  function handleCanvasDragOver(event: DragEvent<HTMLElement>) {
+    const payload = readDragPayload(event);
+
+    if (!payload) {
+      return;
+    }
+
+    event.preventDefault();
+    event.dataTransfer.dropEffect = payload.type === "library" ? "copy" : "move";
+    autoScrollCanvas(event.clientY);
   }
 
   function handleSlotPointerUp(
@@ -2234,7 +2323,11 @@ export function BuilderScreen() {
             </div>
         </aside>
 
-        <section className="canvas-shell">
+        <section
+          className="canvas-shell"
+          onDragOver={handleCanvasDragOver}
+          ref={canvasShellRef}
+        >
           <div className="paper-surface builder-utility-bar">
             <div className="utility-purpose-block">
               <span className="eyebrow">Workshop goal</span>
