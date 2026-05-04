@@ -31,6 +31,8 @@ Already completed:
 - direct builder export menu for Markdown manual, project bundle, and preview/print PDF
 - persisted section notes and block facilitator notes
 - simple day add, rename, and section-to-day movement in the builder
+- lightweight domain smoke tests for notes, day movement, block chains, Markdown export, and bundle inspection
+- alpha smoke checklist for manual release verification
 - persisted multi-project management
 
 ## 3. Priority Slices
@@ -238,7 +240,7 @@ Verifiziere mit build und typecheck.
 
 Priority: P2
 
-Status: In progress. The small builder/manual closure items below are complete; automated coverage, release checklist, and broader error-state hardening remain open.
+Status: In progress. The small builder/manual closure items and first domain smoke tests are complete; broader storage/UI coverage, release checklist execution, and error-state hardening remain open.
 
 Goal:
 
@@ -265,7 +267,8 @@ Acceptance Criteria:
 - Done: Preview remains the print / PDF path
 - Done: section notes and block facilitator notes are persisted and appear in manual/Markdown output
 - Done: day labels can be renamed and sections can be moved between existing day lanes
-- core storage and bundle flows have automated coverage
+- Done: first automated domain smoke coverage exists for notes, day movement, block chains, Markdown export, bundle inspection, malformed bundles, and last-section protection
+- core storage adapter and import flows have automated coverage
 - key user-facing error states are explicit
 - self-host path is documented
 - build and typecheck pass

@@ -140,7 +140,8 @@ These are not failures; they are the important seams to manage deliberately.
 
 ### 4.4 Hardening Gaps
 
-- Core flows build and typecheck, but there is still little automated test coverage.
+- Core flows build and typecheck, and lightweight domain smoke tests now cover workshop mutations, day movement, note export, and bundle inspection.
+- Automated coverage is still focused on domain behavior; storage adapters, import UI, and full browser flows need broader coverage.
 - Error handling and import validation are stronger than before, but not yet comprehensively hardened.
 
 ## 5. Delivery Priorities

@@ -23,6 +23,7 @@ Repository: [github.com/igotsoul/LS-Stringsmith](https://github.com/igotsoul/LS-
 - local project bundle import/export and Markdown export
 - editable day labels and section movement between day lanes
 - persisted section notes and block facilitator notes
+- lightweight Node test coverage for workshop mutations, Markdown export, and bundle import checks
 - print-friendly preview surface with `Print / Save PDF`
 
 Key entry points:
@@ -41,6 +42,7 @@ Key entry points:
 - [Project Mutations](./domain/workshop/project-mutations.ts)
 - [Project Bundle Format](./domain/workshop/project-bundle.ts)
 - [Markdown Export](./domain/workshop/export-markdown.ts)
+- [Domain Smoke Tests](./tests/workshop-domain.test.ts)
 
 ## Current Documents
 
@@ -48,6 +50,7 @@ Key entry points:
 - [V1 Baseline](./docs/v1-baseline.md)
 - [Decision Log](./docs/decision-log.md)
 - [Implementation Backlog](./docs/implementation-backlog.md)
+- [Alpha Smoke Checklist](./docs/alpha-smoke-checklist.md)
 - [UI Wireframe Specification](./docs/ui-wireframes.md)
 - [Visual Design Direction](./docs/design-direction.md)
 - [Screen Composition Blueprint](./docs/screen-composition.md)
@@ -87,7 +90,14 @@ Additional scripts:
 
 ```bash
 pnpm typecheck
+pnpm test
 pnpm build
+```
+
+In environments without `pnpm` on the path, Node 24 can run the package script directly:
+
+```bash
+node --run test
 ```
 
 ## Current Direction
@@ -105,5 +115,5 @@ pnpm build
 
 Continue with the next implementation slice:
 
-1. connect the review provider abstraction to a real AI backend
-2. harden the app for a usable internal alpha
+1. continue Alpha Hardening & Release Readiness
+2. add broader storage, import, and UI smoke coverage

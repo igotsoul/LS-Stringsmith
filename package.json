@@ -9,6 +9,7 @@
     "build": "node scripts/next-with-wasm.mjs build --webpack",
     "start": "next start",
     "sync:ls-icons": "node scripts/sync-ls-icons.mjs",
+    "test": "node --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --loader ./scripts/test-alias-loader.mjs --test tests/workshop-domain.test.ts",
     "typecheck": "tsc --noEmit"
   },
   "engines": {
