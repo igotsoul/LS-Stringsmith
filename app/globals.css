@@ -476,6 +476,17 @@ a:focus-visible {
   box-shadow: 0 8px 16px rgba(31, 92, 91, 0.08);
 }
 
+.meta-pill-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+  box-shadow: none;
+}
+
+.meta-pill-button:disabled:hover {
+  color: var(--color-ink-700);
+  box-shadow: none;
+}
+
 .meta-pill-button.is-active {
   color: var(--color-ink-900);
   border-color: rgba(31, 92, 91, 0.16);
@@ -647,6 +658,73 @@ a:focus-visible {
 
 .storage-runtime-card {
   margin-bottom: 1rem;
+}
+
+.storage-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.storage-choice-button {
+  display: flex;
+  min-height: 9.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(34, 50, 74, 0.1);
+  background: rgba(255, 255, 255, 0.94);
+  padding: 0.95rem;
+  color: var(--color-ink-700);
+  text-align: left;
+  transition: transform var(--transition-base), border-color var(--transition-base),
+    background var(--transition-base), box-shadow var(--transition-base);
+}
+
+.storage-choice-button:hover {
+  transform: translateY(-2px);
+  border-color: rgba(31, 92, 91, 0.22);
+  box-shadow: 0 12px 24px rgba(31, 92, 91, 0.08);
+}
+
+.storage-choice-button.is-active {
+  border-color: rgba(31, 92, 91, 0.32);
+  background: rgba(234, 245, 243, 0.96);
+  box-shadow: 0 14px 28px rgba(31, 92, 91, 0.1);
+}
+
+.storage-choice-button span {
+  color: var(--color-teal-700);
+  font: 700 0.72rem/1.2 var(--font-mono);
+  letter-spacing: 0.02em;
+}
+
+.storage-choice-button strong {
+  color: var(--color-ink-900);
+  font: 700 1rem/1.2 var(--font-display);
+  letter-spacing: 0;
+}
+
+.storage-choice-button small {
+  color: var(--color-ink-600);
+  font: 500 0.86rem/1.38 var(--font-body);
+}
+
+.storage-runtime-note {
+  margin: 0.85rem 0 0;
+  color: var(--color-ink-500);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.storage-runtime-note code {
+  border-radius: 0.35rem;
+  background: rgba(34, 50, 74, 0.06);
+  padding: 0.08rem 0.3rem;
+  color: var(--color-ink-700);
+  font: 600 0.78rem/1.2 var(--font-mono);
 }
 
 .claim-flow-row {
@@ -1719,6 +1797,11 @@ a:focus-visible {
 
 .switch input:checked + span::after {
   transform: translateX(1.54rem);
+}
+
+.switch:has(input:disabled) {
+  cursor: not-allowed;
+  opacity: 0.46;
 }
 
 .builder-layout {
@@ -4730,6 +4813,7 @@ a:focus-visible {
 :root[data-theme="dark"] .setup-insight-card,
 :root[data-theme="dark"] .setup-readiness-list li,
 :root[data-theme="dark"] .choice-button,
+:root[data-theme="dark"] .storage-choice-button,
 :root[data-theme="dark"] .mood-chip,
 :root[data-theme="dark"] .ingredient-pill,
 :root[data-theme="dark"] .spark-ribbon span,
@@ -4801,6 +4885,7 @@ a:focus-visible {
 
 :root[data-theme="dark"] .setup-step-button.is-active,
 :root[data-theme="dark"] .choice-button.is-active,
+:root[data-theme="dark"] .storage-choice-button.is-active,
 :root[data-theme="dark"] .filter-chip.is-active,
 :root[data-theme="dark"] .library-view-button.is-active,
 :root[data-theme="dark"] .library-tool-button.is-active,
@@ -5139,6 +5224,7 @@ a:focus-visible {
   }
 
   .project-grid,
+  .storage-choice-grid,
   .setup-meta-grid,
   .setup-form-grid,
   .setup-review-grid,

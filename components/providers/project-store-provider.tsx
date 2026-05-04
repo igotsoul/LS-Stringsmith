@@ -688,12 +688,13 @@ export function ProjectStoreProvider({ children }: { children: ReactNode }) {
           }
         },
         switchStorageMode(mode) {
-          if (mode === storageMode) {
+          const nextMode = saveRuntimeStorageMode(mode);
+
+          if (nextMode === storageMode) {
             return;
           }
 
-          saveRuntimeStorageMode(mode);
-          setStorageMode(mode);
+          setStorageMode(nextMode);
           setStatus("hydrating");
           setSaveState("idle");
         },

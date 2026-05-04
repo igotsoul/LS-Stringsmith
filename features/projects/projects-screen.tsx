@@ -15,8 +15,10 @@ import {
 import { buildProjectCards } from "@/domain/workshop/project-selectors";
 import { downloadFile } from "@/lib/download-file";
 import {
+  getAvailableProjectStorageModes,
+  getClientRuntimeTarget,
   getStorageModeDetails,
-  projectStorageModes,
+  type RuntimeTarget,
 } from "@/storage/projects/storage-mode";
 
 function BundleActionIcon({ action }: { action: "download" | "import" }) {
@@ -74,6 +76,8 @@ export function ProjectsScreen() {
   } = useAuth();
   const cards = buildProjectCards(projectRecords, activeProjectId, storageMode);
   const storage = getStorageModeDetails(storageMode);
+  const [runtimeTarget, setRuntimeTarget] = useState<RuntimeTarget>("hosted-demo");
+  const availableStorageModes = getAvailableProjectStorageModes(runtimeTarget);
   const router = useRouter();
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const [importMessage, setImportMessage] = useState<string | null>(null);
@@ -97,6 +101,10 @@ export function ProjectsScreen() {
   const activeProjectHref = `/project/${encodeURIComponent(activeProjectId)}`;
   const deliveryLabel =
     authRuntime?.isDemoDelivery ? "Demo mail" : authRuntime?.mailProviderLabel ?? "Mail delivery";
+
+  useEffect(() => {
+    setRuntimeTarget(getClientRuntimeTarget());
+  }, []);
 
   useEffect(() => {
     const searchParams = new URLSearchParams(window.location.search);
@@ -482,33 +490,45 @@ export function ProjectsScreen() {
       <div className="paper-card storage-runtime-card">
         <div className="storage-runtime-head">
           <div>
-            <p className="eyebrow">Storage runtime</p>
-            <h3>{storage.label}</h3>
+            <p className="eyebrow">Where should your drafts live?</p>
+            <h3>Choose the mode that matches what you want to do now.</h3>
           </div>
-          <StatusPill tone={storageMode === "workspace-local" ? "info" : "success"}>
-            {storageMode === "workspace-local" ? "Persisted mode prep" : "Guest-first"}
+          <StatusPill tone={storageMode === "server-persisted" ? "warning" : "success"}>
+            {storage.shortLabel}
           </StatusPill>
         </div>
-        <p>{storage.description}</p>
-        <div className="filter-row">
-          {projectStorageModes.map((mode) => {
+        <p>
+          For a public demo, the safest answer is browser-only. Your draft stays
+          on this device and other visitors cannot touch it.
+        </p>
+        <div className="storage-choice-grid">
+          {availableStorageModes.map((mode) => {
             const option = getStorageModeDetails(mode);
 
             return (
               <button
                 key={mode}
-                className={`filter-pill ${storageMode === mode ? "is-active" : ""}`}
+                className={`storage-choice-button ${storageMode === mode ? "is-active" : ""}`}
                 onClick={() => {
                   switchStorageMode(mode);
                   setImportMessage(`Switched to ${option.label}. Showing projects saved there.`);
                 }}
                 type="button"
               >
-                {option.label}
+                <span>{option.label}</span>
+                <strong>{option.questionLabel}</strong>
+                <small>{option.questionHelp}</small>
               </button>
             );
           })}
         </div>
+        {runtimeTarget === "hosted-demo" ? (
+          <p className="storage-runtime-note">
+            Server draft is hidden here because this looks like a hosted demo. Use
+            local install or set <code>NEXT_PUBLIC_LSD_RUNTIME_TARGET=local-app</code>
+            if you intentionally want to test SQLite-backed drafts.
+          </p>
+        ) : null}
       </div>
 
       {storageMode === "server-persisted" ? (

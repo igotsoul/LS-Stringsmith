@@ -900,11 +900,26 @@ export function SetupScreen() {
             <div className="setup-summary-ai">
               <div>
                 <span>AI assistance</span>
-                <strong>{project.aiEnabled ? "Enabled" : "Disabled"}</strong>
+                <strong>
+                  {!runtime.aiToggleAvailable
+                    ? "Unavailable"
+                    : project.aiEnabled
+                      ? "Enabled"
+                      : "Disabled"}
+                </strong>
                 <p>{runtime.reviewAvailabilityLabel}</p>
               </div>
               <label className="switch">
-                <input checked={project.aiEnabled} onChange={() => toggleAi()} type="checkbox" />
+                <input
+                  checked={runtime.aiActionsAvailable}
+                  disabled={!runtime.aiToggleAvailable}
+                  onChange={() => {
+                    if (runtime.aiToggleAvailable) {
+                      toggleAi();
+                    }
+                  }}
+                  type="checkbox"
+                />
                 <span />
               </label>
             </div>

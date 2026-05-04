@@ -60,7 +60,7 @@ Recommended public-alpha stance:
 
 ### Requirements
 
-- Node.js 24 recommended. `Server draft` uses Node's built-in SQLite module.
+- Node.js 22.13 or newer. `Server draft` uses Node's built-in SQLite module.
 - pnpm for dependency installation.
 
 If pnpm is not available, install it through Corepack:
@@ -116,6 +116,7 @@ is ignored by Git and must not be committed.
 | `LSD_MAIL_HTTP_BEARER_TOKEN` | secret string | Optional bearer token for the HTTP mail hook. |
 | `LSD_MAIL_FROM` | email/string | Optional sender metadata for HTTP mail delivery. |
 | `LSD_MAIL_PROVIDER_LABEL` | string | Optional UI/provider label for mail delivery. |
+| `NEXT_PUBLIC_LSD_RUNTIME_TARGET` | `hosted-demo`, `local-app` | Optional browser-side runtime hint. `hosted-demo` hides SQLite-backed server drafts from the Projects screen. |
 
 The default local mail mode is `demo`. It shows an activation link in the app so
 you can test the claim flow without configuring a real mail provider.
@@ -150,6 +151,7 @@ The safest public alpha is a browser-only demo:
 
 - storage: `Guest local` or `Workspace draft`
 - AI: `LSD_AI_PROVIDER=off`
+- runtime hint: `NEXT_PUBLIC_LSD_RUNTIME_TARGET=hosted-demo`
 - auth/mail: leave demo-only or hide server claim messaging
 - server persistence: do not present `Server draft` as production multi-user storage
 

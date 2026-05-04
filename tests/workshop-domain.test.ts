@@ -8,6 +8,7 @@ import {
   serializeProjectBundle,
 } from "@/domain/workshop/project-bundle";
 import {
+  addSection,
   addBlockToSection,
   moveSectionToDay,
   removeSection,
@@ -55,29 +56,47 @@ test("section notes and block facilitator notes persist and export", () => {
 test("day rename and section movement keep day groups contiguous", () => {
   let project = createDemoProject();
 
+  project = addSection(project, {
+    values: {
+      dayLabel: "Day 2",
+      subgoal: "Plan the first follow-up check after the demo workshop.",
+      title: "Follow-up check",
+    },
+  });
+  const followUpSectionId = project.sections[1]?.id;
+
+  assert.ok(followUpSectionId);
+
   project = renameDayLabel(project, "Day 2", "Follow-up day");
-  project = moveSectionToDay(project, "section-2", "Follow-up day");
+  project = moveSectionToDay(project, "section-1", "Follow-up day");
 
   assert.deepEqual(
     project.sections.map((section) => section.id),
-    ["section-1", "section-3", "section-2"],
+    [followUpSectionId, "section-1"],
   );
   assert.deepEqual(
     project.sections.map((section) => section.indexLabel),
-    ["01", "02", "03"],
+    ["01", "02"],
   );
   assert.equal(project.sections[1]?.dayLabel, "Follow-up day");
-  assert.equal(project.sections[2]?.dayLabel, "Follow-up day");
 });
 
 test("block add and remove rebuild transition chain deterministically", () => {
-  const start = createDemoProject();
-  const firstAdd = addBlockToSection(start, "section-3", "intro");
+  const start = addSection(createDemoProject(), {
+    values: {
+      title: "Scratch section",
+    },
+  });
+  const scratchSectionId = start.sections[1]?.id;
+
+  assert.ok(scratchSectionId);
+
+  const firstAdd = addBlockToSection(start, scratchSectionId, "intro");
 
   assert.ok(firstAdd.newItemId);
 
-  const secondAdd = addBlockToSection(firstAdd.project, "section-3", "reflection");
-  const section = secondAdd.project.sections.find((candidate) => candidate.id === "section-3");
+  const secondAdd = addBlockToSection(firstAdd.project, scratchSectionId, "reflection");
+  const section = secondAdd.project.sections.find((candidate) => candidate.id === scratchSectionId);
 
   assert.deepEqual(
     section?.items.map((item) => item.kind),
@@ -85,8 +104,8 @@ test("block add and remove rebuild transition chain deterministically", () => {
   );
   assert.match((section?.items[1] as TransitionItem).note, /Bridge from Intro \/ Context/);
 
-  const removed = removeBlockFromSection(secondAdd.project, "section-3", firstAdd.newItemId);
-  const rebuiltSection = removed.sections.find((candidate) => candidate.id === "section-3");
+  const removed = removeBlockFromSection(secondAdd.project, scratchSectionId, firstAdd.newItemId);
+  const rebuiltSection = removed.sections.find((candidate) => candidate.id === scratchSectionId);
 
   assert.deepEqual(
     rebuiltSection?.items.map((item) => item.kind),

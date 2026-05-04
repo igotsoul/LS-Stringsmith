@@ -143,11 +143,16 @@ export function AppTopbar({ active }: AppTopbarProps) {
           <span className="meta-pill topbar-status-pill">{runtime.reviewAvailabilityLabel}</span>
         </div>
         <button
-          aria-pressed={project.aiEnabled}
+          aria-pressed={runtime.aiActionsAvailable}
           className={`meta-pill meta-pill-button topbar-ai-toggle ${
-            project.aiEnabled ? "is-active" : ""
+            runtime.aiActionsAvailable ? "is-active" : ""
           }`}
-          onClick={toggleAi}
+          disabled={!runtime.aiToggleAvailable}
+          onClick={() => {
+            if (runtime.aiToggleAvailable) {
+              toggleAi();
+            }
+          }}
           title={runtime.aiToggleLabel}
           type="button"
         >

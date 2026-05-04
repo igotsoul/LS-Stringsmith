@@ -1,6 +1,7 @@
 import type { WorkshopProject } from "@/domain/workshop/types";
 import {
   defaultProjectStorageMode,
+  normalizeProjectStorageModeForRuntime,
   type ProjectStorageMode,
 } from "@/storage/projects/storage-mode";
 
@@ -259,18 +260,20 @@ export function loadRuntimeStorageMode() {
   const raw = window.localStorage.getItem(RUNTIME_LOCAL_STORAGE_KEY);
 
   if (raw === "guest-local" || raw === "workspace-local" || raw === "server-persisted") {
-    return raw;
+    return normalizeProjectStorageModeForRuntime(raw);
   }
 
   return defaultProjectStorageMode;
 }
 
 export function saveRuntimeStorageMode(storageMode: ProjectStorageMode) {
+  const normalizedStorageMode = normalizeProjectStorageModeForRuntime(storageMode);
+
   if (typeof window !== "undefined" && window.localStorage) {
-    window.localStorage.setItem(RUNTIME_LOCAL_STORAGE_KEY, storageMode);
+    window.localStorage.setItem(RUNTIME_LOCAL_STORAGE_KEY, normalizedStorageMode);
   }
 
-  return storageMode;
+  return normalizedStorageMode;
 }
 
 export function loadRuntimeActiveProjectId() {

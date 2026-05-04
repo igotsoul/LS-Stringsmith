@@ -275,13 +275,16 @@ export function PreviewScreen() {
     () => getRuntimeCapabilities(project, storageMode, aiReviewRuntime),
     [aiReviewRuntime, project.aiEnabled, storageMode],
   );
-  const reviewProvider = useMemo(() => getReviewProvider(project), [project.aiEnabled]);
+  const reviewProvider = useMemo(
+    () => getReviewProvider({ aiEnabled: runtime.aiActionsAvailable }),
+    [runtime.aiActionsAvailable],
+  );
   const workshopReviewFallback = useMemo(
     () => reviewProvider.reviewWorkshop(project),
     [project, reviewProvider],
   );
   const workshopReviewState = useAiReview<WorkshopReviewInsight>({
-    enabled: project.aiEnabled,
+    enabled: runtime.aiActionsAvailable,
     fallbackProviderLabel: runtime.reviewProviderLabel,
     fallbackReview: workshopReviewFallback,
     request: {
@@ -475,7 +478,7 @@ export function PreviewScreen() {
 
       <div className="preview-layout">
         <aside className="preview-side-stack">
-          {project.aiEnabled ? (
+          {runtime.aiActionsAvailable ? (
             <div className="review-card preview-review-card">
               <p className="eyebrow">Workshop review</p>
               <p className="review-provider-line">{workshopReviewState.providerLabel}</p>
@@ -507,8 +510,8 @@ export function PreviewScreen() {
             </div>
           ) : (
             <div className="paper-card preview-ai-muted-card">
-              <p className="eyebrow">AI assistance paused</p>
-              <h3>Workshop review is hidden in preview while AI is off.</h3>
+              <p className="eyebrow">AI assistance unavailable</p>
+              <h3>Workshop review is hidden until AI is configured and enabled.</h3>
               <p>{runtime.reviewDisabledNote}</p>
             </div>
           )}
@@ -560,7 +563,7 @@ export function PreviewScreen() {
               <span>{project.language}</span>
               <span>Detailed where needed</span>
             </div>
-            {project.aiEnabled ? (
+            {runtime.aiActionsAvailable ? (
               <div className="manual-top-review">
                 <StatusPill tone={workshopReview.tone}>{workshopReview.label}</StatusPill>
                 <span className="manual-review-score">{workshopReview.score}</span>

@@ -10,17 +10,17 @@ export const demoProjectId = "demo";
 export const projectCards: ProjectCardSummary[] = [
   {
     id: demoProjectId,
-    title: "Team Collaboration Reset",
+    title: "Meeting Reset: From Overload to Action",
     purposePreview:
-      "Improve collaboration and communication by increasing psychological safety and clarifying team agreements.",
-    sectionCountLabel: "4 sections",
+      "Help a product team reduce meeting overload and turn recurring friction into small, owned experiments.",
+    sectionCountLabel: "1 section",
     languageLabel: "EN",
-    formatLabel: "Onsite",
-    aiLabel: "AI enabled",
+    formatLabel: "Hybrid",
+    aiLabel: "AI optional",
     storageLabel: "Local draft",
     updatedLabel: "Updated 14 min ago",
     footerLabel: "Preview ready",
-    badgeLabel: "In motion",
+    badgeLabel: "Demo ready",
     badgeTone: "success",
     featured: true,
   },
@@ -440,7 +440,7 @@ export const inspectableEntries: Record<string, InspectableEntry> = {
   },
   reflection: {
     id: "reflection",
-    title: "Reflection",
+    title: "Closure / Reflection",
     badge: "Neutral block",
     kind: "neutral",
     icon: "reflection",
@@ -577,98 +577,98 @@ export const inspectableEntries: Record<string, InspectableEntry> = {
 
 export const demoProject: WorkshopProject = {
   id: demoProjectId,
-  title: "Team Collaboration Reset",
+  title: "Meeting Reset: From Overload to Action",
   globalPurpose:
-    "Improve collaboration and communication in the team through stronger psychological safety, clearer communication patterns, and practical agreements for daily work.",
+    "Help a cross-functional product team reduce meeting overload, expose counterproductive collaboration habits, and leave with small actions each person can start immediately.",
   context:
-    "The team is working under pressure, communication feels transactional, and feedback often comes too late. The workshop should feel safe, practical, and grounded.",
-  targetAudience: "Cross-functional product team",
-  durationLabel: "2.5 hrs",
-  participantsLabel: "9 participants",
-  format: "Onsite",
+    "The team has too many status meetings, decisions often drift, and people leave recurring sessions with unclear ownership. The workshop should feel candid, practical, and safe enough to name unhelpful patterns without blaming individuals.",
+  targetAudience: "12-person cross-functional product team",
+  durationLabel: "2 hrs",
+  participantsLabel: "12 participants",
+  format: "Hybrid",
   language: "English",
-  aiEnabled: true,
-  desiredFeel: "Safe, practical, honest, energizing.",
+  aiEnabled: false,
+  desiredFeel: "Candid, practical, energizing, and blame-free.",
   energyLevel: "Medium",
   trustLevel: "Growing",
   conflictLevel: "Moderate",
-  decisionNeed: "Practical agreements",
+  decisionNeed: "Small owned experiments",
   moodTags: [
-    "psychological safety",
-    "clearer communication",
-    "practical agreements",
-    "shared ownership",
+    "meeting overload",
+    "clear ownership",
+    "better collaboration",
+    "small experiments",
   ],
-  feelTags: ["grounded", "participatory", "candid"],
+  feelTags: ["practical", "participatory", "light but honest"],
   designIngredients: [
-    "more safety to speak honestly",
-    "shared language for friction",
-    "a few concrete agreements",
+    "fast connection across roles",
+    "visible anti-patterns",
+    "small actions inside each person's control",
   ],
   projectPulse: [
-    "2 structures already have step-level facilitation detail.",
-    "Section 02 is the only module that needs deeper choreography.",
-    "Section 03 still needs a final closing move before export.",
-    "English primary, German supported across UI, content, and export.",
+    "One complete demo string is ready to preview or export.",
+    "The sequence moves from connection to pattern-finding to immediate action.",
+    "TRIZ is framed as a playful mirror so critique stays behavior-based.",
+    "AI assistance is optional and only appears when a server-side provider key is configured.",
   ],
   setupHotspots: [
     {
       sectionId: "section-1",
-      title: "Section 01",
-      detail: "Keep the opening warm and tighten the Appreciative Interviews invitation.",
+      title: "Demo string",
+      detail:
+        "The chain is ready to run: opener, fast networking, broad pattern generation, TRIZ, 15% Solutions, and closure.",
       prepLevel: "Medium",
-    },
-    {
-      sectionId: "section-2",
-      title: "Section 02",
-      detail: "TRIZ needs careful framing and WINFY benefits from step-by-step run-sheet detail.",
-      prepLevel: "Deep",
-    },
-    {
-      sectionId: "section-3",
-      title: "Section 03",
-      detail: "The arc is clear, but the final closing block is still a draft decision.",
-      prepLevel: "Light",
     },
   ],
   previewWarnings: [
-    "Section 2 has one transition note still missing detail.",
-    "Invitation in Appreciative Interviews could be shortened.",
-    "Section 3 does not yet have a final closing block.",
+    "Protect the playful TRIZ frame so the group critiques patterns, not people.",
+    "Keep the final 15% commitments small enough that participants can start this week.",
   ],
   previewFocus: [
     {
+      title: "Impromptu Networking",
+      detail: "Use quick rounds to create energy before the room starts naming friction.",
+    },
+    {
       title: "TRIZ",
-      detail: "Frame it playfully enough to externalize patterns, not blame people.",
+      detail:
+        "Laugh with the paradox, then slow down when participants recognize current habits.",
     },
     {
-      title: "What I Need From You",
-      detail: "Protect the response discipline so the structure stays crisp and useful.",
-    },
-    {
-      title: "Section 03",
-      detail: "Choose the closing move before exporting the final manual.",
+      title: "15% Solutions",
+      detail:
+        "Keep the focus on actions people can take without new permission, budget, or reorganization.",
     },
   ],
   sections: [
     {
       id: "section-1",
       indexLabel: "01",
-      title: "Increase psychological safety",
+      title: "Reset meeting habits and choose first moves",
       subgoal:
-        "Create enough emotional safety for open participation and more honest signal-sharing.",
+        "Move from shared frustration about meeting overload to concrete, personal actions that improve collaboration this week.",
       dayLabel: "Day 1",
-      timeRange: "09:30 - 11:00",
-      totalLabel: "55 min chain",
-      prepNote: "Keep the ramp gentle, concrete, and safe.",
+      timeRange: "09:00 - 11:00",
+      notes:
+        "Set up one visible board with columns for meeting pain points, destructive patterns, things to stop, and 15% actions. For hybrid groups, keep breakout instructions short and put every invitation in chat.",
+      totalLabel: "117 min chain",
+      prepNote:
+        "Prepare a visible harvest board and keep transitions crisp; the string already contains enough depth.",
       prepLevel: "Medium",
-      storyMeta: "Medium prep · One invitation still wants sharpening.",
+      storyMeta: "Complete demo string · ready to preview.",
       reviewSummary:
-        "Strong sequence for psychological safety. The only weak point is the invitation length in Appreciative Interviews.",
+        "A coherent chain for a team that needs relief from meeting overload: connect people first, broaden input, externalize bad habits, then convert insight into small action.",
       collapsedSummary:
-        "Intro -> 1-2-4-All -> Appreciative Interviews -> Reflection",
-      miniPreviewEntryIds: ["intro", "124all", "appreciative", "reflection"],
-      suggestedEntryIds: ["124all", "appreciative"],
+        "Intro -> Impromptu Networking -> 1-2-4-All -> TRIZ -> 15% Solutions -> Closure",
+      miniPreviewEntryIds: [
+        "intro",
+        "impromptu-networking",
+        "124all",
+        "triz",
+        "15percent-solutions",
+        "reflection",
+      ],
+      suggestedEntryIds: ["impromptu-networking", "124all", "triz", "15percent-solutions"],
       status: "ready",
       items: [
         {
@@ -677,14 +677,39 @@ export const demoProject: WorkshopProject = {
           entryId: "intro",
           durationLabel: "8 min",
           invitation:
-            "Let's ground ourselves in why this conversation matters before we step into the team experience more directly.",
+            "Before we redesign anything, let's name why our meeting habits matter for focus, speed, and trust.",
+          facilitatorNotes:
+            "Open with the promise of practical relief, not a lecture about meeting hygiene. Make it clear that the group is examining patterns in the system, not blaming people.",
         },
         {
           id: "section-1-transition-1",
           kind: "transition",
-          entryId: "transition-one",
+          entryId: "transition-generic",
           durationLabel: "2 min",
-          note: "Move from shared framing into rapid individual reflection.",
+          note:
+            "Move from shared context into quick paired rounds so people hear that the frustration is shared across roles.",
+        },
+        {
+          id: "section-1-impromptu-networking",
+          kind: "block",
+          entryId: "impromptu-networking",
+          durationLabel: "20 min",
+          invitation:
+            "In pairs, share one meeting pattern that currently drains energy and one small sign that collaboration can work better.",
+          flowSummary:
+            "Three fast pairing rounds -> one drain and one hopeful signal per round -> brief harvest",
+          facilitatorCue:
+            "Run three short rounds with new partners. Ask people to keep examples concrete and avoid solving too early.",
+          facilitatorNotes:
+            "Harvest only a few phrases after the rounds. The goal is connection and shared signal, not a full diagnosis yet.",
+        },
+        {
+          id: "section-1-transition-2",
+          kind: "transition",
+          entryId: "transition-generic",
+          durationLabel: "2 min",
+          note:
+            "Carry the strongest meeting examples into a broader pattern harvest where everyone contributes at the same time.",
         },
         {
           id: "section-1-124all",
@@ -692,119 +717,80 @@ export const demoProject: WorkshopProject = {
           entryId: "124all",
           durationLabel: "12 min",
           invitation:
-            "Think about one moment when collaboration felt easy and energizing. What made that possible?",
+            "What meeting habits help us make progress, and what habits make our work slower or less clear?",
           flowSummary:
-            "Solo reflection -> Pairs -> Foursomes -> Whole-group share -> Harvest",
+            "Solo reflection -> Pairs -> Foursomes -> Whole-group harvest",
           facilitatorCue:
-            "Harvest only the strongest conditions so the pair work starts from patterns, not from scratch.",
-        },
-        {
-          id: "section-1-transition-2",
-          kind: "transition",
-          entryId: "transition-two",
-          durationLabel: "3 min",
-          note: "Carry the strongest examples into paired story-sharing.",
-        },
-        {
-          id: "section-1-appreciative",
-          kind: "block",
-          entryId: "appreciative",
-          durationLabel: "20 min",
-          invitation:
-            "Interview your partner about a time when communication in the team felt candid, respectful, and useful. What conditions made that possible?",
-          warning: "Invitation could sharpen",
-          accent: true,
+            "Ask for behaviors, not opinions. Cluster similar signals visibly as they appear.",
+          facilitatorNotes:
+            "Keep the harvest balanced: helpful habits on one side, slowing habits on the other. This prepares the room for TRIZ without making it feel negative.",
         },
         {
           id: "section-1-transition-3",
           kind: "transition",
-          entryId: "transition-three",
+          entryId: "transition-generic",
+          durationLabel: "3 min",
+          note:
+            "Invite the group to look at the slowing habits playfully by exaggerating them on purpose.",
+        },
+        {
+          id: "section-1-triz",
+          kind: "block",
+          entryId: "triz",
+          durationLabel: "35 min",
+          invitation:
+            "If we wanted to make our meetings waste as much time and attention as possible, what would we do?",
+          flowSummary:
+            "Invent failure -> find current traces -> choose what to stop or interrupt",
+          facilitatorCue:
+            "Keep the first round playful. In the second round, slow down and ask what already happens in small ways today.",
+          facilitatorNotes:
+            "Use humor to create distance, then protect the conversion step. The valuable output is a short list of patterns the team will stop feeding.",
+          accent: true,
+        },
+        {
+          id: "section-1-transition-4",
+          kind: "transition",
+          entryId: "transition-generic",
+          durationLabel: "3 min",
+          note:
+            "Turn the stop-doing list into personal room for action: what can each person change without waiting for permission?",
+        },
+        {
+          id: "section-1-15percent",
+          kind: "block",
+          entryId: "15percent-solutions",
+          durationLabel: "20 min",
+          invitation:
+            "What is one 15% action you can take this week to make our meetings clearer, shorter, or more useful?",
+          flowSummary:
+            "Solo action drafting -> small-group sharpening -> public optional commitment",
+          facilitatorCue:
+            "Reject actions that require someone else's approval. Ask people to shrink the action until it is truly theirs to start.",
+          facilitatorNotes:
+            "Good examples: decline one unclear meeting, add a decision line to an invite, ask for the owner before leaving a discussion, or end with next action plus date.",
+        },
+        {
+          id: "section-1-transition-5",
+          kind: "transition",
+          entryId: "transition-generic",
           durationLabel: "2 min",
-          note: "Extract concrete conditions that can be reused by the whole team.",
+          note:
+            "Close by making the first moves visible and naming how the team will notice whether the experiment helped.",
         },
         {
           id: "section-1-reflection",
           kind: "block",
           entryId: "reflection",
-          durationLabel: "8 min",
+          durationLabel: "10 min",
           invitation:
-            "What patterns do we want to protect because they help people feel safe enough to contribute?",
+            "What will we each try first, and what signal will tell us that our meeting habits are getting healthier?",
+          facilitatorCue:
+            "Invite one concise checkout sentence per person. Capture only the commitments people choose to make visible.",
+          facilitatorNotes:
+            "End with appreciation for specificity. Do not reopen the whole discussion; protect the sense of forward motion.",
         },
       ],
-    },
-    {
-      id: "section-2",
-      indexLabel: "02",
-      title: "Surface communication patterns",
-      subgoal: "Make invisible habits visible without tipping the room into defensiveness.",
-      dayLabel: "Day 1",
-      timeRange: "11:15 - 12:30",
-      totalLabel: "61 min chain",
-      prepNote: "Keep critique externalized, then convert it into explicit requests.",
-      prepLevel: "Deep",
-      storyMeta: "High prep · TRIZ framing + WINFY response discipline.",
-      reviewSummary:
-        "Powerful section, but emotionally sharper. Consider a softer bridge into TRIZ if the group still feels guarded.",
-      collapsedSummary: "Input -> TRIZ -> What I Need From You -> Reflection",
-      miniPreviewEntryIds: ["input", "triz", "winfy", "reflection"],
-      suggestedEntryIds: ["triz", "winfy"],
-      status: "ready",
-      items: [
-        {
-          id: "section-2-input",
-          kind: "block",
-          entryId: "input",
-          durationLabel: "6 min",
-          invitation:
-            "Before we go sharper, let's briefly name what keeps difficult conversations productive instead of personal.",
-        },
-        {
-          id: "section-2-triz",
-          kind: "block",
-          entryId: "triz",
-          durationLabel: "25 min",
-          invitation:
-            "If we wanted to make collaboration and communication fail completely, what would we do?",
-          flowSummary:
-            "Frame the paradox -> list destructive patterns -> notice current reality -> decide what to stop",
-          facilitatorCue:
-            "Keep it playful enough to create distance from blame, then slow down when the group notices what already happens today.",
-        },
-        {
-          id: "section-2-transition-1",
-          kind: "transition",
-          entryId: "transition-two",
-          durationLabel: "4 min",
-          note: "Shift from exposing damaging patterns into naming what different functions now need from one another.",
-        },
-        {
-          id: "section-2-winfy",
-          kind: "block",
-          entryId: "winfy",
-          durationLabel: "60 min",
-          invitation:
-            "Clusters state concrete requests to one another, capture them without discussion, then answer only with yes, no, I will try, or whatever.",
-          facilitatorCue:
-            "The value comes from clarity and response discipline, not from negotiating every request live.",
-          showDetailedSteps: true,
-        },
-      ],
-    },
-    {
-      id: "section-3",
-      indexLabel: "03",
-      title: "Turn insights into agreements",
-      subgoal:
-        "Convert reflection into a few concrete behavioral agreements the team can actually carry into daily work.",
-      dayLabel: "Day 2",
-      totalLabel: "Draft",
-      prepNote: "Choose the final closing move before export.",
-      prepLevel: "Light",
-      storyMeta: "Light prep · Closing move still open.",
-      collapsedSummary: "Input -> Agreement move -> Closing reflection",
-      suggestedEntryIds: ["reflection", "input"],
-      status: "draft",
-      items: [],
     },
   ],
 };

@@ -729,10 +729,13 @@ export function BuilderScreen() {
   const canvasAutoScrollFrameRef = useRef<number | null>(null);
   const canvasAutoScrollDeltaRef = useRef(0);
   const fallbackSection = project.sections[0];
-  const reviewProvider = useMemo(() => getReviewProvider(project), [project.aiEnabled]);
   const runtime = useMemo(
     () => getRuntimeCapabilities(project, storageMode, aiReviewRuntime),
     [aiReviewRuntime, project.aiEnabled, storageMode],
+  );
+  const reviewProvider = useMemo(
+    () => getReviewProvider({ aiEnabled: runtime.aiActionsAvailable }),
+    [runtime.aiActionsAvailable],
   );
   const activeProjectHref = `/project/${encodeURIComponent(activeProjectId)}`;
   const dayLabels = useMemo(() => getDayLabels(project), [project]);
@@ -861,7 +864,7 @@ export function BuilderScreen() {
         }
       : null;
   const openSectionReviewState = useAiReview<SectionReviewInsight>({
-    enabled: project.aiEnabled && Boolean(openSectionReviewRequest),
+    enabled: runtime.aiActionsAvailable && Boolean(openSectionReviewRequest),
     fallbackProviderLabel: runtime.reviewProviderLabel,
     fallbackReview: openSectionReviewFallback,
     request: openSectionReviewRequest,
@@ -877,7 +880,7 @@ export function BuilderScreen() {
       }
     : null;
   const workshopReviewState = useAiReview<WorkshopReviewInsight>({
-    enabled: project.aiEnabled && isWorkshopReviewOpen && Boolean(workshopReviewRequest),
+    enabled: runtime.aiActionsAvailable && isWorkshopReviewOpen && Boolean(workshopReviewRequest),
     fallbackProviderLabel: runtime.reviewProviderLabel,
     fallbackReview: workshopReviewFallback,
     request: workshopReviewRequest,
@@ -904,7 +907,7 @@ export function BuilderScreen() {
         }
       : null;
   const selectedBlockReviewState = useAiReview<ReviewInsight>({
-    enabled: project.aiEnabled && Boolean(selectedBlockReviewRequest),
+    enabled: runtime.aiActionsAvailable && Boolean(selectedBlockReviewRequest),
     fallbackProviderLabel: runtime.reviewProviderLabel,
     fallbackReview: selectedReviewFallback,
     request: selectedBlockReviewRequest,
@@ -1750,7 +1753,7 @@ export function BuilderScreen() {
   }
 
   function handleToggleSectionReview(sectionId: string) {
-    if (!project.aiEnabled) {
+    if (!runtime.aiActionsAvailable) {
       return;
     }
 
@@ -1768,7 +1771,7 @@ export function BuilderScreen() {
   }
 
   function handleToggleWorkshopReview() {
-    if (!project.aiEnabled) {
+    if (!runtime.aiActionsAvailable) {
       return;
     }
 
@@ -1820,7 +1823,7 @@ export function BuilderScreen() {
     promptText?: string;
     stepIndex?: number;
   }) {
-    if (!project.aiEnabled || !selectedBlockItem || isSharpeningInvitation) {
+    if (!runtime.aiActionsAvailable || !selectedBlockItem || isSharpeningInvitation) {
       return;
     }
 
@@ -2343,10 +2346,10 @@ export function BuilderScreen() {
             <div className="utility-actions">
               <button
                 className="tiny-button"
-                disabled={!project.aiEnabled}
+                disabled={!runtime.aiActionsAvailable}
                 onClick={handleToggleWorkshopReview}
                 title={
-                  project.aiEnabled
+                  runtime.aiActionsAvailable
                     ? `Use ${runtime.reviewProviderLabel.toLowerCase()} for a workshop-level review`
                     : runtime.reviewDisabledNote
                 }
@@ -2360,15 +2363,15 @@ export function BuilderScreen() {
             </div>
           </div>
 
-          {!project.aiEnabled ? (
+          {!runtime.aiActionsAvailable ? (
             <div className="paper-card review-muted-card">
-              <p className="eyebrow">AI assistance paused</p>
-              <h4>Reviews and invitation sharpening are off for this project.</h4>
+              <p className="eyebrow">AI assistance unavailable</p>
+              <h4>Reviews and invitation sharpening use the local fallback for now.</h4>
               <p>{runtime.reviewDisabledNote}</p>
             </div>
           ) : null}
 
-          {isWorkshopReviewOpen && project.aiEnabled ? (
+          {isWorkshopReviewOpen && runtime.aiActionsAvailable ? (
             <div className="review-card workshop-review-card">
               <p className="eyebrow review-provider-eyebrow">{workshopReviewState.providerLabel}</p>
               <div className="review-head">
@@ -2574,9 +2577,15 @@ export function BuilderScreen() {
                             : `Review ${section.title}`
                         }
                         className="tiny-button section-icon-button section-review-trigger"
-                        disabled={!project.aiEnabled}
+                        disabled={!runtime.aiActionsAvailable}
                         onClick={() => handleToggleSectionReview(section.id)}
-                        title={openSectionReviewId === section.id ? "Hide review" : "Review section"}
+                        title={
+                          runtime.aiActionsAvailable
+                            ? openSectionReviewId === section.id
+                              ? "Hide review"
+                              : "Review section"
+                            : runtime.reviewDisabledNote
+                        }
                         type="button"
                       >
                         <SectionControlIcon icon="review" />
@@ -2600,7 +2609,7 @@ export function BuilderScreen() {
                 </div>
               </div>
 
-              {openSectionReviewId === section.id && project.aiEnabled ? (
+              {openSectionReviewId === section.id && runtime.aiActionsAvailable ? (
                 <div className="review-card section-review-card">
                   <div className="review-head">
                     <StatusPill tone={sectionReview.tone}>
@@ -3059,7 +3068,7 @@ export function BuilderScreen() {
               <div className="prompt-field-head">
                 <h4>Working invitation</h4>
                 <SharpenInvitationButton
-                  disabled={!project.aiEnabled}
+                  disabled={!runtime.aiActionsAvailable}
                   loading={isSharpeningInvitation}
                   onClick={() => handleSharpenInvitation()}
                 />
@@ -3244,7 +3253,7 @@ export function BuilderScreen() {
                           <div className="prompt-field-head">
                             <label>Sub-prompt</label>
                             <SharpenInvitationButton
-                              disabled={!project.aiEnabled || !selectedBlockItem}
+                              disabled={!runtime.aiActionsAvailable || !selectedBlockItem}
                               loading={isSharpeningInvitation}
                               onClick={() =>
                                 handleSharpenInvitation({

@@ -1,4 +1,3 @@
-import { getReviewProvider } from "@/domain/workshop/review-provider";
 import type { AiReviewRuntimeStatus } from "@/domain/workshop/ai-review-contract";
 import type { WorkshopProject } from "@/domain/workshop/types";
 import {
@@ -10,6 +9,7 @@ export interface RuntimeCapabilities {
   aiActionsAvailable: boolean;
   aiStatusLabel: string;
   aiToggleLabel: string;
+  aiToggleAvailable: boolean;
   reviewProviderLabel: string;
   reviewAvailabilityLabel: string;
   reviewDisabledNote: string;
@@ -21,26 +21,38 @@ export function getRuntimeCapabilities(
   storageMode: ProjectStorageMode = "guest-local",
   aiReviewRuntime?: AiReviewRuntimeStatus,
 ) {
-  const reviewProvider = getReviewProvider(project);
-  const aiActionsAvailable = project.aiEnabled;
-  const reviewProviderLabel = aiReviewRuntime?.providerLabel ?? reviewProvider.label;
+  const aiToggleAvailable = aiReviewRuntime?.configured === true;
+  const aiActionsAvailable = project.aiEnabled && aiToggleAvailable;
+  const fallbackProviderLabel =
+    aiReviewRuntime?.fallbackProviderLabel ?? "Local heuristic review";
+  const reviewProviderLabel = aiActionsAvailable
+    ? (aiReviewRuntime?.providerLabel ?? "AI review")
+    : fallbackProviderLabel;
   const storage = getStorageModeDetails(storageMode);
-  const reviewAvailabilityLabel = !aiActionsAvailable
-    ? "Review assistance paused"
-    : aiReviewRuntime?.configured
-      ? `${reviewProviderLabel} ready`
-      : aiReviewRuntime?.providerId === "groq"
-        ? "Local fallback ready; Groq needs configuration"
-        : "Local fallback ready";
+  const reviewAvailabilityLabel = !aiToggleAvailable
+    ? "AI unavailable; local review only"
+    : !project.aiEnabled
+      ? "AI assistance paused"
+      : `${reviewProviderLabel} ready`;
 
   return {
     aiActionsAvailable,
-    aiStatusLabel: aiActionsAvailable ? "AI assist on" : "AI assist off",
-    aiToggleLabel: aiActionsAvailable ? "Turn AI assistance off" : "Turn AI assistance on",
+    aiStatusLabel: !aiToggleAvailable
+      ? "AI unavailable"
+      : aiActionsAvailable
+        ? "AI assist on"
+        : "AI assist off",
+    aiToggleAvailable,
+    aiToggleLabel: !aiToggleAvailable
+      ? "Configure GROQ_API_KEY on the server to enable AI assistance."
+      : aiActionsAvailable
+        ? "Turn AI assistance off"
+        : "Turn AI assistance on",
     reviewProviderLabel,
     reviewAvailabilityLabel,
-    reviewDisabledNote:
-      "Reviews and invitation sharpening are paused for this project until AI assistance is turned back on.",
+    reviewDisabledNote: !aiToggleAvailable
+      ? "AI assistance needs a server-side GROQ_API_KEY. Local heuristic review remains available without sending prompts to an external provider."
+      : "Reviews and invitation sharpening are paused for this project until AI assistance is turned back on.",
     storageLabel: storage.savedLabel,
   } satisfies RuntimeCapabilities;
 }
