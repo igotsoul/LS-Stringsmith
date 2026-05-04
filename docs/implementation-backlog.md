@@ -303,7 +303,7 @@ Not part of the next slices unless explicitly re-prioritized:
 - collaboration
 - template marketplace
 - richer LS corpus ingestion
-- analytics
+- privacy-preserving usage analytics
 - mobile-first authoring
 - advanced permissioning
 

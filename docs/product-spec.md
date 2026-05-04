@@ -878,7 +878,7 @@ Guest-only mode:
 - no automatic cloud sync in guest mode
 - explicit AI enablement per project
 - transparent AI usage
-- no training on customer data
+- AI providers must be selected and configured so customer data is not used for provider training without explicit consent
 - deletion and retention policy must be definable
 - EU-hosting readiness is required
 - self-hosting must remain possible

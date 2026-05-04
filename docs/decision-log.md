@@ -417,4 +417,4 @@ Consequence:
 
 These are not decisions yet, but likely upcoming items for the log:
 
-- AI review observability and provider failure telemetry
+- privacy-preserving AI review observability and provider failure telemetry

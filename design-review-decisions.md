@@ -48,7 +48,7 @@ Wichtige Grundsaetze:
 
 - Keine neu generierten LS-Icons.
 - Offizielle Icons von https://liberatingstructures.de/liberating-structures-menue/alle-liberating-structures-alphabetisch-sortiert/ verwenden.
-- Rechtesituation ist laut Auftrag geklaert.
+- Lizenz- und Quellenlage als Third-Party-Boundary dokumentieren; kommerzieller Einsatz sollte zusaetzlich geklaert werden.
 - Icons automatisch von den offiziellen LS-Seiten extrahieren und lokal speichern.
 - Farben unveraendert lassen.
 - Icons sauber je Liberating Structure mappen.

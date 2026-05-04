@@ -2,7 +2,7 @@
 
 ## LS Icon Strategy v0.2
 
-Last reviewed: 2026-04-30
+Last reviewed: 2026-05-04
 
 This note documents the current recommendation for handling Liberating Structures icons in the prototype and later product implementation.
 
@@ -11,7 +11,7 @@ This note documents the current recommendation for handling Liberating Structure
 The design review on 2026-04-29 supersedes the earlier placeholder strategy:
 
 - official Liberating Structures icons are used
-- rights are considered cleared for this project use, but the assets remain third-party materials
+- icon licensing and sources are documented as a third-party boundary; commercial use should obtain permission or replace the assets
 - icons are extracted from the official German LS pages
 - icon colors stay unchanged
 - icons are stored locally under `public/icons/official/`

@@ -114,7 +114,7 @@ Repository stewardship baseline:
 - autonomous workshop generation
 - deep roles / permissions
 - mobile-first authoring
-- advanced analytics
+- advanced privacy-preserving analytics
 
 ## 4. Current Gaps Between Target and Implementation
 
