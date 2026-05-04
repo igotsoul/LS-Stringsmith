@@ -2,6 +2,7 @@
   "name": "ls-stringsmith",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.30.3",
   "license": "MIT",
   "scripts": {
     "dev": "node scripts/next-with-wasm.mjs dev --webpack",
@@ -9,11 +10,13 @@
     "build": "node scripts/next-with-wasm.mjs build --webpack",
     "start": "next start",
     "sync:ls-icons": "node scripts/sync-ls-icons.mjs",
+    "audit": "pnpm audit --prod --audit-level=high",
     "test": "node --disable-warning=ExperimentalWarning --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --loader ./scripts/test-alias-loader.mjs --test tests/workshop-domain.test.ts",
     "typecheck": "tsc --noEmit"
   },
   "engines": {
-    "node": ">=22.13.0"
+    "node": ">=22.13.0",
+    "pnpm": ">=10.30.3"
   },
   "dependencies": {
     "next": "16.2.4",
