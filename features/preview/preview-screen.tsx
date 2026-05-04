@@ -178,8 +178,9 @@ function renderSection(
                 </p>
               ) : null}
               {includeNotes && block.facilitatorNotes?.trim() ? (
-                <p className="manual-facilitator-note">
-                  Facilitator notes: {block.facilitatorNotes}
+                <p className="manual-facilitator-note manual-facilitator-private-note">
+                  <span className="manual-note-label">Facilitator notes</span>
+                  <span>{block.facilitatorNotes}</span>
                 </p>
               ) : null}
             </div>
@@ -217,8 +218,9 @@ function renderSection(
                 </p>
               ) : null}
               {includeNotes && block.facilitatorNotes?.trim() ? (
-                <p className="manual-facilitator-note">
-                  Facilitator notes: {block.facilitatorNotes}
+                <p className="manual-facilitator-note manual-facilitator-private-note">
+                  <span className="manual-note-label">Facilitator notes</span>
+                  <span>{block.facilitatorNotes}</span>
                 </p>
               ) : null}
               {includeNotes && stepsWithPrompts.length ? (

@@ -4335,6 +4335,28 @@ a:focus-visible {
   text-align: right;
 }
 
+.manual-facilitator-private-note {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.55rem;
+  max-width: 68ch;
+  margin-top: 0.4rem;
+  color: var(--color-ink-600);
+  font-size: 0.94rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.manual-note-label {
+  flex: 0 0 auto;
+  color: var(--color-ink-500);
+  font: 650 0.68rem/1.2 var(--font-mono);
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .manual-intro {
   max-width: 66ch;
   margin-top: 0.55rem;
@@ -5310,6 +5332,7 @@ a:focus-visible {
   .manual-draft-callout p,
   .manual-substep p,
   .manual-facilitator-note,
+  .manual-note-label,
   .manual-subcue {
     max-width: none;
     color: #222222 !important;
