@@ -313,14 +313,20 @@ function AiSparkIcon() {
       viewBox="0 0 24 24"
     >
       <path
+        className="ai-action-icon-main"
         d="M12 3.75l1.6 4.15 4.15 1.6-4.15 1.6L12 15.25l-1.6-4.15-4.15-1.6 4.15-1.6L12 3.75Z"
-        stroke="currentColor"
         strokeLinejoin="round"
         strokeWidth="1.8"
       />
       <path
-        d="M18.25 14.25l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7.7-1.8ZM5.75 13.75l.55 1.45 1.45.55-1.45.55-.55 1.45-.55-1.45-1.45-.55 1.45-.55.55-1.45Z"
-        stroke="currentColor"
+        className="ai-action-icon-accent"
+        d="M18.25 14.25l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7.7-1.8Z"
+        strokeLinejoin="round"
+        strokeWidth="1.6"
+      />
+      <path
+        className="ai-action-icon-warm"
+        d="M5.75 13.75l.55 1.45 1.45.55-1.45.55-.55 1.45-.55-1.45-1.45-.55 1.45-.55.55-1.45Z"
         strokeLinejoin="round"
         strokeWidth="1.6"
       />
