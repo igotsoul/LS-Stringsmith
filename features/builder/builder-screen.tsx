@@ -703,6 +703,11 @@ export function BuilderScreen() {
   const [collapsedSectionIds, setCollapsedSectionIds] = useState<Set<string>>(() => new Set());
   const [inspectorTab, setInspectorTab] = useState<InspectorTab>("details");
   const [isExportMenuOpen, setIsExportMenuOpen] = useState(false);
+  const [exportMenuPosition, setExportMenuPosition] = useState<{
+    left: number;
+    top: number;
+    width: number;
+  } | null>(null);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [activeMatchmakers, setActiveMatchmakers] = useState<MatchmakerCategory[]>([]);
   const [activeKinds, setActiveKinds] = useState<Array<Exclude<EntryKind, "transition">>>([]);
@@ -717,6 +722,7 @@ export function BuilderScreen() {
   const [workshopReviewSnapshot, setWorkshopReviewSnapshot] =
     useState<WorkshopProject | null>(null);
   const libraryCardRefs = useRef<Record<string, HTMLButtonElement | null>>({});
+  const exportButtonRef = useRef<HTMLButtonElement | null>(null);
   const fallbackSection = project.sections[0];
   const reviewProvider = useMemo(() => getReviewProvider(project), [project.aiEnabled]);
   const runtime = useMemo(
@@ -725,6 +731,47 @@ export function BuilderScreen() {
   );
   const activeProjectHref = `/project/${encodeURIComponent(activeProjectId)}`;
   const dayLabels = useMemo(() => getDayLabels(project), [project]);
+
+  useEffect(() => {
+    if (!isExportMenuOpen) {
+      setExportMenuPosition(null);
+      return;
+    }
+
+    function updateExportMenuPosition() {
+      const button = exportButtonRef.current;
+
+      if (!button) {
+        return;
+      }
+
+      const rect = button.getBoundingClientRect();
+      const viewportPadding = 12;
+      const viewportWidth = window.innerWidth;
+      const availableWidth = Math.max(0, viewportWidth - viewportPadding * 2);
+      const menuWidth = Math.min(320, availableWidth);
+      const maxLeft = Math.max(viewportPadding, viewportWidth - menuWidth - viewportPadding);
+      const left = Math.min(
+        Math.max(viewportPadding, rect.right - menuWidth),
+        maxLeft,
+      );
+
+      setExportMenuPosition({
+        left,
+        top: rect.bottom + 8,
+        width: menuWidth,
+      });
+    }
+
+    updateExportMenuPosition();
+    window.addEventListener("resize", updateExportMenuPosition);
+    window.addEventListener("scroll", updateExportMenuPosition, true);
+
+    return () => {
+      window.removeEventListener("resize", updateExportMenuPosition);
+      window.removeEventListener("scroll", updateExportMenuPosition, true);
+    };
+  }, [isExportMenuOpen]);
 
   if (!fallbackSection) {
     return null;
@@ -1872,12 +1919,17 @@ export function BuilderScreen() {
               aria-expanded={isExportMenuOpen}
               className="primary-button"
               onClick={() => setIsExportMenuOpen((current) => !current)}
+              ref={exportButtonRef}
               type="button"
             >
               Export
             </button>
             {isExportMenuOpen ? (
-              <div className="export-menu" role="menu">
+              <div
+                className="export-menu"
+                role="menu"
+                style={exportMenuPosition ?? undefined}
+              >
                 <button onClick={handleExportMarkdown} role="menuitem" type="button">
                   <span>Markdown manual</span>
                   <small>Download a facilitation-ready `.md` file.</small>

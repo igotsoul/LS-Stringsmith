@@ -283,14 +283,15 @@ a:focus-visible {
 }
 
 .export-menu {
-  position: absolute;
-  top: calc(100% + 0.45rem);
-  right: 0;
-  z-index: 20;
+  position: fixed;
+  z-index: 80;
   display: grid;
   gap: 0.35rem;
-  width: min(20rem, calc(100vw - 2rem));
+  width: min(20rem, calc(100dvw - 1.5rem));
+  max-height: calc(100dvh - 1.5rem);
   padding: 0.5rem;
+  overflow-y: auto;
+  box-sizing: border-box;
   border-radius: 1rem;
   border: 1px solid rgba(34, 50, 74, 0.1);
   background: rgba(255, 255, 255, 0.98);
