@@ -109,7 +109,7 @@ export function AppTopbar({ active }: AppTopbarProps) {
           />
         </div>
         <div>
-          <p className="eyebrow">Scaffold Alpha</p>
+          <p className="eyebrow">Public Alpha</p>
           <h1>LS Stringsmith</h1>
         </div>
       </div>

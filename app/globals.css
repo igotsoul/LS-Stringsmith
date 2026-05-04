@@ -568,6 +568,29 @@ a:focus-visible {
   font-size: 1.02rem;
 }
 
+.feedback-callout {
+  margin-top: 1.1rem;
+  max-width: 42rem;
+  border-left: 3px solid rgba(31, 92, 91, 0.34);
+  padding-left: 0.95rem;
+}
+
+.feedback-callout span {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--color-teal-700);
+  font: 700 0.74rem/1.2 var(--font-mono);
+  letter-spacing: 0.02em;
+}
+
+.feedback-callout p {
+  margin: 0 0 0.45rem;
+  max-width: 58ch;
+  color: var(--color-ink-700);
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
 .primary-button,
 .secondary-button {
   display: inline-flex;
@@ -5134,6 +5157,10 @@ a:focus-visible {
 :root[data-theme="dark"] .status-pill-subtle {
   border-color: rgba(203, 213, 225, 0.08);
   background: rgba(20, 30, 41, 0.8);
+}
+
+:root[data-theme="dark"] .feedback-callout {
+  border-left-color: rgba(95, 183, 176, 0.42);
 }
 
 :root[data-theme="dark"] .invitation-dialog-backdrop {

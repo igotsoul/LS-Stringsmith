@@ -253,6 +253,21 @@ export function ProjectsScreen() {
               Review active setup
             </Link>
           </div>
+          <div className="feedback-callout">
+            <span>Feedback welcome</span>
+            <p>
+              This public alpha is intentionally early. Open a GitHub issue or
+              send a LinkedIn note if something feels useful, confusing, or missing.
+            </p>
+            <a
+              className="text-button"
+              href="https://github.com/igotsoul/LS-Stringsmith/issues"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Share feedback on GitHub
+            </a>
+          </div>
         </div>
 
         <div className="hero-orbit">
