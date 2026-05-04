@@ -101,7 +101,12 @@ export function AppTopbar({ active }: AppTopbarProps) {
     <header className="topbar">
       <div className="brand">
         <div className="brand-mark" aria-hidden="true">
-          <img className="brand-logo-mark" src="/brand/ls-stringsmith-mark.png" alt="" />
+          <img className="brand-logo-mark brand-logo-mark-light" src="/brand/ls-stringsmith-mark.png" alt="" />
+          <img
+            className="brand-logo-mark brand-logo-mark-dark"
+            src="/brand/ls-stringsmith-mark-dark.png"
+            alt=""
+          />
         </div>
         <div>
           <p className="eyebrow">Scaffold Alpha</p>

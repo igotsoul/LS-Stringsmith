@@ -224,6 +224,7 @@ a:focus-visible {
 }
 
 .brand-mark {
+  position: relative;
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
@@ -241,6 +242,10 @@ a:focus-visible {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.brand-logo-mark-dark {
+  display: none;
 }
 
 .eyebrow {
@@ -4634,7 +4639,17 @@ a:focus-visible {
 }
 
 :root[data-theme="dark"] .brand-mark {
-  background: rgba(21, 31, 43, 0.56);
+  background: var(--color-surface-1);
+  border: 1px solid rgba(139, 216, 208, 0.16);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.26);
+}
+
+:root[data-theme="dark"] .brand-logo-mark-light {
+  display: none;
+}
+
+:root[data-theme="dark"] .brand-logo-mark-dark {
+  display: block;
 }
 
 :root[data-theme="dark"] .nav-chip,
