@@ -386,6 +386,31 @@ Consequence:
 - Preview and Markdown export include these notes when they are present and notes are enabled
 - advanced export configuration and richer day management remain later-scope hardening work
 
+### DL-019: Public alpha demo should be browser-local and AI-off by default
+
+Status: accepted
+
+Decision:
+
+- publish the public alpha demo as a browser-local experience first
+- prefer `Guest local` or `Workspace draft` for demo visitors
+- keep shared hosted AI disabled by default with `LSD_AI_PROVIDER=off`
+- allow AI through user-owned server-side configuration in local/self-hosted installs
+- do not present `Server draft` as production multi-user storage until durable hosted storage, usage limits, and account semantics are hardened
+
+Why:
+
+- browser-local demo data prevents visitors from overwriting each other's drafts
+- a shared provider key creates avoidable throttling, cost, and abuse risk
+- the product remains useful through deterministic/local review when AI is off
+- the current server draft mode is an implementation seam, not a collaboration model
+
+Consequence:
+
+- README and release messaging should frame the alpha demo as safe browser-only evaluation
+- public hosting can be cheap/static or free-tier Next.js as long as server persistence and AI are not promised
+- future hosted AI requires rate limiting, monitoring, and clearer operational ownership
+
 ---
 
 ## Open Decision Candidates
