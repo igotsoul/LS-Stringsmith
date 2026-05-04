@@ -2,7 +2,7 @@
 
 ## Decision Log
 
-Last updated: 2026-04-30
+Last updated: 2026-05-04
 
 This log captures meaningful product, UX, and architecture decisions that should survive chat history compression. Keep entries short and decision-oriented.
 
@@ -356,6 +356,35 @@ Consequence:
 
 - future design work should either refine the current cool-neutral baseline or intentionally replace it in one named visual pass
 - docs should distinguish implemented visual baseline from earlier exploratory recommendations
+
+---
+
+## 2026-05-04
+
+### DL-018: Alpha builder closure uses direct controls over larger management dialogs
+
+Status: accepted
+
+Decision:
+
+- replace the Builder export placeholder with a compact export menu
+- download Markdown manuals and project bundles directly from Builder
+- keep print/PDF generation routed through Manual Preview and browser print
+- persist preparation notes at section level and facilitator notes at block-instance level
+- keep day handling simple for alpha: add a day, rename a day label, and move sections into an existing day lane
+- defer complex day merge, day reorder, collapse, and export preset dialogs
+
+Why:
+
+- the alpha needs the core facilitation workflow to be complete without introducing modal-heavy management surfaces
+- facilitators need private preparation notes to survive save/export, not only library guidance text
+- day groups should be useful for real workshop planning while staying visually secondary to sections and strings
+
+Consequence:
+
+- the project model now carries `section.notes` and `block.facilitatorNotes`
+- Preview and Markdown export include these notes when they are present and notes are enabled
+- advanced export configuration and richer day management remain later-scope hardening work
 
 ---
 

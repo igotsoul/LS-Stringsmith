@@ -25,6 +25,8 @@ import type {
   AiReviewResponse,
   AiReviewSource,
 } from "@/domain/workshop/ai-review-contract";
+import { exportProjectMarkdown } from "@/domain/workshop/export-markdown";
+import { serializeProjectBundle } from "@/domain/workshop/project-bundle";
 import {
   getReviewProvider,
 } from "@/domain/workshop/review-provider";
@@ -37,6 +39,7 @@ import type {
 import { buildPreviewWarnings } from "@/domain/workshop/project-selectors";
 import { getRuntimeCapabilities } from "@/domain/workshop/runtime-capabilities";
 import { useAiReview } from "@/features/reviews/use-ai-review";
+import { downloadFile } from "@/lib/download-file";
 import type {
   BlockItem,
   EntryKind,
@@ -155,6 +158,20 @@ const sourceLabels: Record<SourceStatus, string> = {
 
 const chainScrollEdgeThreshold = 104;
 const chainScrollMaxStep = 24;
+
+function getDayLabels(project: WorkshopProject) {
+  const labels = project.sections.map((section) => section.dayLabel || "Day 1");
+  return Array.from(new Set(labels));
+}
+
+function getNextDayLabel(dayLabels: string[]) {
+  const highestDay = dayLabels.reduce((highest, dayLabel) => {
+    const match = dayLabel.match(/day\s+(\d+)/i);
+    return match ? Math.max(highest, Number(match[1])) : highest;
+  }, 0);
+
+  return `Day ${highestDay + 1}`;
+}
 
 function normalizeForSearch(value: string) {
   return value.toLowerCase().trim();
@@ -660,9 +677,11 @@ export function BuilderScreen() {
     storageMode,
     removeSection,
     removeBlock,
+    moveSectionToDay,
+    renameDayLabel,
     updateBlockInvitation,
+    updateBlockNotes,
     updateBlockStep,
-    updateProject,
     updateSection,
     updateTransition,
   } = useProjectStore();
@@ -683,6 +702,7 @@ export function BuilderScreen() {
   const [isLibraryPositionPickerOpen, setIsLibraryPositionPickerOpen] = useState(false);
   const [collapsedSectionIds, setCollapsedSectionIds] = useState<Set<string>>(() => new Set());
   const [inspectorTab, setInspectorTab] = useState<InspectorTab>("details");
+  const [isExportMenuOpen, setIsExportMenuOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [activeMatchmakers, setActiveMatchmakers] = useState<MatchmakerCategory[]>([]);
   const [activeKinds, setActiveKinds] = useState<Array<Exclude<EntryKind, "transition">>>([]);
@@ -704,6 +724,7 @@ export function BuilderScreen() {
     [aiReviewRuntime, project.aiEnabled, storageMode],
   );
   const activeProjectHref = `/project/${encodeURIComponent(activeProjectId)}`;
+  const dayLabels = useMemo(() => getDayLabels(project), [project]);
 
   if (!fallbackSection) {
     return null;
@@ -1493,6 +1514,64 @@ export function BuilderScreen() {
     });
   }
 
+  function handleAddDay() {
+    const nextDayLabel = getNextDayLabel(dayLabels);
+    const nextSectionId = addSection({
+      afterSectionId: project.sections.at(-1)?.id ?? null,
+      values: {
+        dayLabel: nextDayLabel,
+      },
+    });
+
+    if (!nextSectionId) {
+      return;
+    }
+
+    const nextEntryId =
+      selectedEntry.kind === "transition"
+        ? (libraryEntries[0]?.id ?? "intro")
+        : selectedEntry.id;
+
+    setActiveSectionId(nextSectionId);
+    setSelection({
+      entryId: nextEntryId,
+      sectionId: nextSectionId,
+    });
+  }
+
+  function handleRenameDay(currentDayLabel: string) {
+    const nextDayLabel = window.prompt("Rename day", currentDayLabel)?.trim();
+
+    if (!nextDayLabel || nextDayLabel === currentDayLabel) {
+      return;
+    }
+
+    if (dayLabels.includes(nextDayLabel)) {
+      window.alert(`"${nextDayLabel}" already exists. Move sections into it instead.`);
+      return;
+    }
+
+    renameDayLabel(currentDayLabel, nextDayLabel);
+  }
+
+  function handleExportMarkdown() {
+    downloadFile(
+      exportProjectMarkdown(project),
+      `${project.id}-manual.md`,
+      "text/markdown;charset=utf-8",
+    );
+    setIsExportMenuOpen(false);
+  }
+
+  function handleExportBundle() {
+    downloadFile(
+      serializeProjectBundle(project, { exportedFrom: storageMode }),
+      `${project.id}.ls-stringsmith.json`,
+      "application/json;charset=utf-8",
+    );
+    setIsExportMenuOpen(false);
+  }
+
   function handleRemoveSection(sectionId: string, sectionTitle: string) {
     if (
       !window.confirm(
@@ -1788,9 +1867,36 @@ export function BuilderScreen() {
           <Link className="secondary-button" href={`${activeProjectHref}/preview`}>
             Open preview
           </Link>
-          <button className="primary-button" type="button">
-            Export later
-          </button>
+          <div className="export-menu-wrap">
+            <button
+              aria-expanded={isExportMenuOpen}
+              className="primary-button"
+              onClick={() => setIsExportMenuOpen((current) => !current)}
+              type="button"
+            >
+              Export
+            </button>
+            {isExportMenuOpen ? (
+              <div className="export-menu" role="menu">
+                <button onClick={handleExportMarkdown} role="menuitem" type="button">
+                  <span>Markdown manual</span>
+                  <small>Download a facilitation-ready `.md` file.</small>
+                </button>
+                <button onClick={handleExportBundle} role="menuitem" type="button">
+                  <span>Project bundle</span>
+                  <small>Download a portable LS Stringsmith project file.</small>
+                </button>
+                <Link
+                  href={`${activeProjectHref}/preview`}
+                  onClick={() => setIsExportMenuOpen(false)}
+                  role="menuitem"
+                >
+                  <span>Preview / print PDF</span>
+                  <small>Open the run sheet and use browser print.</small>
+                </Link>
+              </div>
+            ) : null}
+          </div>
         </div>
       </div>
 
@@ -2169,6 +2275,13 @@ export function BuilderScreen() {
               {index === 0 || project.sections[index - 1]?.dayLabel !== section.dayLabel ? (
                 <div className="day-band">
                   <span className="day-chip">{section.dayLabel}</span>
+                  <button
+                    className="day-action-button"
+                    onClick={() => handleRenameDay(section.dayLabel)}
+                    type="button"
+                  >
+                    Rename day
+                  </button>
                 </div>
               ) : null}
 
@@ -2273,6 +2386,24 @@ export function BuilderScreen() {
                   <div className="section-meta-group section-meta-group-info">
                     <div className="section-info-pills" aria-label="Section details">
                       <span className="phase-summary-pill">{phaseLabel}</span>
+                      {section.id === activeSectionId ? (
+                        <select
+                          aria-label={`Move ${section.title} to day`}
+                          className="section-day-select"
+                          onChange={(event) =>
+                            moveSectionToDay(section.id, event.target.value)
+                          }
+                          value={section.dayLabel}
+                        >
+                          {dayLabels.map((dayLabel) => (
+                            <option key={dayLabel} value={dayLabel}>
+                              {dayLabel}
+                            </option>
+                          ))}
+                        </select>
+                      ) : (
+                        <span className="meta-pill">{section.dayLabel}</span>
+                      )}
                       {section.id === activeSectionId ? (
                         <input
                           className="section-time-input"
@@ -2740,6 +2871,15 @@ export function BuilderScreen() {
               <strong>Add section</strong>
               <p>Start a fresh module with its own subgoal and local LS chain.</p>
             </button>
+            <button
+              className="section-create-card"
+              onClick={handleAddDay}
+              type="button"
+            >
+              <span className="section-create-plus">+</span>
+              <strong>Add day</strong>
+              <p>Create a new day lane with its first draft section.</p>
+            </button>
           </div>
         </section>
 
@@ -3079,13 +3219,51 @@ export function BuilderScreen() {
           {inspectorTab === "notes" ? (
             <div className="inspector-tab-panel">
               <div className="inspector-block">
-                <h4>Facilitator notes</h4>
+                <h4>Section notes</h4>
                 <textarea
-                  key={`${selection.entryId}-${selection.canvasItemId ?? "library"}-notes`}
-                  defaultValue={selectedEntry.notes}
-                  rows={10}
+                  onChange={(event) =>
+                    updateSection(selectedSection.id, { notes: event.target.value })
+                  }
+                  placeholder="Capture prep notes, risks, materials, or facilitation reminders for this section."
+                  rows={6}
+                  value={selectedSection.notes ?? ""}
                 />
               </div>
+
+              {selectedBlockItem ? (
+                <div className="inspector-block">
+                  <h4>Block facilitator notes</h4>
+                  <textarea
+                    onChange={(event) =>
+                      updateBlockNotes(
+                        selectedSection.id,
+                        selectedBlockItem.id,
+                        event.target.value,
+                      )
+                    }
+                    placeholder="Add private notes for facilitating this structure."
+                    rows={7}
+                    value={selectedBlockItem.facilitatorNotes ?? ""}
+                  />
+                </div>
+              ) : null}
+
+              {selectedTransitionItem ? (
+                <div className="inspector-block">
+                  <h4>Transition note</h4>
+                  <p className="inspector-muted-note">
+                    Transition notes are edited in Details because they are part of the
+                    visible flow between blocks.
+                  </p>
+                </div>
+              ) : null}
+
+              {hasLibrarySelection ? (
+                <div className="inspector-block">
+                  <h4>Library guidance</h4>
+                  <p>{selectedEntry.notes}</p>
+                </div>
+              ) : null}
             </div>
           ) : null}
 

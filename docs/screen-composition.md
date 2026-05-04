@@ -215,11 +215,13 @@ When day groups are used:
 
 - render them as labeled bands with subtle background distinction
 - keep them visually quieter than section boxes
+- expose lightweight day rename controls in the band
+- let selected sections move into an existing day from the section header
 
 Suggested format:
 
 ```text
-Day 1
+Day 1 [Rename]
 [Section Box]
 [Section Box]
 ```
@@ -326,7 +328,7 @@ This screen should feel much more like a document than a tool.
 
 ```text
 +--------------------------------------------------------------------------------------------------+
-| Top Bar: Back to Builder | Manual Preview | Export Markdown | Export HTML | Export PDF          |
+| Top Bar: Back to Builder | Manual Preview | Notes toggle | Print / Save PDF | Export Markdown     |
 +--------------------------------------------------------------------------------------------------+
 | Warning Summary                                                                                  |
 +--------------------------------------------------------------------------------------------------+
@@ -355,30 +357,26 @@ This screen should feel much more like a document than a tool.
 - low UI chrome
 - easy to print
 
-## 6. Export Dialog Composition
+## 6. Builder Export Menu Composition
 
-### 6.1 Dialog Structure
+### 6.1 Menu Structure
 
 ```text
-+--------------------------------------------------------+
-| Export Manual                                          |
-+--------------------------------------------------------+
-| Format                                                 |
-| ( ) Markdown                                           |
-| ( ) Printable HTML                                     |
-| ( ) PDF                                                |
-| ( ) Project Bundle                                     |
-+--------------------------------------------------------+
-| Language                                               |
-| [English v]                                            |
-+--------------------------------------------------------+
-| Options                                                |
-| [ ] Include review summary                             |
-| [ ] Include empty note placeholders                    |
-+--------------------------------------------------------+
-| [Cancel] [Export]                                      |
-+--------------------------------------------------------+
++-------------------------------+
+| Export                        |
++-------------------------------+
+| Markdown manual               |
+| Project bundle                |
+| Preview / print PDF           |
++-------------------------------+
 ```
+
+The alpha export surface is a compact Builder menu rather than a modal dialog.
+Markdown and bundle exports download directly. Print/PDF output is routed through
+Manual Preview so browser print uses the same facilitation run sheet.
+
+Future export options, such as language presets, review-summary toggles, or empty
+notes placeholders, should be added only when they are needed by real export use.
 
 ## 7. Empty, Sparse, and Long-State Guidance
 

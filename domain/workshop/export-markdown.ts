@@ -99,6 +99,9 @@ export function exportProjectMarkdown(project: WorkshopProject) {
     lines.push(`- Prep note: ${escapeInline(section.prepNote)}`);
     lines.push(`- Duration: ${section.totalLabel}`);
     lines.push(`- Status: ${section.status}`);
+    if (section.notes?.trim()) {
+      lines.push(`- Section notes: ${escapeInline(section.notes)}`);
+    }
     if (sectionReview) {
       lines.push(`- Review label: ${sectionReview.label}`);
       lines.push(`- Review score: ${sectionReview.score}`);
@@ -149,6 +152,10 @@ export function exportProjectMarkdown(project: WorkshopProject) {
 
       if (block.facilitatorCue) {
         lines.push(`- Facilitator cue: ${escapeInline(block.facilitatorCue)}`);
+      }
+
+      if (block.facilitatorNotes?.trim()) {
+        lines.push(`- Facilitator notes: ${escapeInline(block.facilitatorNotes)}`);
       }
 
       if (block.warning) {

@@ -19,7 +19,10 @@ Repository: [github.com/igotsoul/LS-Stringsmith](https://github.com/igotsoul/LS-
 - editable setup metadata and section story arc
 - quick-add builder flow for appending blocks into sections
 - bundle export with richer metadata plus reviewed import validation UI
+- builder export menu for Markdown, project bundle, and preview/print PDF
 - local project bundle import/export and Markdown export
+- editable day labels and section movement between day lanes
+- persisted section notes and block facilitator notes
 - print-friendly preview surface with `Print / Save PDF`
 
 Key entry points:

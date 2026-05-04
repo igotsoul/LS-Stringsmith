@@ -27,6 +27,7 @@ type PreviewRunItem = {
   kind: "block" | "transition";
   primaryText: string;
   facilitatorCue?: string;
+  facilitatorNotes?: string;
   meta: string;
   warning?: string;
 };
@@ -70,6 +71,7 @@ function buildPreviewRunItems(project: WorkshopProject): PreviewRunItem[] {
         kind: "block",
         primaryText: block.invitation,
         facilitatorCue: block.facilitatorCue,
+        facilitatorNotes: block.facilitatorNotes,
         meta: `${section.indexLabel} · ${entry.libraryGroupSize ?? "Group"} · ${entry.libraryCategoryLabel ?? entry.typeLabel}`,
         warning: block.warning,
       } satisfies PreviewRunItem;
@@ -102,6 +104,12 @@ function renderSection(
           <p className="manual-section-focus">Prep focus: {section.prepNote}</p>
         </div>
         <p className="manual-intro">{section.subgoal}</p>
+        {includeNotes && section.notes?.trim() ? (
+          <div className="manual-section-notes">
+            <strong>Section notes</strong>
+            <p>{section.notes}</p>
+          </div>
+        ) : null}
         <div className="manual-draft-callout">
           <strong>Draft section</strong>
           <p>
@@ -128,6 +136,12 @@ function renderSection(
         <p className="manual-section-focus">Prep focus: {section.prepNote}</p>
       </div>
       <p className="manual-intro">{section.subgoal}</p>
+      {includeNotes && section.notes?.trim() ? (
+        <div className="manual-section-notes">
+          <strong>Section notes</strong>
+          <p>{section.notes}</p>
+        </div>
+      ) : null}
 
       {section.items.map((item) => {
         const entry = getInspectableEntry(item.entryId);
@@ -158,12 +172,17 @@ function renderSection(
                 <p>
                   Core move: {block.invitation}
                 </p>
-                {includeNotes && block.facilitatorCue ? (
-                  <p className="manual-facilitator-note">
-                    Facilitator cue: {block.facilitatorCue}
-                  </p>
-                ) : null}
-              </div>
+              {includeNotes && block.facilitatorCue ? (
+                <p className="manual-facilitator-note">
+                  Facilitator cue: {block.facilitatorCue}
+                </p>
+              ) : null}
+              {includeNotes && block.facilitatorNotes?.trim() ? (
+                <p className="manual-facilitator-note">
+                  Facilitator notes: {block.facilitatorNotes}
+                </p>
+              ) : null}
+            </div>
               <div className="manual-substeps">
                 {steps.map((step, stepIndex) => (
                   <div key={step.title} className="manual-substep">
@@ -195,6 +214,11 @@ function renderSection(
               {includeNotes && block.facilitatorCue ? (
                 <p className="manual-facilitator-note">
                   Facilitator cue: {block.facilitatorCue}
+                </p>
+              ) : null}
+              {includeNotes && block.facilitatorNotes?.trim() ? (
+                <p className="manual-facilitator-note">
+                  Facilitator notes: {block.facilitatorNotes}
                 </p>
               ) : null}
               {includeNotes && stepsWithPrompts.length ? (
@@ -379,6 +403,11 @@ export function PreviewScreen() {
               {activeRunItem.facilitatorCue ? (
                 <p className="preview-facilitator-cue">
                   {activeRunItem.facilitatorCue}
+                </p>
+              ) : null}
+              {activeRunItem.facilitatorNotes?.trim() ? (
+                <p className="preview-facilitator-cue">
+                  Notes: {activeRunItem.facilitatorNotes}
                 </p>
               ) : null}
               {activeRunItem.warning ? (

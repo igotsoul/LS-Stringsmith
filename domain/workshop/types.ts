@@ -62,6 +62,7 @@ export interface BlockItem {
   entryId: string;
   durationLabel: string;
   invitation: string;
+  facilitatorNotes?: string;
   steps?: StepFlow[];
   flowSummary?: string;
   facilitatorCue?: string;
@@ -99,6 +100,7 @@ export interface WorkshopSection {
   subgoal: string;
   dayLabel: string;
   timeRange?: string;
+  notes?: string;
   totalLabel: string;
   prepNote: string;
   prepLevel: "Light" | "Medium" | "Deep";

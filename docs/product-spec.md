@@ -88,7 +88,7 @@ Workshops are modeled hierarchically, not as one giant chain.
   - optional day grouping
   - sections
 - Day Group (optional)
-  - groups sections
+  - groups sections under a simple editable label
 - Section
   - title
   - sub-goal
@@ -97,6 +97,7 @@ Workshops are modeled hierarchically, not as one giant chain.
   - linear sequence of blocks
 - Block
   - either a Liberating Structure or a neutral workshop block
+  - facilitator notes for private block-specific preparation
 - Block Step
   - optional ordered step flow inside a Liberating Structure
   - can hold per-step sub-prompts and facilitator cues
@@ -111,7 +112,7 @@ Workshops are modeled hierarchically, not as one giant chain.
 - every section has a sub-goal
 - every section contains a linear sequence only
 - no parallel paths in MVP
-- days are optional grouping only
+- days are optional grouping only; alpha supports simple labels and section assignment, not date scheduling or complex day planning
 - section duration is calculated from block durations and transition durations
 - all durations can be manually overridden
 - library definitions remain unchanged; project instances are editable
@@ -263,9 +264,9 @@ Purpose:
 Purpose:
 
 - export markdown
-- export printable HTML
-- export PDF
 - export a portable project bundle
+- open Manual Preview for print/PDF output
+- keep deeper export preset options for a later export dialog if needed
 
 ### 12. Builder UI Component Specification
 
@@ -316,6 +317,7 @@ Responsibilities:
 
 - visualize the workshop as a sequence of sections
 - optionally group sections under days
+- support simple day creation, day renaming, and movement of sections into existing days
 - support drag and drop ordering
 - keep flow legible at all times
 
@@ -351,6 +353,7 @@ Section actions:
 
 - duplicate
 - move
+- move to day
 - delete
 - AI review section
 
@@ -400,7 +403,7 @@ Responsibilities:
 - edit details for selected section, block, or transition
 - show LS steps for a selected LS block
 - show metadata and risks
-- support longer-form notes editing
+- support longer-form section notes and block facilitator notes editing
 - host the LS-internal step editor without overloading the block card
 
 Design rule:
@@ -468,7 +471,7 @@ Preview sections:
 - sections
 - block details
 - transition notes
-- optional detailed structure flow and facilitator cues for higher-complexity structures
+- optional section notes, detailed structure flow, facilitator cues, and block facilitator notes
 - optional print-only preface with workshop metadata and final prep notes
 
 Preview review rule:
@@ -513,7 +516,7 @@ Print/PDF behavior:
 4. Reorder blocks
 5. Add invitations
 6. Add transition notes
-7. Adjust durations and notes
+7. Adjust durations, section notes, and block facilitator notes
 8. Run section review if needed
 
 #### 13.4 Manual Generation Flow
@@ -540,11 +543,12 @@ Actions are defined in a transport-neutral way so they can work with local guest
 #### 14.2 Day and Section Actions
 
 - addDay(projectId, payload)
-- reorderDays(projectId, orderedIds)
+- renameDay(projectId, currentLabel, nextLabel)
 - addSection(projectId, payload)
 - updateSection(sectionId, payload)
 - duplicateSection(sectionId)
 - moveSection(sectionId, targetIndex, optionalDayId)
+- moveSectionToDay(sectionId, dayLabel)
 - deleteSection(sectionId)
 
 #### 14.3 Builder Actions

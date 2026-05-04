@@ -136,6 +136,7 @@ function createBlockItem(sectionId: string, entryId: string) {
     entryId,
     durationLabel: durationFromEntry(entryId),
     invitation: invitationFromEntry(entryId),
+    facilitatorNotes: "",
     steps,
     flowSummary: flowSummaryFromSteps(steps) ?? flowSummaryFromEntry(entryId),
     facilitatorCue: facilitatorCueFromEntry(entryId),
@@ -170,6 +171,7 @@ function createSectionTemplate(previousSection?: WorkshopSection) {
     subgoal: "Define the next workshop move and the outcome you want to create.",
     dayLabel: previousSection?.dayLabel ?? "Day 1",
     timeRange: undefined,
+    notes: "",
     totalLabel: "Draft",
     prepNote: "Shape the section with one clear move and one visible outcome.",
     prepLevel: "Light",
@@ -298,7 +300,7 @@ export function addSection(
   project: WorkshopProject,
   options?: {
     afterSectionId?: string | null;
-    values?: Partial<Pick<WorkshopSection, "title" | "subgoal" | "timeRange" | "dayLabel">>;
+    values?: Partial<Pick<WorkshopSection, "title" | "subgoal" | "timeRange" | "dayLabel" | "notes">>;
   },
 ) {
   const targetIndex = options?.afterSectionId
@@ -411,7 +413,7 @@ export function removeSections(project: WorkshopProject, sectionIds: string[]) {
 export function updateSectionMeta(
   project: WorkshopProject,
   sectionId: string,
-  values: Partial<Pick<WorkshopSection, "title" | "subgoal" | "timeRange" | "dayLabel">>,
+  values: Partial<Pick<WorkshopSection, "title" | "subgoal" | "timeRange" | "dayLabel" | "notes">>,
 ) {
   return {
     ...project,
@@ -423,6 +425,96 @@ export function updateSectionMeta(
           })
         : section,
     ),
+  } satisfies WorkshopProject;
+}
+
+export function renameDayLabel(
+  project: WorkshopProject,
+  currentDayLabel: string,
+  nextDayLabel: string,
+) {
+  const normalizedNextLabel = nextDayLabel.trim();
+
+  if (!normalizedNextLabel || normalizedNextLabel === currentDayLabel) {
+    return project;
+  }
+
+  return {
+    ...project,
+    sections: project.sections.map((section) =>
+      section.dayLabel === currentDayLabel
+        ? {
+            ...section,
+            dayLabel: normalizedNextLabel,
+          }
+        : section,
+    ),
+  } satisfies WorkshopProject;
+}
+
+export function moveSectionToDay(
+  project: WorkshopProject,
+  sectionId: string,
+  nextDayLabel: string,
+) {
+  const normalizedNextLabel = nextDayLabel.trim();
+  const sourceIndex = project.sections.findIndex((section) => section.id === sectionId);
+
+  if (!normalizedNextLabel || sourceIndex === -1) {
+    return project;
+  }
+
+  const sourceSection = project.sections[sourceIndex];
+
+  if (sourceSection.dayLabel === normalizedNextLabel) {
+    return project;
+  }
+
+  const movedSection = enrichSection({
+    ...sourceSection,
+    dayLabel: normalizedNextLabel,
+  });
+  const nextSections = project.sections.filter((section) => section.id !== sectionId);
+  const targetDayLastIndex = nextSections.reduce(
+    (lastIndex, section, index) =>
+      section.dayLabel === normalizedNextLabel ? index : lastIndex,
+    -1,
+  );
+  const insertIndex = targetDayLastIndex === -1 ? nextSections.length : targetDayLastIndex + 1;
+
+  nextSections.splice(insertIndex, 0, movedSection);
+
+  return {
+    ...project,
+    sections: relabelSections(nextSections),
+  } satisfies WorkshopProject;
+}
+
+export function updateBlockNotes(
+  project: WorkshopProject,
+  sectionId: string,
+  blockItemId: string,
+  facilitatorNotes: string,
+) {
+  return {
+    ...project,
+    sections: project.sections.map((section) => {
+      if (section.id !== sectionId) {
+        return section;
+      }
+
+      return enrichSection({
+        ...section,
+        items: section.items.map((item) =>
+          item.kind === "block" && item.id === blockItemId
+            ? {
+                ...item,
+                facilitatorNotes,
+              }
+            : item,
+        ),
+      });
+    }),
   } satisfies WorkshopProject;
 }
 

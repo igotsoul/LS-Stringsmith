@@ -2,7 +2,7 @@
 
 ## Implementation Backlog
 
-Last updated: 2026-04-30
+Last updated: 2026-05-04
 
 This backlog turns the current repo state into the next structured delivery plan. It is intentionally slice-based instead of issue-exhaustive.
 
@@ -28,6 +28,9 @@ Already completed:
 - heuristic review provider abstraction
 - Groq-backed AI review provider integration with local fallback
 - preview / export baseline
+- direct builder export menu for Markdown manual, project bundle, and preview/print PDF
+- persisted section notes and block facilitator notes
+- simple day add, rename, and section-to-day movement in the builder
 - persisted multi-project management
 
 ## 3. Priority Slices
@@ -231,16 +234,19 @@ Out of Scope:
 Verifiziere mit build und typecheck.
 ```
 
-### Slice D: Hardening & Release Readiness
+### Slice D: Functional Alpha Closure & Release Readiness
 
 Priority: P2
 
+Status: In progress. The small builder/manual closure items below are complete; automated coverage, release checklist, and broader error-state hardening remain open.
+
 Goal:
 
-- make the app stable enough for a credible internal alpha
+- make the app functionally complete and stable enough for a credible internal alpha
 
 In Scope:
 
+- small workflow completions that replace placeholders
 - test coverage for core domain and storage seams
 - smoke tests / checklists for key flows
 - empty / error / loading states
@@ -253,6 +259,12 @@ Out of Scope:
 
 Acceptance Criteria:
 
+- Done: builder export placeholder is replaced by a working export menu
+- Done: Markdown manual export can be started from Builder and Preview
+- Done: project bundle export can be started from Builder and Projects
+- Done: Preview remains the print / PDF path
+- Done: section notes and block facilitator notes are persisted and appear in manual/Markdown output
+- Done: day labels can be renamed and sections can be moved between existing day lanes
 - core storage and bundle flows have automated coverage
 - key user-facing error states are explicit
 - self-host path is documented
@@ -261,7 +273,7 @@ Acceptance Criteria:
 Recommended thread start prompt:
 
 ```text
-Arbeite nur am Slice "Hardening & Release Readiness".
+Arbeite nur am Slice "Functional Alpha Closure & Release Readiness".
 
 Ziel:
 - die App für einen stabilen internen Alpha-Stand absichern
@@ -296,7 +308,7 @@ Not part of the next slices unless explicitly re-prioritized:
 
 Use the next implementation chats in this order:
 
-1. `Hardening & Release Readiness`
+1. `Functional Alpha Closure & Release Readiness`
 
 Use a lightweight stewardship thread in parallel only for:
 

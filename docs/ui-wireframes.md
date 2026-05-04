@@ -42,7 +42,7 @@ Suggested top-level navigation behavior:
 - Workshop Setup Screen
 - Workshop Builder Screen
 - Manual Preview Screen
-- Export Dialog
+- Export Menu
 - Import Dialog
 - Review Panel
 
@@ -450,7 +450,9 @@ Day groups are optional structural wrappers.
 Suggested rendering:
 
 - day label row above contained sections
+- lightweight rename action in the day label row
 - sections remain primary design objects
+- selected sections can move into another existing day from the section header
 - day grouping should not dominate the visual model
 
 ## 7. Manual Preview Screen
@@ -466,7 +468,7 @@ Suggested rendering:
 
 ```text
 +----------------------------------------------------------------------------------+
-| Header: Back to Builder | Manual Preview | Export Markdown | Export HTML | PDF   |
+| Header: Back to Builder | Manual Preview | Notes toggle | Print / Save PDF | Export Markdown |
 +----------------------------------------------------------------------------------+
 | Side Panel: workshop review | warnings | run-sheet depth                          |
 +----------------------------------------------------------------------------------+
@@ -517,20 +519,19 @@ Examples:
 - print view may include a compact print-only cover/meta block with workshop title, context, and final prep notes
 - day boundaries can introduce explicit page breaks when that improves readability
 
-## 8. Export Dialog
+## 8. Export Menu
 
 ### 8.1 Export Options
 
 - markdown
-- printable HTML
-- PDF
 - project bundle
+- preview / print PDF
 
 ### 8.2 Export Controls
 
-- language
-- include review summary on/off
-- include empty notes fields on/off
+- Markdown and bundle download directly from Builder
+- print/PDF output opens Manual Preview and uses browser print
+- language, review summary, and empty-note export presets remain later options
 
 ## 9. Import Dialog
 
@@ -620,5 +621,5 @@ These do not block implementation but should be validated during design or testi
 - exact density of block cards in long sections
 - whether invitation editing needs a richer inline editor
 - whether review details fit best in inspector only or in a slide-over panel
-- whether day groups need collapsed states
-- whether markdown export options need presets
+- whether day groups need collapsed states or explicit day reordering
+- whether markdown export options need presets beyond the direct Builder menu

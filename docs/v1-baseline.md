@@ -2,7 +2,7 @@
 
 ## V1 Baseline
 
-Last updated: 2026-04-30
+Last updated: 2026-05-04
 
 This document freezes the current V1 baseline so product, design, and implementation can move in a more structured delivery mode. It is intentionally shorter than the full product brief and should be treated as the active source of truth for:
 
@@ -18,7 +18,7 @@ LS Stringsmith is a browser-first, self-contained workshop design app for facili
 
 - design workshops faster
 - compose LS chains per section/sub-goal
-- keep invitations and transition notes close to the flow
+- keep invitations, transition notes, section notes, and block facilitator notes close to the flow
 - generate a facilitation-ready internal manual
 - get assistive review feedback without losing design ownership
 
@@ -53,6 +53,8 @@ The current app baseline already includes:
   - transitions
   - drag / move interaction
   - inline invitation editing
+  - simple day creation, day renaming, and section movement between day lanes
+  - persisted section notes and block facilitator notes
   - section duplication, removal, reordering
 - LS library with:
   - search
@@ -69,10 +71,11 @@ The current app baseline already includes:
   - `openai/gpt-oss-20b` as the default model
   - structured JSON responses for block, section, and workshop reviews
   - heuristic/local fallback when AI is off, unavailable, or invalid
-- preview / run-sheet generation
-- markdown export
+- preview / run-sheet generation with optional section notes and block facilitator notes
+- markdown export from Preview and the Builder export menu
 - print / PDF-friendly preview
 - project bundle export / import
+- direct Builder export menu for Markdown manual, portable project bundle, and preview/print PDF
 - richer bundle metadata plus reviewed import confirmation flow
 - import into a selected existing project or as a newly created project
 - optional light/dark shell theme toggle
@@ -93,9 +96,11 @@ Repository stewardship baseline:
 - guest/local and persisted draft modes
 - section-based workshop structure
 - linear chains only
+- simple editable day grouping
 - LS library plus neutral workshop blocks
 - inline invitation authoring
 - transition notes
+- section notes and block-level facilitator notes
 - preview / manual generation
 - markdown + printable output
 - optional assistive review
@@ -118,7 +123,7 @@ These are not failures; they are the important seams to manage deliberately.
 ### 4.1 Product / Data Gaps
 
 - Project management now supports multiple persisted projects; deeper account-level reopen semantics remain future auth work.
-- Day grouping is conceptually defined, but not yet a first-class editable workflow in the running app.
+- Day grouping is now alpha-editable through add, rename, and section-to-day movement; advanced day scheduling, day reordering, merge flows, and collapsed day management remain later scope.
 - The LS library is still a curated seed set, not a broader production-ready catalog.
 
 ### 4.2 Auth / Delivery Gaps
@@ -142,7 +147,7 @@ These are not failures; they are the important seams to manage deliberately.
 
 Recommended order from here:
 
-1. `Hardening & Release Readiness`
+1. `Functional Alpha Closure & Release Readiness`
 
 Reasoning:
 
@@ -184,11 +189,11 @@ Purpose:
 
 - completed: keep the Groq-backed review integration healthy while preserving the local fallback
 
-### Thread 5: Hardening & Release Readiness
+### Thread 5: Functional Alpha Closure & Release Readiness
 
 Purpose:
 
-- stabilize, test, document, and prepare for a usable alpha
+- finish small alpha workflow gaps, then stabilize, test, document, and prepare for a usable alpha
 
 ## 7. Working Rules From Here
 

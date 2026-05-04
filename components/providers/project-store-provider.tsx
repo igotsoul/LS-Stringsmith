@@ -21,6 +21,9 @@ import {
   removeSection as removeSectionMutation,
   removeSections as removeSectionsMutation,
   removeBlockFromSection as removeBlockFromSectionMutation,
+  moveSectionToDay as moveSectionToDayMutation,
+  renameDayLabel as renameDayLabelMutation,
+  updateBlockNotes as updateBlockNotesMutation,
   updateBlockStep as updateBlockStepMutation,
   updateSectionMeta,
   updateTransitionMeta as updateTransitionMetaMutation,
@@ -70,7 +73,7 @@ type ProjectMetaFields = Pick<
   | "decisionNeed"
 >;
 
-type SectionMetaFields = Pick<WorkshopSection, "title" | "subgoal" | "timeRange" | "dayLabel">;
+type SectionMetaFields = Pick<WorkshopSection, "title" | "subgoal" | "timeRange" | "dayLabel" | "notes">;
 
 interface ImportProjectOptions {
   targetProjectId?: string | null;
@@ -110,6 +113,9 @@ interface ProjectStoreContextValue {
   ): string | null;
   removeBlock(sectionId: string, blockItemId: string): void;
   updateBlockInvitation(sectionId: string, itemId: string, invitation: string): void;
+  updateBlockNotes(sectionId: string, itemId: string, facilitatorNotes: string): void;
+  moveSectionToDay(sectionId: string, nextDayLabel: string): void;
+  renameDayLabel(currentDayLabel: string, nextDayLabel: string): void;
   updateTransition(
     sectionId: string,
     transitionId: string,
@@ -594,6 +600,17 @@ export function ProjectStoreProvider({ children }: { children: ReactNode }) {
                 : section,
             ),
           });
+        },
+        updateBlockNotes(sectionId, itemId, facilitatorNotes) {
+          replaceActiveProject(
+            updateBlockNotesMutation(project, sectionId, itemId, facilitatorNotes),
+          );
+        },
+        moveSectionToDay(sectionId, nextDayLabel) {
+          replaceActiveProject(moveSectionToDayMutation(project, sectionId, nextDayLabel));
+        },
+        renameDayLabel(currentDayLabel, nextDayLabel) {
+          replaceActiveProject(renameDayLabelMutation(project, currentDayLabel, nextDayLabel));
         },
         updateTransition(sectionId, transitionId, values) {
           replaceActiveProject(
