@@ -325,8 +325,12 @@ export function ProjectsScreen() {
             <BundleActionIcon action="download" />
             <span>Download bundle</span>
           </button>
-          <button className="primary-button" onClick={handleCreateProject} type="button">
-            New project
+          <button
+            className="primary-button project-create-button"
+            onClick={handleCreateProject}
+            type="button"
+          >
+            <span>Start new workshop</span>
           </button>
         </div>
       </div>
